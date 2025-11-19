@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <ThemeProvider>
           <Navbar />
-          <main className="flex-1 pb-20 md:pb-0">
+          <main className="flex-1 pb-20 md:pb-0 page-container">
             {children}
           </main>
           <WebFooter />
