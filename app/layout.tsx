@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WebFooter from '@/components/WebFooter';
 
 export const metadata: Metadata = {
   title: 'TheatreConnect - Empowering Theatre Communities',
@@ -33,6 +34,7 @@ export default function RootLayout({
         <main className="flex-1 pb-20 md:pb-0">
           {children}
         </main>
+        <WebFooter />
         <Footer />
       </body>
     </html>
