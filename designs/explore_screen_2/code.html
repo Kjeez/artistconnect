@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Stage - Explore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5e19e6",
+              "background-light": "#f6f6f8",
+              "background-dark": "#161121",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-white">
+<div class="relative w-full flex-col pb-28">
+<!-- Header & Search Section -->
+<header class="bg-background-dark">
+<div class="flex flex-col gap-2 p-4 pb-2">
+<div class="flex h-12 items-center justify-between">
+<div class="flex size-12 shrink-0 items-center"></div>
+<div class="flex w-12 items-center justify-end">
+<button class="flex h-12 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-transparent p-0 text-white">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+</div>
+<p class="text-[28px] font-bold leading-tight tracking-light text-white">Explore</p>
+</div>
+<div class="px-4 py-3">
+<label class="flex h-12 w-full min-w-40 flex-col">
+<div class="flex h-full w-full flex-1 items-stretch rounded-xl bg-[#302447]">
+<div class="flex items-center justify-center pl-4 text-[#a593c8]">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex h-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl border-none bg-transparent px-2 text-base font-normal leading-normal text-white placeholder:text-[#a593c8] focus:outline-0 focus:ring-0" placeholder="Search artists, events, scripts..." value=""/>
+</div>
+</label>
+</div>
+</header>
+<!-- Main Content: Category Grid -->
+<main class="p-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="group relative aspect-square overflow-hidden rounded-xl bg-cover bg-center" data-alt="A brightly lit stage with a silhouette of a performer." style='background-image: linear-gradient(0deg, rgba(22, 17, 33, 0.7) 0%, rgba(22, 17, 33, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXV5gue5clkaI244Dc2URuNqyUfnXkL_TEBg-wlRNFpV6QWOvDqq8nFEuHhA2c6O5ux1wVLgHIzzAdB6udtzggRNdkAqglPvtKLNkO4zFhTPr9OMIZo4hhRNxG8Kf1V73iYwLcTuTC-hxelln9IiaR1R7iYc4yb7zEjTncOcKocpUx7H3dpIrGee0sGDjkHl_RxfjVDcCF5u_OpC8PFRw3aYsLCm3wMc99QkgRx14k9x3tn6k4DnR4uxsW7_rDKkgBPiGo0Nx5Es4");'>
+<div class="flex h-full w-full flex-col justify-end p-4">
+<p class="text-lg font-bold leading-tight text-white">Artists</p>
+</div>
+<div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 transition-all group-hover:ring-2 group-hover:ring-primary"></div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-xl bg-cover bg-center" data-alt="A crowd of people enjoying an outdoor festival." style='background-image: linear-gradient(0deg, rgba(22, 17, 33, 0.7) 0%, rgba(22, 17, 33, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDVUkrdKxxcgGg5HPecfgBg7fPkNp6tS1AVYtFLzFsrFA1-ufApVSW1ZKq7eig016_8PuI2S2q7BLwpzZuclK-x1cO-G1O6swYQl3TOvlpGZGRzooBsLPD7ocWHhtKkdJBT3H-tMilC2LapDcy2mps1AZkFPAZGxnaDathCTxg10UzNAKLxfvbopbYVozD9GaPx6v0RAzQvuB7T_8YfF6rK_q8Jtb1fytwGSic4VrguNI-IGmUhQo23oXNKf_Dln0m_HMIkq-YTfA");'>
+<div class="flex h-full w-full flex-col justify-end p-4">
+<p class="text-lg font-bold leading-tight text-white">Events</p>
+</div>
+<div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 transition-all group-hover:ring-2 group-hover:ring-primary"></div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-xl bg-cover bg-center" data-alt="An open book with handwritten text on a wooden table." style='background-image: linear-gradient(0deg, rgba(22, 17, 33, 0.7) 0%, rgba(22, 17, 33, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBysfTa8mHuXRUGM2tU1HBHYxInYqZLGAMduNbsquvek_WwtAi5n5WVPn0lp2jA_pRBhZqoU9-gyoH9ImyhIrTBX1-vzW-UnkqWxU6ykvUVnpUze0h_Q3xB0D_J83lDxCzFFCteghfjqCt7qrYuEOOvG8X9PDtsLuuL5IwsP2tYC8hBlnM3Q2GI0RK7Y9hU88cos9EERI1ds4RhuC9tHKYtAvsNWEH1sS641_kdpCWl-vo9mPXc7Hc1O-NrpRa-Bq9ag4v15I6SxRU");'>
+<div class="flex h-full w-full flex-col justify-end p-4">
+<p class="text-lg font-bold leading-tight text-white">Scripts</p>
+</div>
+<div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 transition-all group-hover:ring-2 group-hover:ring-primary"></div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-xl bg-cover bg-center" data-alt="A person standing in a spotlight on a dark stage." style='background-image: linear-gradient(0deg, rgba(22, 17, 33, 0.7) 0%, rgba(22, 17, 33, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlUJ5gyxqSsJZoJ0znDlARs6y1tTIwX6_NfusdMuiF8pLLaBNJ347aB48ZurVV0qRcKLbF9seG-JQgefdUUexXGOhG-U_xVdAvzIIVqTHHn48GZ-PLa13hAQKUKGY9ChPQ7xX_i777i_NY4Nh80e2KZctZG0kp9vVWTCffystyqzqQCCbGPIhD5cHWvAW_5hznfrlXbUUZE_kfBLcuKFrK9Y6XVkMuUvEMi_00Mm8RUNNTTHjb-UzbzRqWYMwf4K4LD0NHo36Zrsc");'>
+<div class="flex h-full w-full flex-col justify-end p-4">
+<p class="text-lg font-bold leading-tight text-white">Auditions</p>
+</div>
+<div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 transition-all group-hover:ring-2 group-hover:ring-primary"></div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-xl bg-cover bg-center" data-alt="A group of diverse people talking and laughing together." style='background-image: linear-gradient(0deg, rgba(22, 17, 33, 0.7) 0%, rgba(22, 17, 33, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVHofxPWajCltfpfKGqXSX8BdnyRVahRwrHJgHNz7eKEZtiD8BeWqMsJAgx-GYfxC5WsUOmXqiBnY-UUxhCmGx2kJgMRI-eZXRZ2UkSYf8txCi5-EAZR-Zy7nBiF58zlpiE_oIuPW_GC3PDVAgDPkMoIfTPe54pJzocrmaK6YhoxK1Qzjn4usz5smCFEf7oR398rzzmm2It5Bxu6IBazjUKEGGBw2rU5bnh6_Dnrx5qLGBOPEcMJ06jdy58hOFOIh4RIUZIbQfueQ");'>
+<div class="flex h-full w-full flex-col justify-end p-4">
+<p class="text-lg font-bold leading-tight text-white">Community Hub</p>
+</div>
+<div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 transition-all group-hover:ring-2 group-hover:ring-primary"></div>
+</div>
+<div class="group relative aspect-square overflow-hidden rounded-xl bg-cover bg-center" data-alt="An abstract digital art image of glowing neural networks." style='background-image: linear-gradient(0deg, rgba(22, 17, 33, 0.7) 0%, rgba(22, 17, 33, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3il35zy3Trn5OsfCKGcJ1gsEN5shLuvzP9EzwvQxEYWHboNcLJv9ABBV9Ue14Rb0j94ijaf1zUy8oAV5a4WRw9a4MAeFwAxtLELY0DKioP-zOhkE_nwm98Z0Trq1Tg2YcF16wu0iWqGXuxYWO2ZNfQEswL_ZVrmjMVJtXxWnWhCOMqHJoSD2qazQCFEqHdDXccJLdcLLrH9Jeyo4DVz7135W8Au3ogp5ZKzhysDclEMSCQCJY5eI5-uNK6mtufKK3krP3aV2RW2U");'>
+<div class="flex h-full w-full flex-col justify-end p-4">
+<p class="text-lg font-bold leading-tight text-white">AI Tools</p>
+</div>
+<div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 transition-all group-hover:ring-2 group-hover:ring-primary"></div>
+</div>
+<div class="group relative col-span-2 aspect-[2/1] overflow-hidden rounded-xl bg-cover bg-center" data-alt="A ticket booth with a neon sign that says 'Tickets'." style='background-image: linear-gradient(0deg, rgba(22, 17, 33, 0.7) 0%, rgba(22, 17, 33, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUQ0rO4MNjvPESC-0SsU5ufuwxVe2HN18GHP6Pl8NTu5dIebASQ4IVlb0kWgmqlfpfkW1eZrnc0H_ADaJOtoo6rV0K14SGqQtCVAVdjO2XOgwzrhTcR9Vgi13JauzwGcKi4eew_bSdGBRHAMM_6PJmUDsZxjSmzlKSiwy7luiQBmlNs1lWroQn594RDF5C4zGo2nNgPg09vn7gr11HXFJs5llbrnifjmhmMeiTe8j8DJn5w1s6gLmtKONKsmblS0aPHVsijSANuL4");'>
+<div class="flex h-full w-full flex-col justify-end p-4">
+<p class="text-lg font-bold leading-tight text-white">Event Marketplace</p>
+</div>
+<div class="absolute inset-0 rounded-xl ring-1 ring-inset ring-white/10 transition-all group-hover:ring-2 group-hover:ring-primary"></div>
+</div>
+</div>
+</main>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center">home</span>
+<p class="text-xs font-medium leading-normal">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-white" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center" style="font-variation-settings: 'FILL' 1;">explore</span>
+<p class="text-xs font-medium leading-normal">Explore</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center">add_circle</span>
+<p class="text-xs font-medium leading-normal">Create</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center">mail</span>
+<p class="text-xs font-medium leading-normal">Messages</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center">person</span>
+<p class="text-xs font-medium leading-normal">Profile</p>
+</a>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Stage - Create</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5e19e6",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#161121",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+        .material-symbols-outlined.fill { font-variation-settings: 'FILL' 1 }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-white antialiased">
+<div class="flex flex-col h-screen justify-between">
+<!-- Header & Main Content -->
+<div>
+<!-- Header -->
+<header class="grid grid-cols-3 items-center p-4">
+<div class="flex justify-start">
+<button class="p-2 text-[#a593c8]">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<h1 class="text-lg font-bold text-center text-white">Create</h1>
+<!-- Empty div for centering -->
+<div class="flex justify-end"></div>
+</header>
+<!-- Main Content -->
+<main class="px-4 py-2 space-y-4">
+<!-- Card 1: Post Audition -->
+<a class="flex items-center gap-4 bg-[#221a32] p-4 rounded-xl transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#302447]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">theater_comedy</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-base font-semibold text-white">Post an Audition</p>
+<p class="text-sm text-[#a593c8]">Find the perfect talent for your production.</p>
+</div>
+<span class="material-symbols-outlined text-[#a593c8]">chevron_right</span>
+</a>
+<!-- Card 2: Upload Script -->
+<a class="flex items-center gap-4 bg-[#221a32] p-4 rounded-xl transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#302447]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">menu_book</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-base font-semibold text-white">Upload a Script</p>
+<p class="text-sm text-[#a593c8]">Share your work with the community.</p>
+</div>
+<span class="material-symbols-outlined text-[#a593c8]">chevron_right</span>
+</a>
+<!-- Card 3: Manage Profile -->
+<a class="flex items-center gap-4 bg-[#221a32] p-4 rounded-xl transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#302447]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">manage_accounts</span>
+</div>
+<div class="flex flex-col flex-1">
+<p class="text-base font-semibold text-white">Manage Your Profile</p>
+<p class="text-sm text-[#a593c8]">Keep your portfolio and details up to date.</p>
+</div>
+<span class="material-symbols-outlined text-[#a593c8]">chevron_right</span>
+</a>
+</main>
+</div>
+<!-- Bottom Navigation -->
+<nav class="w-full border-t border-[#302447] bg-[#221a32] px-2 pb-3 pt-2">
+<div class="flex justify-around">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined">search</span>
+<p class="text-xs font-medium">Discover</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-white" href="#">
+<span class="material-symbols-outlined fill" style="font-size: 28px;">add_circle</span>
+<p class="text-xs font-medium">Create</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<p class="text-xs font-medium">Messages</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

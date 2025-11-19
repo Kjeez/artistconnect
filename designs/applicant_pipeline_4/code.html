@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Applicant Pipeline - Artisan Stage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-size: 24px;
+      }.no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }.no-scrollbar {
+        -ms-overflow-style: none;scrollbar-width: none;}
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1919e6",
+              "background-light": "#f6f6f8",
+              // New grungy dark background
+              "background-dark": "#181A1B", // Darker, slightly desaturated
+              // New card background with subtle texture
+              "card-dark": "#252B2D", // Darker, less reflective
+              // Neon accents
+              "neon-pink": "#FF00FF",
+              "neon-green": "#00FF7F",
+              "neon-blue": "#00FFFF",
+              "neon-yellow": "#FFFF00",
+              "text-primary-dark": "#E0E0E0", // Slightly off-white
+              "text-secondary-dark": "#9A9A9A", // Grungy secondary text
+            },
+            fontFamily: {
+              // Keeping Manrope but will lean into bold/heavy weights for street art feel
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem", // Slightly less rounded
+              "lg": "0.75rem",
+              "xl": "1rem",
+              "full": "9999px"
+            },
+            // Custom animations for splatters/drips
+            keyframes: {
+              drip: {
+                '0%': { transform: 'translateY(-10px) scaleY(0)', opacity: '0' },
+                '100%': { transform: 'translateY(0px) scaleY(1)', opacity: '1' },
+              },
+              splatter: {
+                '0%': { transform: 'scale(0.5)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              }
+            },
+            animation: {
+              drip: 'drip 0.5s ease-out forwards',
+              splatter: 'splatter 0.3s ease-out forwards',
+            }
+          },
+        },
+      }
+    </script>
+<style type="text/tailwindcss">body {
+        min-height: max(884px, 100dvh);
+        background-image: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)" opacity="0.05"/></svg>');
+        background-color: theme('colors.background-dark');
+        background-blend-mode: overlay;
+      }.card-base {
+        position: absolute;
+        width: 90%;margin-left: 5%;left: 0;
+        right: 0;
+        transform-origin: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }.card-1 {
+        z-index: 30;
+        transform: rotate(-3deg) translateY(0px) translateX(-5px);
+      }
+      .card-2 {
+        z-index: 40;transform: rotate(2deg) translateY(20px) translateX(10px);
+      }
+      .card-3 {
+        z-index: 35;transform: rotate(-1deg) translateY(40px) translateX(-15px);
+      }
+      .card-empty-state {
+        z-index: 20;
+        transform: rotate(4deg) translateY(60px) translateX(5px);
+      }.drip-border-neon-pink {
+        position: relative;
+        overflow: hidden;
+      }
+      .drip-border-neon-pink:before {
+        content: '';
+        position: absolute;
+        top: -2px;left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border: 2px solid theme('colors.neon-pink');
+        border-radius: theme('borderRadius.DEFAULT');
+        opacity: 0.6;
+        filter: blur(2px);
+        pointer-events: none;
+        animation: drip 0.5s ease-out forwards;
+      }
+      .drip-border-neon-green {
+        position: relative;
+        overflow: hidden;
+      }
+      .drip-border-neon-green:before {
+        content: '';
+        position: absolute;
+        top: -2px;left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border: 2px solid theme('colors.neon-green');
+        border-radius: theme('borderRadius.DEFAULT');
+        opacity: 0.6;
+        filter: blur(2px);
+        pointer-events: none;
+        animation: drip 0.5s ease-out forwards;
+      }.splatter-neon-pink {
+        position: relative;
+      }
+      .splatter-neon-pink:after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: theme('colors.neon-pink');
+        border-radius: 50%;
+        opacity: 0.7;
+        filter: blur(5px);
+        left: 10%;top: 80%;animation: splatter 0.4s ease-out forwards;
+        pointer-events: none;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-text-primary-dark antialiased">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 flex items-center bg-background-dark/80 backdrop-blur-sm p-4 pb-2 justify-between border-b-2 border-neon-blue/30 shadow-lg">
+<button class="flex size-10 items-center justify-center rounded-full text-neon-blue transition-colors hover:text-neon-green">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-text-primary-dark text-lg font-extrabold leading-tight tracking-wide flex-1 text-center uppercase">A Midsummer Night's Dream</h1>
+<button class="flex size-10 items-center justify-center rounded-full text-neon-blue transition-colors hover:text-neon-green">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<nav class="sticky top-[72px] z-40 bg-background-dark/80 backdrop-blur-sm">
+<div class="no-scrollbar overflow-x-auto">
+<div class="flex border-b-2 border-card-dark px-4 min-w-max">
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-neon-pink text-neon-pink px-4 pb-[13px] pt-4 font-extrabold text-shadow-neon-pink transition-colors" href="#">
+<p class="text-sm font-bold leading-normal uppercase">New Applicants (78)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 hover:border-b-neon-blue hover:text-neon-blue transition-colors" href="#">
+<p class="text-sm font-bold leading-normal uppercase">Shortlisted (12)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 hover:border-b-neon-blue hover:text-neon-blue transition-colors" href="#">
+<p class="text-sm font-bold leading-normal uppercase">Callback (4)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 hover:border-b-neon-blue hover:text-neon-blue transition-colors" href="#">
+<p class="text-sm font-bold leading-normal uppercase">Hired (1)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 hover:border-b-neon-blue hover:text-neon-blue transition-colors" href="#">
+<p class="text-sm font-bold leading-normal uppercase">Rejected (23)</p>
+</a>
+</div>
+</div>
+</nav>
+<main class="relative flex-1 p-4 pb-28 min-h-[calc(100vh-180px)]">
+<div class="card-base card-1 rounded-xl bg-card-dark p-4 shadow-xl border-2 border-neon-blue/20">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center border-2 border-neon-yellow" data-alt="Headshot of Eleanor Vance" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkfc4d5BI5Ztw5ZgRNmQJsPD_GvNXrsPXpATzPRWPEYaQsC7OnXRckyHsuJ7n0OeMXVXpNW1D5JtLd1K5aD6GNXBXHixeF1JCYKhqtUNOAuWHcDjyjx6teLQtsxBh73or3ErzQy8yiMJgnECCiQYRR9KtIwp0t5OjKy4TOoEIMrZRqPLbpQBmlETxv9LLqhAh4xFQGY4age6PHo7cGUjohFtUXtxOLCtUxk5UYx_eq1eGetJ1vTawKWXi2YXrNXRpltPtCuPJcmgk')"></div>
+<div class="flex-grow">
+<p class="text-base font-extrabold leading-tight text-text-primary-dark uppercase">Eleanor Vance</p>
+<p class="text-sm font-light leading-normal text-text-secondary-dark">Applied 3 days ago</p>
+</div>
+<div class="flex items-center gap-2 splatter-neon-pink">
+<div class="flex h-8 items-center justify-center rounded-full bg-neon-pink/20 px-3 border border-neon-pink/50">
+<p class="text-xs font-bold text-neon-pink uppercase drop-shadow-lg">92% Match</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 mt-4">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-text-secondary-dark/10 px-4 text-neon-blue gap-2 text-sm font-bold leading-normal border border-neon-blue/50 hover:bg-neon-blue/20 transition-all active:scale-95">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span class="uppercase">Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-neon-green px-4 text-card-dark gap-2 text-sm font-bold leading-normal shadow-lg shadow-neon-green/30 hover:shadow-neon-green/60 active:scale-95 transition-all">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span class="uppercase">View Profile</span>
+</button>
+</div>
+</div>
+<div class="card-base card-2 rounded-xl bg-card-dark p-4 shadow-xl border-2 border-neon-pink/20 drip-border-neon-pink">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center border-2 border-neon-green" data-alt="Headshot of Marcus Thorne" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4Vt6t1VmELWYsmZcpDpUo9kflG-0_VqMkSTu4SPIK699JMq176y1Ihz3AH0n7cMC0mlWYJZRT0_6qnVP1wgzwSdNuwpJ4FHbMKTDcE1DO-Vdoxw7RWr0cbi2RlAQraXBGgt5NkrkSduml0rDwGHCCQILSwM3z0JppKi_68Tc3piUX1sfAH4_itMjnzK8Ts6TSlPr_eZ1IYMdey93nVzdOLUjcL-KRuXYNYKfEBv-mdg4YMlgS7QAJg_XgbfYr3-v3s19JaOr6IdA')"></div>
+<div class="flex-grow">
+<p class="text-base font-extrabold leading-tight text-text-primary-dark uppercase">Marcus Thorne</p>
+<p class="text-sm font-light leading-normal text-text-secondary-dark">Applied 5 days ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex h-8 items-center justify-center rounded-full bg-neon-green/20 px-3 border border-neon-green/50">
+<p class="text-xs font-bold text-neon-green uppercase drop-shadow-lg">88% Match</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 mt-4">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-text-secondary-dark/10 px-4 text-neon-blue gap-2 text-sm font-bold leading-normal border border-neon-blue/50 hover:bg-neon-blue/20 transition-all active:scale-95">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span class="uppercase">Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-neon-green px-4 text-card-dark gap-2 text-sm font-bold leading-normal shadow-lg shadow-neon-green/30 hover:shadow-neon-green/60 active:scale-95 transition-all">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span class="uppercase">View Profile</span>
+</button>
+</div>
+</div>
+<div class="card-base card-3 rounded-xl bg-card-dark p-4 shadow-xl border-2 border-neon-yellow/20">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center border-2 border-neon-pink" data-alt="Headshot of Jordan Lee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0cWLdDYjxV-MGQaW_ihoLQuEdlvF5Ffwmozj4RRGnMbreFiWHJb0dhQzH1CeHNEOPV8-6ObCea1R9Rza7jTXtmasoKcltBTyzPILYDkNRoJXLIqTP2Aeg1EJ2KjEOjRKfajHCiTW1ChOtsp5lTPfkj4wcbtxXC4WNmB0tp8GMxRxnXAP2wdk8Eh8ZNtZn3HI76jVNetmxYWDaWIOl_nJfCgyxw4oXBgCQf5gIG9Ixz56M_ESPpkmi1yWNphxIitiCEM7x7Jzkkq4')"></div>
+<div class="flex-grow">
+<p class="text-base font-extrabold leading-tight text-text-primary-dark uppercase">Jordan Lee</p>
+<p class="text-sm font-light leading-normal text-text-secondary-dark">Applied 1 week ago</p>
+</div>
+<div class="flex items-center gap-2 splatter-neon-pink">
+<div class="flex h-8 items-center justify-center rounded-full bg-neon-yellow/20 px-3 border border-neon-yellow/50">
+<p class="text-xs font-bold text-neon-yellow uppercase drop-shadow-lg">85% Match</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3 mt-4">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-text-secondary-dark/10 px-4 text-neon-blue gap-2 text-sm font-bold leading-normal border border-neon-blue/50 hover:bg-neon-blue/20 transition-all active:scale-95">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span class="uppercase">Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-neon-green px-4 text-card-dark gap-2 text-sm font-bold leading-normal shadow-lg shadow-neon-green/30 hover:shadow-neon-green/60 active:scale-95 transition-all">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span class="uppercase">View Profile</span>
+</button>
+</div>
+</div>
+<div class="card-base card-empty-state flex flex-col items-center justify-center rounded-xl bg-card-dark/50 p-10 text-center border-2 border-text-secondary-dark/20 shadow-xl">
+<span class="material-symbols-outlined !text-5xl text-text-secondary-dark/50 drop-shadow-md">upcoming</span>
+<p class="mt-4 font-extrabold text-text-primary-dark uppercase">No More Applicants</p>
+<p class="text-sm text-text-secondary-dark">Check back later for new submissions.</p>
+</div>
+<div class="h-[300px]"></div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-50 w-full border-t-2 border-neon-blue/30 bg-background-dark/80 p-4 backdrop-blur-sm shadow-2xl shadow-black/50">
+<div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4">
+<p class="text-base font-bold text-text-primary-dark uppercase text-shadow-neon-pink">1 Selected</p>
+<div class="flex items-center gap-3">
+<button class="flex h-10 items-center justify-center rounded-lg bg-text-secondary-dark/20 px-4 text-sm font-bold text-neon-blue border border-neon-blue/50 hover:bg-neon-blue/20 transition-all active:scale-95 uppercase">Reject</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-text-secondary-dark/20 px-4 text-sm font-bold text-neon-blue border border-neon-blue/50 hover:bg-neon-blue/20 transition-all active:scale-95 uppercase">Message</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-neon-pink px-4 text-card-dark text-sm font-bold shadow-lg shadow-neon-pink/30 hover:shadow-neon-pink/60 active:scale-95 transition-all uppercase">Move</button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TheatreConnect - Audition Management</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ee2bad;
+        --background-color: #181116;
+        --surface-color: #271c23;
+        --text-primary: #ffffff;
+        --text-secondary: #b99db0;
+        --accent-color: #392833;
+      }
+      body {
+        font-family: "Be Vietnam Pro", sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+      .nav-item {
+        @apply flex flex-1 flex-col items-center justify-end gap-1 text-[var(--text-secondary)] transition-colors duration-300;
+      }
+      .nav-item.active,
+      .nav-item:hover {
+        @apply text-[var(--primary-color)];
+      }
+      .nav-item .material-icons {
+        @apply h-8 w-8 text-3xl;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between overflow-x-hidden">
+<main class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center bg-[var(--background-color)]/80 p-4 pb-3 backdrop-blur-sm">
+<button class="flex size-10 items-center justify-center rounded-full text-[var(--text-primary)]">
+<span class="material-icons">arrow_back_ios_new</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold tracking-tight pr-10">Audition Management</h1>
+</header>
+<div class="px-4">
+<section class="mb-8">
+<h2 class="mb-4 text-2xl font-bold tracking-tight">AI-Powered Audition Matching</h2>
+<div class="relative">
+<input class="w-full rounded-full border-none bg-[var(--accent-color)] py-3 pl-12 pr-4 text-base text-[var(--text-primary)] placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" placeholder="Search for auditions" type="search"/>
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
+<span class="material-icons text-[var(--text-secondary)]">search</span>
+</div>
+</div>
+<div class="mt-4 flex flex-wrap gap-2">
+<button class="rounded-full bg-[var(--accent-color)] px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-colors hover:bg-[var(--primary-color)]">Acting</button>
+<button class="rounded-full bg-[var(--accent-color)] px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-colors hover:bg-[var(--primary-color)]">Singing</button>
+<button class="rounded-full bg-[var(--accent-color)] px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-colors hover:bg-[var(--primary-color)]">Dance</button>
+</div>
+</section>
+<section class="mb-8 space-y-3">
+<div class="flex items-center gap-4 rounded-lg bg-[var(--surface-color)] p-3 transition-transform hover:scale-[1.02]">
+<div class="size-16 shrink-0">
+<img alt="Hamlet poster" class="size-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM-YGSns7zEyGsYvV6tl-mJNQ9kGKljUsSHX8--mDSkcbA6XlYPm3_JLf2YdEnlNM6G4hBLFS4rwG9nMMvi-ICghLWlyPpiK_GYqYodJE1fgJCHDdiWQgU5uFAN8cth3_q6dzM8NjlRhMvfizNZ5jKi-2Js390uyQgF21iZ96waLLjLmacQw3t-FzeSVMoP8dtAQ3jNQo7dvXz_j4fuP2o0_5hNgT3gICQ7VlzBgXQZSMXMDdc34RJ0JjSyBWSIaqnT4tHcZSb_aU"/>
+</div>
+<div class="flex-grow">
+<p class="font-bold">Hamlet</p>
+<p class="text-sm text-[var(--text-secondary)]">Delhi-NCR</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-[var(--accent-color)] text-[var(--primary-color)]">
+<span class="material-icons">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-[var(--surface-color)] p-3 transition-transform hover:scale-[1.02]">
+<div class="size-16 shrink-0">
+<img alt="Romeo and Juliet poster" class="size-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA0e2TzMrxx0_6m7K_b_253QfMM-mKhTr6cOtZvBFlksOGEvUTnOcXPr3gJKtLpFGzSYNkhk5LfjJECGXH-NVXq568Tju_z3kU0_EI2p7ogfArSuLXw_VNIpgcJOwaIAB9Qj3TlzashWEGqaud20VW1JZ-kEWoDAhQE8QDsSgEuzsRtS-UE3NiRc2nkx2ptRhwzqhJHSCUKQxPHvE4fm8lD6j8MVNGKplpianonzQlPaf3KSF656HJxc9hVczzWl2OPre_7cLhB_w"/>
+</div>
+<div class="flex-grow">
+<p class="font-bold">Romeo and Juliet</p>
+<p class="text-sm text-[var(--text-secondary)]">Delhi-NCR</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-[var(--accent-color)] text-[var(--primary-color)]">
+<span class="material-icons">chevron_right</span>
+</button>
+</div>
+<div class="flex items-center gap-4 rounded-lg bg-[var(--surface-color)] p-3 transition-transform hover:scale-[1.02]">
+<div class="size-16 shrink-0">
+<img alt="Macbeth poster" class="size-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPwzG7AurWFKmi7WZzB7BSePd9tionuMCH5eMjy-BnyIKBOHcHeTlAyn4_ZfmMWBY7baks8tXYdtocykGMuxVhRbl03MY951oznDy6J5Al2aTBTBT9y-iSJ1FP84MG3TPFaVAhETRGbm68Ci92Te3CaSHYaq0UXEi2fdRoORd3qtWO5NEkYzzrdZPfh5omB7bEcozIXFRJXnMyUsHn-HoVQOZbWsJX8jUp27Kd8LOGkY6hqZbhWEGu--z24Htza3u-FdorW6SN5z8"/>
+</div>
+<div class="flex-grow">
+<p class="font-bold">Macbeth</p>
+<p class="text-sm text-[var(--text-secondary)]">Delhi-NCR</p>
+</div>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full bg-[var(--accent-color)] text-[var(--primary-color)]">
+<span class="material-icons">chevron_right</span>
+</button>
+</div>
+</section>
+<section class="mb-8">
+<h2 class="mb-4 text-2xl font-bold tracking-tight">Video Analysis</h2>
+<div class="flex items-center gap-4 rounded-xl bg-[var(--surface-color)] p-4">
+<div class="flex-1 space-y-2">
+<h3 class="text-lg font-bold">Analyze your performance</h3>
+<p class="text-sm text-[var(--text-secondary)]">Upload your audition video to get feedback on your acting, voice, and overall presentation.</p>
+<button class="mt-2 rounded-full bg-[var(--primary-color)] px-5 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90">Upload Video</button>
+</div>
+<div class="relative w-28 shrink-0">
+<img alt="Video analysis graphic" class="aspect-square w-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3WCQGvcIKPY944sqrImCe6J-NAt8qyv5WfnQ4A3s8Ylzhh1HfZj2YOjEVZlhjt9j5yd3111RITCB9dWftxCiP_YTxRjc_nNE_pkT_3_obyfH7slamsfVPDQNNuCUOMjOd6Co_OznsiWpSBpqnedrPtfPNG2lcDeqWbIPoWLD91sk9EKpExCN3x4iIJQcqJrInrnQNqsadRduO3UU0YtTYP7tiZ0QZIMV2MCnYqcuxP2UQ2GMQDylxEVmjq6WeLjpi2d7JUcOdci8"/>
+<div class="absolute inset-0 flex items-center justify-center rounded-lg bg-black/40">
+<span class="material-icons text-4xl text-white">play_circle</span>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h2 class="mb-4 text-2xl font-bold tracking-tight">Mock Audition Scripts</h2>
+<div class="flex items-center gap-4 rounded-xl bg-[var(--surface-color)] p-4">
+<div class="flex-1 space-y-2">
+<h3 class="text-lg font-bold">Practice with mock scripts</h3>
+<p class="text-sm text-[var(--text-secondary)]">Explore a variety of scripts from our library to hone your audition skills.</p>
+<button class="mt-2 rounded-full bg-[var(--primary-color)] px-5 py-2.5 text-sm font-bold text-white transition-opacity hover:opacity-90">Explore Scripts</button>
+</div>
+<div class="relative w-28 shrink-0">
+<img alt="Mock scripts graphic" class="aspect-square w-full rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdOfVoXkuelSHXcfrx_fhX62lPWhR2Z1puuA57Fl1HbTxMrKSYFBXYc-jQr290JrdN8kL77rW6dmcA9FKIdN-qZdFgYEVJ49141NFV1QGx-_nNGQpC5KuWj8EAVqI4NopIiJts6bGVuDmtuU9HtAasgQGCnXvXRsanA1ko3eQjDGbGWrw01xTflZWy2JmhJnaRnSZbcn0cFe9aX7JcrITk7msV67JoV5wTr8AHk8bfb_D0ABFJM_DV2eeN6GGgq6MCy8dSuFHqTBw"/>
+<div class="absolute inset-0 flex items-center justify-center rounded-lg bg-black/40">
+<span class="material-icons text-4xl text-white">menu_book</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10 border-t border-[var(--accent-color)] bg-[var(--surface-color)]/80 pb-4 pt-2 backdrop-blur-sm">
+<nav class="flex justify-around px-4">
+<a class="nav-item" href="#">
+<span class="material-icons">home</span>
+<p class="text-xs font-medium tracking-wide">Home</p>
+</a>
+<a class="nav-item" href="#">
+<span class="material-icons">groups</span>
+<p class="text-xs font-medium tracking-wide">Community</p>
+</a>
+<a class="nav-item active" href="#">
+<span class="material-icons">movie</span>
+<p class="text-xs font-medium tracking-wide">Auditions</p>
+</a>
+<a class="nav-item" href="#">
+<span class="material-icons">person</span>
+<p class="text-xs font-medium tracking-wide">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

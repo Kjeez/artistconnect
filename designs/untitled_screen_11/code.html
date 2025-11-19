@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-50: #fde6f4;
+            --primary-100: #fcd1e9;
+            --primary-200: #faabd8;
+            --primary-300: #f885c7;
+            --primary-400: #f55fb6;
+            --primary-500: #f338a5;
+            --primary-600: #ee2bad;
+            --primary-700: #d51994;
+            --primary-800: #bc1680;
+            --primary-900: #a2136d;
+            --primary-950: #6a0d47;
+            --secondary-50: #f2f0f1;
+            --secondary-100: #e5e2e4;
+            --secondary-200: #cbc5c9;
+            --secondary-300: #b1a8ae;
+            --secondary-400: #978b93;
+            --secondary-500: #7d6e78;
+            --secondary-600: #63565e;
+            --secondary-700: #493e44;
+            --secondary-800: #30262b;
+            --secondary-900: #160e11;
+            --secondary-950: #0b0708;
+        }
+        body {
+            background-color: var(--secondary-900);
+            color: white;
+            font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen bg-secondary-900">
+<div class="relative flex size-full flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex flex-col">
+<header class="flex items-center bg-secondary-900 p-4 pb-2 justify-between">
+<div class="text-white flex size-10 shrink-0 items-center justify-center rounded-full bg-secondary-800" data-icon="ArrowLeft" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</div>
+<h1 class="text-white text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Purchase Script</h1>
+</header>
+<main class="flex-grow px-4 py-6">
+<div class="mb-6">
+<div class="w-full bg-center bg-no-repeat aspect-[16/7] bg-cover rounded-xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAownSHHMKqfuH4_6GJacm2cs00jYDJPBfKA_j2gzESm9dDTCwqhArMci_ZGlnz7Dw4JdoDc88heAGN2XIZSTnsmtzD03mJA_prMgF-M7rFwhC2a9DsBdzG57xIC7j4KCpD9kb9pXPccrfB1ElnV-WzeHVb2Aq9LtfLK97QIORdy9kxyTTkIDnbrLXUR7Fb6ZLVDTmcC25xpJRM_MdWe6TkGKbVAQt6xGUcj5_J8ItvbIoIt3twS96IJdv0gkvbG8ci7HtTM8VwSJ8");'></div>
+<div class="mt-4">
+<h2 class="text-white text-2xl font-bold leading-tight">The Silent Echo</h2>
+<p class="text-secondary-300 text-base">By Alisha Khan</p>
+<p class="text-primary-400 text-lg font-bold mt-2">₹499</p>
+</div>
+</div>
+<div class="space-y-4">
+<h3 class="text-white text-xl font-bold">Choose your purchase option</h3>
+<div class="bg-secondary-800 p-4 rounded-lg border-2 border-primary-500">
+<label class="flex items-center" for="individual">
+<input checked="" class="form-radio bg-secondary-700 border-secondary-600 text-primary-500 focus:ring-primary-500" id="individual" name="purchase_option" type="radio"/>
+<span class="ml-3">
+<p class="text-white font-semibold">Individual Purchase</p>
+<p class="text-secondary-300 text-sm">Buy this script for ₹499</p>
+</span>
+</label>
+</div>
+<div class="bg-secondary-800 p-4 rounded-lg border-2 border-transparent">
+<label class="flex items-center" for="subscription">
+<input class="form-radio bg-secondary-700 border-secondary-600 text-primary-500 focus:ring-primary-500" id="subscription" name="purchase_option" type="radio"/>
+<span class="ml-3">
+<p class="text-white font-semibold">Subscribe to TheatreConnect+</p>
+<p class="text-secondary-300 text-sm">Get this script and more with our monthly plan.</p>
+</span>
+</label>
+<div class="mt-4 ml-7 pl-1 border-l border-secondary-600">
+<h4 class="text-primary-300 font-semibold mb-2">Subscription Benefits:</h4>
+<ul class="space-y-2 text-sm text-secondary-200">
+<li class="flex items-center">
+<svg class="w-4 h-4 mr-2 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                                    Unlimited access to all scripts
+                                </li>
+<li class="flex items-center">
+<svg class="w-4 h-4 mr-2 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                                    Generate up to 10 scripts per month
+                                </li>
+<li class="flex items-center">
+<svg class="w-4 h-4 mr-2 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                                    Exclusive access to new releases
+                                </li>
+</ul>
+<p class="mt-3 text-white font-bold text-lg">₹999<span class="text-secondary-300 font-normal text-sm">/month</span></p>
+<a class="text-primary-400 text-sm font-semibold mt-1 inline-block" href="#">Learn more</a>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="text-white text-xl font-bold mb-4">Payment Details</h3>
+<div class="space-y-4">
+<input class="form-input w-full bg-secondary-800 border-secondary-700 rounded-lg text-white placeholder-secondary-400 focus:ring-primary-500 focus:border-primary-500" placeholder="Cardholder Name" type="text"/>
+<div class="relative">
+<input class="form-input w-full bg-secondary-800 border-secondary-700 rounded-lg text-white placeholder-secondary-400 focus:ring-primary-500 focus:border-primary-500 pr-12" placeholder="Card Number" type="text"/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-3">
+<svg class="h-6 w-6 text-secondary-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.998 8c0-1.103-.897-2-2-2h-16c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-8zM4.001 8h16v2h-16V8zM19.999 16h-16v-3.998h16V16z"></path><path d="M6.001 14h4v1.5h-4z"></path></svg>
+</div>
+</div>
+<div class="flex space-x-4">
+<input class="form-input w-1/2 bg-secondary-800 border-secondary-700 rounded-lg text-white placeholder-secondary-400 focus:ring-primary-500 focus:border-primary-500" placeholder="MM/YY" type="text"/>
+<input class="form-input w-1/2 bg-secondary-800 border-secondary-700 rounded-lg text-white placeholder-secondary-400 focus:ring-primary-500 focus:border-primary-500" placeholder="CVC" type="text"/>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-secondary-900 px-4 py-4 border-t border-secondary-800">
+<div class="flex justify-between items-center mb-4">
+<span class="text-secondary-300">Total</span>
+<span class="text-white text-2xl font-bold">₹499</span>
+</div>
+<button class="w-full bg-primary-600 text-white font-bold py-3 rounded-full hover:bg-primary-700 transition-colors">
+                    Confirm Purchase
+                </button>
+</footer>
+</div>
+</div>
+
+</body></html>

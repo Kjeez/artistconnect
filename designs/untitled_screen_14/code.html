@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TheatreConnect - Events</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #ee2bad;
+            --background-color: #120B10;
+            --surface-color: #1E151A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A39DA0;
+            --neon-pink: #ee2bad;
+            --neon-blue: #2BABE2;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+        .neon-glow {
+            box-shadow: 0 0 5px var(--neon-pink), 0 0 10px var(--neon-pink), 0 0 15px var(--neon-pink);
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-white">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+</svg>
+</button>
+<h1 class="text-white text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Events</h1>
+<div class="w-7"></div>
+</div>
+<div class="px-4 py-3">
+<div class="relative">
+<input class="form-input w-full rounded-full border-2 border-[var(--surface-color)] bg-transparent py-3 pl-12 pr-4 text-base font-normal leading-normal text-white placeholder:text-[var(--text-secondary)] focus:border-[var(--primary-color)] focus:ring-0 transition-colors" placeholder="Search events, artists, venues..." value=""/>
+<div class="absolute inset-y-0 left-0 flex items-center pl-4 text-[var(--text-secondary)]">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="flex gap-3 px-4 pb-4 overflow-x-auto no-scrollbar">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full border border-[var(--primary-color)] bg-[var(--primary-color)]/10 px-4">
+<p class="text-[var(--primary-color)] text-sm font-medium">All Dates</p>
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="16" viewBox="0 0 256 256" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full border border-white/20 bg-[var(--surface-color)] px-4">
+<p class="text-white text-sm font-medium">Genre</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full border border-white/20 bg-[var(--surface-color)] px-4">
+<p class="text-white text-sm font-medium">Location</p>
+</button>
+</div>
+</header>
+<main class="flex-1 pb-24">
+<div class="p-4 space-y-6">
+<div class="relative overflow-hidden rounded-2xl group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+<img alt="The Tempest poster" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdbenawm9VZBgM6p-KjUawYGCuvHfBUJYcg0tU6CtJ-9xFHvcMV5EJ42d-4EvlIV-TrIZjUkQ7lcAUrK76mXEhY8yGO7Tq7MTg7WI-fo1OO0Hy097CzLKuRwtNCXehuK66GgJKiXsqgsZyHEk9cFA-yhROKkM-qy3aC66C5TvYZqiK2W-hlbKbkJO6_LlfLqaUJryudyuw1Ye-IgBvygbtn-rM9dcPZYcPAUYsbGTrntaUqPfUHoK5i_OrzqrKVFScrR8LoA9GQ60"/>
+<div class="absolute bottom-0 left-0 p-5">
+<p class="text-xs font-bold uppercase tracking-wider text-[var(--neon-blue)]">Featured Event</p>
+<h2 class="text-2xl font-black text-white mt-1">The Tempest</h2>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-0.5">
+<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<svg class="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+</div>
+<p class="text-sm text-white">4.2 (124 reviews)</p>
+</div>
+<p class="text-sm text-[var(--text-secondary)] mt-1">"A mesmerizing experience! The cast was brilliant."</p>
+<div class="flex gap-2 mt-4">
+<button class="flex items-center justify-center rounded-full h-10 px-6 bg-[var(--primary-color)] text-white text-sm font-bold neon-glow transition-all duration-300 hover:bg-white hover:text-[var(--primary-color)] hover:shadow-none">
+<span>Book Now</span>
+</button>
+<a class="flex items-center justify-center rounded-full h-10 px-6 border border-[var(--text-secondary)] text-[var(--text-secondary)] text-sm font-bold" href="#">
+<span>Reviews</span>
+</a>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-baseline">
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">Upcoming Events</h2>
+<a class="text-sm font-medium text-[var(--primary-color)]" href="#">See All</a>
+</div>
+<div class="space-y-4">
+<div class="flex gap-4 bg-[var(--surface-color)] p-3 rounded-2xl">
+<img alt="Hamlet poster" class="w-24 h-24 object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCOD0tyjKMq_GWeBEVFI-e9-B4f-7N8VuX-S4ajgMryIpcsaaYLgFBLjmNEoUqS25uKmGyyxM3b8bIKJzMzZi1mxrrFI-Tj_yXUZnN48t-2AJdJqnRXq15TI_vpydxYCDGRgWjZmPuXQ7ufJ_cOXcL6PNHu6C4iM3MiACIttlg9h9jpr4MXsQnq0tze_8zH0iPK1YhmDyawdZLwpavUjh2iyYh0NRFSpFbr46OkMUCbQs7i8QFfZB8N_y55SFVq50F3CrcY-JZKFI"/>
+<div class="flex-1">
+<p class="text-sm text-[var(--text-secondary)]">Sat, 28 Oct · 7:00 PM</p>
+<h3 class="text-white text-lg font-bold leading-tight mt-1">Hamlet</h3>
+<p class="text-sm text-[var(--text-secondary)] mt-1">Akshara Theatre, Delhi</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-0.5">
+<svg class="w-3.5 h-3.5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<span class="text-sm text-white font-semibold">4.8</span>
+</div>
+<p class="text-xs text-[var(--text-secondary)]">(89 reviews)</p>
+</div>
+</div>
+<button class="self-start text-[var(--primary-color)]">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.49,32,147.1,32,94A46.06,46.06,0,0,1,78,48c19.68,0,34.54,12.42,42.09,27.24a8,8,0,0,0,15.82,0C143.46,60.42,158.32,48,178,48a46.06,46.06,0,0,1,46,46C224,147.1,146.26,196.49,128,206.8Z"></path></svg>
+</button>
+</div>
+<div class="flex gap-4 bg-[var(--surface-color)] p-3 rounded-2xl">
+<img alt="A Midsummer Night's Dream poster" class="w-24 h-24 object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdhWwRyDt_3pLGh25P5uxXPSeI79E_3SZJZsQfkrAPPCXhUVd3aaV7_lLD_fT0gpYicQ3_gKToWRS_4mjnpAloE09xb0RenKnzP6SHlG7LB3HklNuf-WvEi3OcAbES2XfzL-aCaCEWUy3jEAVUGNDKWMG94JHaY3HrZYHjpmYlptGqnAxcHYMvGLhxfrst_PhGynDUv5gn-wSpYKLfM8ZcdP1a0boxMovL7f9kLZvDHLFNaPer6bGO_xfKcDJ728d8M6Rw3dPur18"/>
+<div class="flex-1">
+<p class="text-sm text-[var(--text-secondary)]">Sun, 29 Oct · 5:00 PM</p>
+<h3 class="text-white text-lg font-bold leading-tight mt-1">A Midsummer Night's Dream</h3>
+<p class="text-sm text-[var(--text-secondary)] mt-1">Kamani Auditorium, Delhi</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-0.5">
+<svg class="w-3.5 h-3.5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<span class="text-sm text-white font-semibold">4.5</span>
+</div>
+<p class="text-xs text-[var(--text-secondary)]">(72 reviews)</p>
+</div>
+</div>
+<button class="self-start text-[var(--text-secondary)]">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.49,32,147.1,32,94A46.06,46.06,0,0,1,78,48c19.68,0,34.54,12.42,42.09,27.24a8,8,0,0,0,15.82,0C143.46,60.42,158.32,48,178,48a46.06,46.06,0,0,1,46,46C224,147.1,146.26,196.49,128,206.8Z"></path></svg>
+</button>
+</div>
+<div class="flex gap-4 bg-[var(--surface-color)] p-3 rounded-2xl">
+<img alt="Macbeth poster" class="w-24 h-24 object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4Lx-JrRHTMrtqw3Fm4vtQryCHFd5JXinqw7lwGLMZNoQbqNTM-Ph9GfA72MBOhDflbOtWD5b6QggUDZP2zRwBCaLiWgbaC_vUxRzxgRVV13F9lSA29MvkYdnqHdoake8kAQlkoBf73C9s0oD6GT2mQQFC30yu5l1SgCtO3XFk8KQqmTZMK-GeaKLjA2TocDqLzsM5reE2BIGZeO6gO98-kbQVsQ2z0-IWpozYCnnfmf99ZW-EymKiFfqUlAevSrpxgu_PX3w6fOs"/>
+<div class="flex-1">
+<p class="text-sm text-[var(--text-secondary)]">Fri, 3 Nov · 8:00 PM</p>
+<h3 class="text-white text-lg font-bold leading-tight mt-1">Macbeth</h3>
+<p class="text-sm text-[var(--text-secondary)] mt-1">Stein Auditorium, IHC</p>
+<div class="flex items-center gap-2 mt-2">
+<div class="flex items-center gap-0.5">
+<svg class="w-3.5 h-3.5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+<span class="text-sm text-white font-semibold">4.6</span>
+</div>
+<p class="text-xs text-[var(--text-secondary)]">(105 reviews)</p>
+</div>
+</div>
+<button class="self-start text-[var(--text-secondary)]">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.49,32,147.1,32,94A46.06,46.06,0,0,1,78,48c19.68,0,34.54,12.42,42.09,27.24a8,8,0,0,0,15.82,0C143.46,60.42,158.32,48,178,48a46.06,46.06,0,0,1,46,46C224,147.1,146.26,196.49,128,206.8Z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-[var(--surface-color)]/80 backdrop-blur-sm border-t border-white/10 pb-safe">
+<div class="flex justify-around items-center h-20">
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path>
+</svg>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--primary-color)]" href="#">
+<div class="relative">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM48,80V48H72v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80Zm160,128H48V96H208Z"></path>
+</svg>
+<div class="w-1.5 h-1.5 rounded-full bg-[var(--primary-color)] absolute top-0 right-0 neon-glow"></div>
+</div>
+<p class="text-xs font-bold leading-normal tracking-[0.015em]">Events</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"></path>
+</svg>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Scripts</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

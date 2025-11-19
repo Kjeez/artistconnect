@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Stage - Actors</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#121212] dark" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+<div class="sticky top-0 z-10 bg-[#121212] pt-4">
+<div class="flex items-center px-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-[#F5F5F5]" style="font-size: 24px;">arrow_back_ios_new</span>
+</div>
+<h2 class="text-[#F5F5F5] text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Actors</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#F5F5F5] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-[#F5F5F5]" style="font-size: 28px;">grid_view</span>
+</button>
+</div>
+</div>
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+<div class="text-[#A9A9A9] flex border-none bg-[#1E1E1E] items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined" style="font-size: 24px;">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#F5F5F5] focus:outline-0 focus:ring-0 border-none bg-[#1E1E1E] focus:border-none h-full placeholder:text-[#A9A9A9] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search actors by name or skill..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex gap-3 px-4 pb-4 overflow-x-auto [&amp;::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gradient-to-r from-[#BF953F] to-[#FCF6BA] px-4">
+<p class="text-black text-sm font-medium leading-normal">Location</p>
+<span class="material-symbols-outlined text-black" style="font-size: 20px;">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#1E1E1E] px-4">
+<p class="text-[#F5F5F5] text-sm font-medium leading-normal">Skills</p>
+<span class="material-symbols-outlined text-[#F5F5F5]" style="font-size: 20px;">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#1E1E1E] px-4">
+<p class="text-[#F5F5F5] text-sm font-medium leading-normal">Availability</p>
+<span class="material-symbols-outlined text-[#F5F5F5]" style="font-size: 20px;">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#1E1E1E] px-4">
+<p class="text-[#F5F5F5] text-sm font-medium leading-normal">Experience</p>
+<span class="material-symbols-outlined text-[#F5F5F5]" style="font-size: 20px;">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#1E1E1E] px-4">
+<p class="text-[#F5F5F5] text-sm font-medium leading-normal">Sort by</p>
+<span class="material-symbols-outlined text-[#F5F5F5]" style="font-size: 20px;">expand_more</span>
+</button>
+</div>
+</div>
+<main class="flex-1 pb-24">
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-2">
+<div class="relative w-full">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional headshot of Olivia Chen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5lChS1Lf65O1qfd0J2n-MtrIrLo91557PoHAiwcEn9wZtukZDaCfACfRM0yZqat_12DdZpvkZUqCN2q3AnlHTweZAl2kdeHrmoneHjaAvc_g0Agha84Tb1rTMSUEVMIF-wADlLe9Vv6z_VGdSPv3AJZN2PWkVgEl5UnCgvTxRgSNqpl6g_YNUpEmoQZKS2DHSeJrmKJiGG0UeVw1Ae6SSGvKOfqcBOQH-v9rd48-ca7tKNMAhUSWa4I5pd5POA9OV4iD5RngEq2k");'></div>
+<div class="absolute top-2 right-2 flex size-6 items-center justify-center rounded-full bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">
+<span class="material-symbols-outlined text-black" style="font-size: 16px;">verified</span>
+</div>
+</div>
+<div>
+<p class="text-[#F5F5F5] text-base font-bold leading-normal">Olivia Chen</p>
+<p class="text-[#A9A9A9] text-sm font-normal leading-normal">Shakespearean, Voiceover</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="relative w-full">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional headshot of Benjamin Carter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAU-fMctdrKLEUlTUt3yjAq0nsm4Y-gazyn5Bsb5fCJBv6qVjPnXFt92kCw1Sgg4e7vKBljnfzy154ZM9Q0YlLrqesOtgcA0UnwGfngpsRJZhIiG3KZ1Go6ySgaLy2GzMgJ-3U4CLSCulsni6lIv9JKqVkg4f4k9cVko2DaUQ5G48kmV9-b6rH8OtkYbpJgoVgRAqHTeIW6d7EqfDOg0cTwAN3wg_F58Wsj9-j3K6rcfAnH34fWUAXrEktJGIYoWhbTI_10WrlbfdU");'></div>
+</div>
+<div>
+<p class="text-[#F5F5F5] text-base font-bold leading-normal">Benjamin Carter</p>
+<p class="text-[#A9A9A9] text-sm font-normal leading-normal">Method Actor, Stage Combat</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="relative w-full">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional headshot of Sophia Rodriguez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvGmMOg_a0Fy3uz5ViO6NzF6rORk727qOxBDCxidUu48nyhQZOP7x2JcuukqVAZYPloOrOdEVwHR1mh0yuXhTs5_hobzxRua5H2Zi76cw1zdKUOLMJJbvUbDZQ65VSR5t-7q3SdAjSx5x1y0b7K-UGfcxS9Sgp0lX1Kj9PoVc_LaMwMlTlZ5aNfO6XL2ORHI_8-FKC32tjsz3RrkA0XIZj03zHJUOoA4fWG7VRpLzWzIuh_tvhdkArpx1k2wj1RgkvOiPFCA1rGeI");'></div>
+</div>
+<div>
+<p class="text-[#F5F5F5] text-base font-bold leading-normal">Sophia Rodriguez</p>
+<p class="text-[#A9A9A9] text-sm font-normal leading-normal">Comedic Actor, Improv</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="relative w-full">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional headshot of Liam Goldberg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDObaCI1j3HpZNQswSntaRyyeha5qzGhF7KO4WzKpQDB1w0-qeF033cJnMPstrPYSv5pkic0TNfbSsuv5YppA5ZODaOU8KlJz_HDGaNZO7lr7bKCHxLm1EeJL83XNflBfzw9JmF42xu-_55D35izQLws9-3ubr1PIY1mq-Mk9YdDv1f1wHwu56tabu7xHLMvacuMLJe9ugekaanh3UW4iu_Ec1H4rwIiljAwpmFTEE1zkwGa0A3YDBIRBZ65SpZ5Dcq6m3ECkXOWhg");'></div>
+<div class="absolute top-2 right-2 flex size-6 items-center justify-center rounded-full bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">
+<span class="material-symbols-outlined text-black" style="font-size: 16px;">verified</span>
+</div>
+</div>
+<div>
+<p class="text-[#F5F5F5] text-base font-bold leading-normal">Liam Goldberg</p>
+<p class="text-[#A9A9A9] text-sm font-normal leading-normal">Voiceover Artist, Announcer</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="relative w-full">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional headshot of Ava Nguyen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBJRHYWs940HT2yI-VwHL4nSoWRxI53345jj5jQDliCqDV32uRqYdDIQUKatlKDn8eWkGanrQ_aL6UMIAlu3sXWcG5cwk6CsH44A18KuW-RB82wr1_zpclRMFEBitZcaQPrGJM-fYpH2SQ8DOY_r9jeN7lv5OBqBOuPEmMJ98gC88_Z0BZyOhKba3vjkUohJa4kPv4XWqaojGJz5_GdD_nHt4SIipFVk719LhiqZqaE0qEbedx-iRA92W-0gxeBSHbNlFx3yjVuiK0");'></div>
+</div>
+<div>
+<p class="text-[#F5F5F5] text-base font-bold leading-normal">Ava Nguyen</p>
+<p class="text-[#A9A9A9] text-sm font-normal leading-normal">Musical Theatre, Soprano</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="relative w-full">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional headshot of Noah Patel" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC-B5j9DygzxUKysKLYGhmD0QyPriNdbxTqfr0uZivNhdZKDSTNk5mPysJZbb1Fg8W6Z9MS433uxtLnbVZKmdMNZ8R1wgUyIIQQXZsOnkC2LjyOEhi7v9suEPRokFpE6J4-63r-fxI5AcwlmdxXjJpoylpZHtsUonIXYvKLntjylpJHXxW3fltoqqU6m8tYgd0_5gm5I56j-bzaFYzPzAjvHXC-TdI1a4gNAodSfMUd9DyqCAet45WNAja-C5Uu5KQM4w2JxQGuRmc");'></div>
+<div class="absolute top-2 right-2 flex size-6 items-center justify-center rounded-full bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">
+<span class="material-symbols-outlined text-black" style="font-size: 16px;">verified</span>
+</div>
+</div>
+<div>
+<p class="text-[#F5F5F5] text-base font-bold leading-normal">Noah Patel</p>
+<p class="text-[#A9A9A9] text-sm font-normal leading-normal">Film Actor, Stunt Double</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="relative w-full">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional headshot of Chloe Kim" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAHr2E8XXn8L4QMiIpM_6F86LrqAJFFQq1vmqyEBGBB2EuSr1bVdtXpQbhjJse9ARpaEebSqIAas5TEYsczI4a_hY2GToZ54tkmeW_AyVJS5I_D7l_FD5kritFePGSDr8pYLj02KBTApO7qSGXhbNAUZVEf5gDXX84wJbPT1uhd0kt8glAVkFcfVbAJwm2n2Rxlj1wPGWLi1dHRPlyryAFsQbWt35JtMT5dL3WM1gey_ymueUZnWgLxvRl9dvBU2KevQpSWKRFTi8");'></div>
+</div>
+<div>
+<p class="text-[#F5F5F5] text-base font-bold leading-normal">Chloe Kim</p>
+<p class="text-[#A9A9A9] text-sm font-normal leading-normal">Character Actor, Dancer</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="relative w-full">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional headshot of Mason Williams" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8qF3MQCD50uIpMuQOM6b6Qy7w9SzPaioA4OgT08LWU6pU-DC631xea7lcFQIVN1UvWxK6VZ6P1OaxADdHd0bkjJWi8YgA32fxmFB9HOmSMzHb-mEfnJuRG7nDkgN905A7qJieARAuAtatXj5WAU_stwpdCDqI8TubRJ7biVMeI370iZ_kaCDSbD8x6ZVeaX0md4TMAxcQxusqbeQ8DBchNV3D7ExRjmCeBgm3ck1bcexIEjsBGxmznDQxT4_eNPoZohBWBSmKhpo");'></div>
+<div class="absolute top-2 right-2 flex size-6 items-center justify-center rounded-full bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">
+<span class="material-symbols-outlined text-black" style="font-size: 16px;">verified</span>
+</div>
+</div>
+<div>
+<p class="text-[#F5F5F5] text-base font-bold leading-normal">Mason Williams</p>
+<p class="text-[#A9A9A9] text-sm font-normal leading-normal">Stage Actor, Director</p>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-10">
+<div class="flex gap-2 border-t border-[#1E1E1E] bg-[#121212] px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#A9A9A9]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[#A9A9A9]" style="font-size: 24px;">home</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#F5F5F5]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined fill text-[#F5F5F5]" style="font-size: 24px;">search</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Explore</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#A9A9A9]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[#A9A9A9]" style="font-size: 24px;">add_circle</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Post</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#A9A9A9]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[#A9A9A9]" style="font-size: 24px;">chat_bubble</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Messages</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#A9A9A9]" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[#A9A9A9]" style="font-size: 24px;">person</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</div>
+</div>
+</div>
+</body></html>

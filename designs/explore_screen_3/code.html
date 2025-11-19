@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Stage - Explore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5e19e6",
+              "background-light": "#f6f6f8",
+              "background-dark": "#161121",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-white">
+<div class="relative w-full flex-col pb-28">
+<header class="bg-background-dark/95 sticky top-0 z-40 pb-2 backdrop-blur-lg">
+<div class="flex flex-col gap-2 p-4 pb-0">
+<p class="text-[28px] font-bold leading-tight tracking-light text-white">Explore</p>
+</div>
+<div class="px-4 py-3">
+<div class="flex h-12 w-full items-center rounded-xl bg-[#302447]">
+<div class="flex items-center justify-center pl-4 text-[#a593c8]">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex h-full min-w-0 flex-1 resize-none overflow-hidden border-none bg-transparent px-2 text-base font-normal leading-normal text-white placeholder:text-[#a593c8] focus:outline-0 focus:ring-0" placeholder="Search artists, events, scripts..." value=""/>
+<button class="mr-2 flex items-center gap-1.5 rounded-lg bg-[#5e19e6] px-3 py-1.5 text-sm font-semibold">
+<span class="hidden sm:inline">All</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+</div>
+<div class="hide-scrollbar -mb-2 flex items-center gap-4 overflow-x-auto px-4">
+<a class="flex shrink-0 items-center justify-center border-b-2 border-primary py-2.5" href="#">
+<p class="text-sm font-bold text-white">Artists</p>
+</a>
+<a class="flex shrink-0 items-center justify-center border-b-2 border-transparent py-2.5" href="#">
+<p class="text-sm font-semibold text-gray-400">Events</p>
+</a>
+<a class="flex shrink-0 items-center justify-center border-b-2 border-transparent py-2.5" href="#">
+<p class="text-sm font-semibold text-gray-400">Scripts</p>
+</a>
+<a class="flex shrink-0 items-center justify-center border-b-2 border-transparent py-2.5" href="#">
+<p class="text-sm font-semibold text-gray-400">Auditions</p>
+</a>
+<a class="flex shrink-0 items-center justify-center border-b-2 border-transparent py-2.5" href="#">
+<p class="text-sm font-semibold text-gray-400">Services</p>
+</a>
+<a class="flex shrink-0 items-center justify-center border-b-2 border-transparent py-2.5" href="#">
+<p class="text-sm font-semibold text-gray-400">Community</p>
+</a>
+</div>
+</header>
+<main class="flex flex-col gap-6 p-4 pt-4">
+<div class="flex items-center justify-between">
+<h2 class="text-xl font-bold text-white">Featured Artists</h2>
+<a class="text-sm font-semibold text-primary" href="#">See All</a>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="group relative flex flex-col gap-3">
+<div class="relative aspect-square w-full overflow-hidden rounded-xl">
+<img alt="Portrait of a male actor with a confident expression." class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO7M6CShhZ7tpsgGxh_1fdIIAOZaiQgP2C4a2_7RzH21oSa7CpQ5J_gBk0UHRfUYO70FdxVNLtS77MtUfM2ao8BCezbqBWmbUntq_lGLtTn1Aylde5LKTzdYsRew_tIY8tspnSfJJ185adAEClMh75nTMfYc-6s7jjORmJZxDnV9vAGnmQ7z1D8V5XwbttrcJgl2d_X0qQEPZs61InJHePz_fpU9LxfqXthRx7dNeS0fhuCdkZiL9_GvW9mWTvpPwoPW_isVP-SFs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1.5 rounded-full bg-black/50 px-2.5 py-1 text-xs text-white backdrop-blur-sm">
+<span class="relative flex h-2 w-2">
+<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+<span class="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+</span>
+<span>Available</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<h3 class="truncate text-base font-bold text-white">Julian Vale</h3>
+<div class="flex items-center gap-1 text-sm text-yellow-400">
+<span class="material-symbols-outlined !text-base" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'opsz' 20;">star</span>
+<span class="font-semibold">4.9</span>
+</div>
+</div>
+<p class="text-sm text-gray-400">Actor, Singer</p>
+</div>
+</div>
+<div class="group relative flex flex-col gap-3">
+<div class="relative aspect-square w-full overflow-hidden rounded-xl">
+<img alt="Portrait of a female director with glasses, looking thoughtful." class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWZeFmnmxkCf3is-hLuOaPis2ezx9z3Bvx-Kd4mXw5_ULVhl3jVx7XwSolN6DfYathfqeN2xhl_19mCUjRpjaSzBo8WDKA8c1IwQaCuOD6ff6wXzmi2i6Ua7psia9fRltipUO_o_o85yb66JeEOjk1i5NfHv64W0pzin6LPT9tOkd4fEI8Hw5oMB5GViY6uLmmByrZvlOm95wnnZUmMqRnHiR1QNUOMiDahiA-E1bABMMfdQHq3lI3Heny3O7hBdfRfIB33cnNtrg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute right-2 top-2">
+<span class="material-symbols-outlined text-blue-400" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'opsz' 20;">verified</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between">
+<h3 class="truncate text-base font-bold text-white">Elara Vance</h3>
+<div class="flex items-center gap-1 text-sm text-yellow-400">
+<span class="material-symbols-outlined !text-base" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'opsz' 20;">star</span>
+<span class="font-semibold">5.0</span>
+</div>
+</div>
+<p class="text-sm text-gray-400">Director</p>
+</div>
+</div>
+</div>
+<section class="flex flex-col gap-3 py-2">
+<div class="flex items-center justify-between">
+<h2 class="text-xl font-bold text-white">Trending</h2>
+<a class="text-sm font-semibold text-primary" href="#">See All</a>
+</div>
+<div class="hide-scrollbar flex gap-4 overflow-x-auto">
+<div class="flex w-40 shrink-0 flex-col gap-2">
+<div class="group relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+<img alt="Portrait of a female artist with striking makeup." class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXV5gue5clkaI244Dc2URuNqyUfnXkL_TEBg-wlRNFpV6QWOvDqq8nFEuHhA2c6O5ux1wVLgHIzzAdB6udtzggRNdkAqglPvtKLNkO4zFhTPr9OMIZo4hhRNxG8Kf1V73iYwLcTuTC-hxelln9IiaR1R7iYc4yb7zEjTncOcKocpUx7H3dpIrGee0sGDjkHl_RxfjVDcCF5u_OpC8PFRw3aYsLCm3wMc99QkgRx14k9x3tn6k4DnR4uxsW7_rDKkgBPiGo0Nx5Es4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-black/50 px-2 py-0.5 text-xs text-white backdrop-blur-sm">
+<span class="material-symbols-outlined !text-sm !font-thin" style="font-variation-settings: 'FILL' 1, 'wght' 300, 'opsz' 20;">local_fire_department</span>
+<span class="font-bold">Hot</span>
+</div>
+</div>
+<div>
+<h3 class="truncate font-semibold text-white">Olivia Reign</h3>
+<p class="text-sm text-gray-400">Artist</p>
+</div>
+</div>
+<div class="flex w-40 shrink-0 flex-col gap-2">
+<div class="group relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+<img alt="A vintage-looking playbill for a theatre event." class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBysfTa8mHuXRUGM2tU1HBHYxInYqZLGAMduNbsquvek_WwtAi5n5WVPn0lp2jA_pRBhZqoU9-gyoH9ImyhIrTBX1-vzW-UnkqWxU6ykvUVnpUze0h_Q3xB0D_J83lDxCzFFCteghfjqCt7qrYuEOOvG8X9PDtsLuuL5IwsP2tYC8hBlnM3Q2GI0RK7Y9hU88cos9EERI1ds4RhuC9tHKYtAvsNWEH1sS641_kdpCWl-vo9mPXc7Hc1O-NrpRa-Bq9ag4v15I6SxRU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-black/50 px-2 py-0.5 text-xs text-white backdrop-blur-sm">
+<span class="material-symbols-outlined !text-sm !font-thin" style="font-variation-settings: 'FILL' 1, 'wght' 300, 'opsz' 20;">local_fire_department</span>
+<span class="font-bold">Hot</span>
+</div>
+</div>
+<div>
+<h3 class="truncate font-semibold text-white">The Last Monarch</h3>
+<p class="text-sm text-gray-400">Script</p>
+</div>
+</div>
+<div class="flex w-40 shrink-0 flex-col gap-2">
+<div class="group relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+<img alt="An energetic concert with a large crowd and purple stage lights." class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDVUkrdKxxcgGg5HPecfgBg7fPkNp6tS1AVYtFLzFsrFA1-ufApVSW1ZKq7eig016_8PuI2S2q7BLwpzZuclK-x1cO-G1O6swYQl3TOvlpGZGRzooBsLPD7ocWHhtKkdJBT3H-tMilC2LapDcy2mps1AZkFPAZGxnaDathCTxg10UzNAKLxfvbopbYVozD9GaPx6v0RAzQvuB7T_8YfF6rK_q8Jtb1fytwGSic4VrguNI-IGmUhQo23oXNKf_Dln0m_HMIkq-YTfA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-black/50 px-2 py-0.5 text-xs text-white backdrop-blur-sm">
+<span class="material-symbols-outlined !text-sm !font-thin" style="font-variation-settings: 'FILL' 1, 'wght' 300, 'opsz' 20;">local_fire_department</span>
+<span class="font-bold">Hot</span>
+</div>
+</div>
+<div>
+<h3 class="truncate font-semibold text-white">Starlight Serenade</h3>
+<p class="text-sm text-gray-400">Event</p>
+</div>
+</div>
+<div class="flex w-40 shrink-0 flex-col gap-2">
+<div class="group relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+<img alt="A person in costume stands under a spotlight." class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlUJ5gyxqSsJZoJ0znDlARs6y1tTIwX6_NfusdMuiF8pLLaBNJ347aB48ZurVV0qRcKLbF9seG-JQgefdUUexXGOhG-U_xVdAvzIIVqTHHn48GZ-PLa13hAQKUKGY9ChPQ7xX_i777i_NY4Nh80e2KZctZG0kp9vVWTCffystyqzqQCCbGPIhD5cHWvAW_5hznfrlXbUUZE_kfBLcuKFrK9Y6XVkMuUvEMi_00Mm8RUNNTTHjb-UzbzRqWYMwf4K4LD0NHo36Zrsc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="absolute bottom-2 left-2 flex items-center gap-1 rounded-full bg-black/50 px-2 py-0.5 text-xs text-white backdrop-blur-sm">
+<span class="material-symbols-outlined !text-sm !font-thin" style="font-variation-settings: 'FILL' 1, 'wght' 300, 'opsz' 20;">local_fire_department</span>
+<span class="font-bold">Hot</span>
+</div>
+</div>
+<div>
+<h3 class="truncate font-semibold text-white">Echoes of Time</h3>
+<p class="text-sm text-gray-400">Audition</p>
+</div>
+</div>
+</div>
+</section>
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h2 class="text-xl font-bold text-white">Top-Rated Professionals</h2>
+<a class="text-sm font-semibold text-primary" href="#">See All</a>
+</div>
+<div class="flex flex-col gap-4">
+<div class="group flex items-center gap-4 rounded-xl p-2 transition-colors hover:bg-white/5">
+<img alt="Portrait of a female makeup artist smiling." class="size-16 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClWfzbMAnb1il3_7YnSHGNwYJb_ON9kTiIiRmEAYhvKmAaHRGHJ60aO31CKaX1oTFG_K97m_8iszy6Qki2ieEoPunUgFOzcP6sQgQt4I6MtkkMzmVc58k_HYbHlMCDazszTG2Gs4zwvpBY12HtMqxmsriyKN3RjO2-zo12XEHp4xvfjVg4ikQMWpGDo3XbhTD2j4exBRM7CAakdf8-PPK3sXN2R8QdlWtYrGyJ82Wa5L_MOvpc_ZR20XQjSL-nxCCF6183q4a3q9A"/>
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-white">Aria Chen</h3>
+<span class="material-symbols-outlined text-blue-400" style="font-variation-settings: 'FILL' 1, 'wght' 700, 'opsz' 20;">verified</span>
+</div>
+<p class="text-sm text-gray-400">Makeup Artist</p>
+</div>
+<div class="flex items-center gap-1 text-sm text-yellow-400">
+<span class="material-symbols-outlined !text-base" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'opsz' 20;">star</span>
+<span class="font-semibold">5.0</span>
+</div>
+</div>
+<div class="group flex items-center gap-4 rounded-xl p-2 transition-colors hover:bg-white/5">
+<img alt="Portrait of a male sound engineer at a mixing board." class="size-16 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsPsDMrvVV1hZ4ah3NQUFutjDqGmk5e13gVyllOjRcpMoKv0scjHvyWyqLtNk3-RtV4ywoAldmev0mGMjXMPv47OO2yDfVJo5mPMcArpwxNREAHOTu83CIfVxz_NhWpo2GNhwF354jnHrcEdf1SNFHEQEt-bHnvAn1BE68kp9-W_GU1VHA9OFQ2vzeG4qKdXtz8XCD2LvGrEfu-UjvG3jp88wajps8WQJJ55x0VKfWF3RmCFpDyHtpvIZm2qjWhzAtGcKutXcpWLw"/>
+<div class="flex-1">
+<h3 class="font-bold text-white">Leo Rivera</h3>
+<p class="text-sm text-gray-400">Sound Engineer</p>
+</div>
+<div class="flex items-center gap-1 text-sm text-yellow-400">
+<span class="material-symbols-outlined !text-base" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'opsz' 20;">star</span>
+<span class="font-semibold">4.9</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center">home</span>
+<p class="text-xs font-medium leading-normal">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-white" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center" style="font-variation-settings: 'FILL' 1;">explore</span>
+<p class="text-xs font-medium leading-normal">Explore</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center">add_circle</span>
+<p class="text-xs font-medium leading-normal">Create</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center">mail</span>
+<p class="text-xs font-medium leading-normal">Messages</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#a593c8]" href="#">
+<span class="material-symbols-outlined flex h-8 items-center justify-center">person</span>
+<p class="text-xs font-medium leading-normal">Profile</p>
+</a>
+</div>
+</nav>
+</body></html>

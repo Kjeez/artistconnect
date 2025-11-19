@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Application Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#D4AF37",
+            "background-light": "#f6f6f8",
+            "background-dark": "#111121",
+            "surface-dark": "#1E1E1E",
+            "accent-start": "#D4AF37",
+            "accent-end": "#B8860B",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-dark dark font-display" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-white text-2xl">arrow_back</span>
+</div>
+<h2 class="text-neutral-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Application Details</h2>
+<div class="size-10 shrink-0"></div> <!-- Spacer -->
+</div>
+<!-- Main Content -->
+<div class="flex-1 pb-28 px-4">
+<!-- Headline & Sub-headline -->
+<h1 class="text-neutral-100 tracking-tight text-[32px] font-bold leading-tight text-left pb-1 pt-4">Hamlet - Lead Role</h1>
+<p class="text-neutral-400 text-base font-normal leading-normal pb-4">Royal Shakespeare Company</p>
+<!-- Status Chips -->
+<div class="flex gap-2 pb-6 flex-wrap">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-gradient-to-r from-accent-start to-accent-end px-4">
+<p class="text-black text-sm font-bold leading-normal">Callback Request</p>
+</div>
+</div>
+<!-- Link to Original Audition -->
+<div class="flex items-center gap-4 bg-transparent min-h-14 justify-between border-y border-white/10 py-2 mb-6">
+<div class="flex items-center gap-4">
+<div class="text-neutral-300 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">description</span>
+</div>
+<p class="text-neutral-100 text-base font-medium leading-normal flex-1 truncate">View Original Audition Details</p>
+</div>
+<div class="shrink-0">
+<div class="text-neutral-400 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Callback Details Section -->
+<div class="bg-surface-dark rounded-xl p-5 mb-6">
+<h3 class="text-neutral-100 text-lg font-bold mb-4">Callback Details</h3>
+<div class="space-y-4 mb-5">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-neutral-400 text-xl">calendar_today</span>
+<p class="text-neutral-200">Monday, November 6, 2023</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-neutral-400 text-xl">schedule</span>
+<p class="text-neutral-200">2:30 PM - 3:00 PM (GMT)</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-neutral-400 text-xl">videocam</span>
+<p class="text-primary font-medium">zoom.us/j/123456789</p>
+</div>
+</div>
+<div class="bg-background-dark rounded-lg p-4 mb-5">
+<p class="text-neutral-400 text-sm mb-2 font-medium">Message from Casting Director:</p>
+<p class="text-neutral-200 leading-relaxed">"Looking forward to seeing your interpretation. Please prepare the attached sides. We'll be focusing on the 'To be or not to be' soliloquy."</p>
+</div>
+<div class="flex gap-3">
+<button class="flex-1 text-center bg-gradient-to-r from-accent-start to-accent-end text-black font-bold py-3 px-4 rounded-lg">Accept</button>
+<button class="flex-1 text-center bg-transparent border border-red-500/50 text-red-400 font-bold py-3 px-4 rounded-lg">Decline</button>
+</div>
+</div>
+<!-- Your Submission Section -->
+<div class="bg-surface-dark rounded-xl p-5 mb-6">
+<h3 class="text-neutral-100 text-lg font-bold mb-4">Your Submission</h3>
+<div class="flex gap-3 overflow-x-auto pb-4 -mx-1 px-1">
+<img class="size-24 rounded-lg object-cover" data-alt="Headshot of a man with a beard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWFNrRA4kfk9vobZEtq3PcAaE8SmSNcwC_6Zw4-yXQ_IS0zQn8ca3extfBj6nDUnpYRGYVlpm5xmLXlMrgn4hU0Dy2WQFDYDdKuGgjGYVOpoOROeNYAPmANaWJCPd8MFuY163KfPUSNy8zwLYsJrv_tm3BTFHbaq72ctCEFhtq6gwkx8Q-UDPYIlDJP-i6oilCRVBgXBxLs5WU0PFlxYmQRjyztGgbC6eH9F2PE5vCKJlLqRIpoI0kMQQjgn_iEGM1MqqHBLthIA8"/>
+<img class="size-24 rounded-lg object-cover" data-alt="Headshot of a woman with curly hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk-24a1eD4Blp7U5futxL1Y22di7z6VSliptO8ZXbXHZ-_q6MbUz0QXxD1-JILc-KU0-SDLmuHidRbhfy-IqpnBeH2G7dMX6G1ZV9zv2yvT047GDGFRW7FuTY6gn0EoJa8wAadT-ajVMCbMstxfVq4NzpPrz4D7SY83FEWOyomRq1c58nLkY4nGEGI758rv76WYSWSFmRaWxmaQ0MCNUVbKTN7XoaZggXJTTxyBLXbvsXvRT8BYjtlVgIhXzx1pLCZJSC8JZc0U3I"/>
+<div class="relative size-24 rounded-lg bg-background-dark flex items-center justify-center shrink-0">
+<img class="w-full h-full object-cover rounded-lg opacity-50" data-alt="Video thumbnail of a dramatic scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ttQ69V2kXhuZx7UQLoheFJ1-wIo1QiyTm_OsyiMAXuSlvxSYbOj-agXmbmhts2gJwC61Z9r9eymT9WtmLWv9Q6k4YAqOVY_6ZwGn0t0CPqvNeAbsr18aFPjBwgloS6NrECK_SLogtd2gfsWEBQsNpK4uW7UoGRtRwO8-r_kxY1iEf_iozVKKYFnpwWEKC89tCxqGQYNqvDZB8ndqqp-TOtQq7sR7I2-lwPgiOAJVfaK2I0ayYFCfToCv9hvFd0w80jomMTu_ud4"/>
+<span class="material-symbols-outlined text-white text-4xl absolute">play_circle</span>
+</div>
+</div>
+<div>
+<h4 class="text-neutral-400 text-sm mb-2 font-medium">Cover Note</h4>
+<p class="text-neutral-200 text-base leading-relaxed">To the esteemed casting team, I am thrilled at the prospect of portraying Hamlet. My training at Juilliard and experience with classical text has prepared me for the depth this role demands. Thank you for your time and consideration.</p>
+</div>
+</div>
+<!-- Status History Section -->
+<div class="bg-surface-dark rounded-xl p-5">
+<h3 class="text-neutral-100 text-lg font-bold mb-5">Status History</h3>
+<div class="relative">
+<!-- Timeline line -->
+<div class="absolute left-3 top-2 h-full w-0.5 bg-neutral-700"></div>
+<div class="relative pl-10 pb-6">
+<div class="absolute left-0 top-0.5">
+<div class="flex size-6 items-center justify-center rounded-full bg-accent-start">
+<span class="material-symbols-outlined text-black text-sm">phone_callback</span>
+</div>
+</div>
+<p class="font-bold text-neutral-100">Callback Request</p>
+<p class="text-sm text-neutral-400">October 26</p>
+</div>
+<div class="relative pl-10 pb-6">
+<div class="absolute left-0 top-0.5">
+<div class="flex size-6 items-center justify-center rounded-full bg-neutral-600">
+<span class="material-symbols-outlined text-neutral-200 text-sm">star</span>
+</div>
+</div>
+<p class="font-bold text-neutral-100">Shortlisted</p>
+<p class="text-sm text-neutral-400">October 24</p>
+</div>
+<div class="relative pl-10 pb-6">
+<div class="absolute left-0 top-0.5">
+<div class="flex size-6 items-center justify-center rounded-full bg-neutral-600">
+<span class="material-symbols-outlined text-neutral-200 text-sm">visibility</span>
+</div>
+</div>
+<p class="font-bold text-neutral-100">Viewed</p>
+<p class="text-sm text-neutral-400">October 22</p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-0.5">
+<div class="flex size-6 items-center justify-center rounded-full bg-neutral-600">
+<span class="material-symbols-outlined text-neutral-200 text-sm">check</span>
+</div>
+</div>
+<p class="font-bold text-neutral-100">Submitted</p>
+<p class="text-sm text-neutral-400">October 20</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Footer Button -->
+<div class="fixed bottom-0 left-0 right-0 bg-background-dark/80 backdrop-blur-sm p-4 border-t border-white/10">
+<button class="w-full text-center bg-surface-dark text-neutral-100 font-bold py-3.5 px-4 rounded-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-lg">mail</span>
+        Message Casting Director
+      </button>
+</div>
+</div>
+</body></html>

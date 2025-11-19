@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Street Art Gallery - Artisan Stage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&amp;family=Bangers&amp;family=Press+Start+2P&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }.no-scrollbar {
+            -ms-overflow-style: none;scrollbar-width: none;}
+        body {
+          background-image: url('https://w.wallhaven.cc/full/wq/wallhaven-wqo17m.jpg');background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+          min-height: max(884px, 100dvh);
+          position: relative;
+          z-index: 0;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7);z-index: -1;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1919e6",
+              "background-light": "#f6f6f8",
+              "background-dark": "transparent","card-dark": "rgba(30, 30, 30, 0.7)","gold-start": "#F7DC6F","gold-end": "#E5A000","text-primary-dark": "#F5F5F5",
+              "text-secondary-dark": "#B0B0B0","graffiti-pink": "#FF0080",
+              "graffiti-blue": "#00FFFF",
+              "graffiti-green": "#00FF00",
+              "graffiti-purple": "#8A2BE2",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"],
+              "graffiti-bold": ["Bangers", "cursive"],"graffiti-stencil": ["Permanent Marker", "cursive"],},
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-text-primary-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center bg-black/80 p-4 pb-2 justify-between border-b border-white/10 shadow-lg">
+<button class="flex size-10 items-center justify-center rounded-full text-graffiti-blue active:text-graffiti-pink">
+<span class="material-symbols-outlined !text-3xl drop-shadow-lg">arrow_back</span>
+</button>
+<h1 class="text-white text-xl font-graffiti-stencil leading-tight tracking-wide flex-1 text-center drop-shadow-md">A Midsummer Night's Dream</h1>
+<button class="flex size-10 items-center justify-center rounded-full text-graffiti-blue active:text-graffiti-pink">
+<span class="material-symbols-outlined !text-3xl drop-shadow-lg">more_vert</span>
+</button>
+</header>
+<nav class="sticky top-[72px] z-10 bg-black/80 border-b border-white/10 shadow-lg">
+<div class="no-scrollbar overflow-x-auto">
+<div class="flex px-4 min-w-max">
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-graffiti-green text-graffiti-green px-4 pb-[13px] pt-4 font-graffiti-stencil text-lg drop-shadow-lg" href="#">
+<p class="text-sm font-bold leading-normal">New Applicants (78)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 font-graffiti-stencil text-lg opacity-70 hover:text-graffiti-blue hover:opacity-100 transition-colors duration-200" href="#">
+<p class="text-sm font-bold leading-normal">Shortlisted (12)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 font-graffiti-stencil text-lg opacity-70 hover:text-graffiti-pink hover:opacity-100 transition-colors duration-200" href="#">
+<p class="text-sm font-bold leading-normal">Callback (4)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 font-graffiti-stencil text-lg opacity-70 hover:text-graffiti-green hover:opacity-100 transition-colors duration-200" href="#">
+<p class="text-sm font-bold leading-normal">Hired (1)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 font-graffiti-stencil text-lg opacity-70 hover:text-graffiti-purple hover:opacity-100 transition-colors duration-200" href="#">
+<p class="text-sm font-bold leading-normal">Rejected (23)</p>
+</a>
+</div>
+</div>
+</nav>
+<main class="flex-1 space-y-4 p-4 pb-28">
+<div class="flex flex-col gap-4 rounded-xl bg-gradient-to-br from-card-dark to-black/70 p-4 border border-white/10 shadow-xl relative overflow-hidden">
+<div class="absolute inset-0 bg-contain bg-no-repeat bg-[url('https://i.ibb.co/3s6q2Bw/graffiti-spray.png')] opacity-5 rotate-180 mix-blend-screen -z-0 pointer-events-none"></div>
+<div class="relative z-10 flex items-center gap-4">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center border-2 border-graffiti-blue shadow-lg" data-alt="Headshot of Eleanor Vance" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkfc4d5BI5Ztw5ZgRNmQJsPD_GvNXrsPXpATzPRWPEYaQsC7OnXRckyHsuJ7n0OeMXVXpNW1D5JtLd1K5aD6GNXBXHixeF1JCYKhqtUNOAuWHcDjyjx6teLQtsxBh73or3ErzQy8yiMJgnECCiQYRR9KtIwp0t5OjKy4TOoEIMrZRqPLbpQBmlETxv9LLqhAh4xFQGY4age6PHo7cGUjohFtUXtxOLCtUxk5UYx_eq1eGetJ1vTawKWXi2YXrNXRpltPtCuPJcmgk')"></div>
+<div class="flex-grow">
+<p class="text-xl font-graffiti-bold leading-tight text-graffiti-blue tracking-wide drop-shadow-md">Eleanor Vance</p>
+<p class="text-sm font-display leading-normal text-text-secondary-dark">Applied 3 days ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex h-10 items-center justify-center rounded-lg bg-gradient-to-br from-graffiti-green/30 to-graffiti-pink/30 px-3 border border-graffiti-green/50 shadow-md">
+<p class="text-sm font-graffiti-bold text-graffiti-green drop-shadow">92% Match</p>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-end gap-3">
+<button class="flex h-12 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/10 hover:bg-graffiti-pink/20 transition-colors duration-200 px-4 text-white gap-2 text-base font-graffiti-stencil drop-shadow">
+<span class="material-symbols-outlined !text-xl text-graffiti-pink">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-12 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-graffiti-green to-graffiti-blue hover:from-graffiti-blue hover:to-graffiti-green transition-all duration-300 px-4 text-black gap-2 text-base font-graffiti-stencil drop-shadow-lg">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-gradient-to-br from-card-dark to-black/70 p-4 ring-2 ring-graffiti-pink border border-white/10 shadow-xl relative overflow-hidden">
+<div class="absolute inset-0 bg-contain bg-no-repeat bg-[url('https://i.ibb.co/3s6q2Bw/graffiti-spray.png')] opacity-5 mix-blend-screen -z-0 pointer-events-none"></div>
+<div class="relative z-10 flex items-center gap-4">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center border-2 border-graffiti-pink shadow-lg" data-alt="Headshot of Marcus Thorne" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4Vt6t1VmELWYsmZcpDpUo9kflG-0_VqMkSTu4SPIK699JMq176y1Ihz3AH0n7cMC0mlWYJZRT0_6qnVP1wgzwSdNuwpJ4FHbMKTDcE1DO-Vdoxw7RWr0cbi2RlAQraXBGgt5NkrkSduml0rDwGHCCQILSwM3z0JppKi_68Tc3piUX1sfAH4_itMjnzK8Ts6TSlPr_eZ1IYMdey93nVzdOLUjcL-KRuXYNYKfEBv-mdg4YMlgS7QAJg_XgbfYr3-v3s19JaOr6IdA')"></div>
+<div class="flex-grow">
+<p class="text-xl font-graffiti-bold leading-tight text-graffiti-pink tracking-wide drop-shadow-md">Marcus Thorne</p>
+<p class="text-sm font-display leading-normal text-text-secondary-dark">Applied 5 days ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex h-10 items-center justify-center rounded-lg bg-gradient-to-br from-graffiti-blue/30 to-graffiti-green/30 px-3 border border-graffiti-blue/50 shadow-md">
+<p class="text-sm font-graffiti-bold text-graffiti-blue drop-shadow">88% Match</p>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-end gap-3">
+<button class="flex h-12 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/10 hover:bg-graffiti-blue/20 transition-colors duration-200 px-4 text-white gap-2 text-base font-graffiti-stencil drop-shadow">
+<span class="material-symbols-outlined !text-xl text-graffiti-blue">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-12 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-graffiti-blue to-graffiti-green hover:from-graffiti-green hover:to-graffiti-blue transition-all duration-300 px-4 text-black gap-2 text-base font-graffiti-stencil drop-shadow-lg">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-gradient-to-br from-card-dark to-black/70 p-4 border border-white/10 shadow-xl relative overflow-hidden">
+<div class="absolute inset-0 bg-contain bg-no-repeat bg-[url('https://i.ibb.co/3s6q2Bw/graffiti-spray.png')] opacity-5 rotate-90 mix-blend-screen -z-0 pointer-events-none"></div>
+<div class="relative z-10 flex items-center gap-4">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center border-2 border-graffiti-green shadow-lg" data-alt="Headshot of Jordan Lee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0cWLdDYjxV-MGQaW_ihoLQuEdlvF5Ffwmozj4RRGnMbreFiWHJb0dhQzH1CeHNEOPV8-6ObCea1R9Rza7jTXtmasoKcltBTyzPILYDkNRoJXLIqTP2Aeg1EJ2KjEOjRKfajHCiTW1ChOtsp5lTPfkj4wcbtxXC4WNmB0tp8GMxRxnXAP2wdk8Eh8ZNtZn3HI76jVNetmxYWDaWIOl_nJfCgyxw4oXBgCQf5gIG9Ixz56M_ESPpkmi1yWNphxIitiCEM7x7Jzkkq4')"></div>
+<div class="flex-grow">
+<p class="text-xl font-graffiti-bold leading-tight text-graffiti-green tracking-wide drop-shadow-md">Jordan Lee</p>
+<p class="text-sm font-display leading-normal text-text-secondary-dark">Applied 1 week ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex h-10 items-center justify-center rounded-lg bg-gradient-to-br from-graffiti-pink/30 to-graffiti-blue/30 px-3 border border-graffiti-pink/50 shadow-md">
+<p class="text-sm font-graffiti-bold text-graffiti-pink drop-shadow">85% Match</p>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-end gap-3">
+<button class="flex h-12 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-white/10 hover:bg-graffiti-green/20 transition-colors duration-200 px-4 text-white gap-2 text-base font-graffiti-stencil drop-shadow">
+<span class="material-symbols-outlined !text-xl text-graffiti-green">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-12 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-graffiti-green to-graffiti-blue hover:from-graffiti-blue hover:to-graffiti-green transition-all duration-300 px-4 text-black gap-2 text-base font-graffiti-stencil drop-shadow-lg">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center rounded-xl bg-black/70 border border-white/10 p-10 text-center shadow-lg relative overflow-hidden">
+<div class="absolute inset-0 bg-contain bg-no-repeat bg-[url('https://i.ibb.co/3s6q2Bw/graffiti-spray.png')] opacity-5 -rotate-90 mix-blend-screen -z-0 pointer-events-none"></div>
+<span class="material-symbols-outlined !text-6xl text-graffiti-purple/50 drop-shadow-lg relative z-10">upcoming</span>
+<p class="mt-4 font-graffiti-bold text-graffiti-purple text-lg drop-shadow relative z-10">No More Applicants</p>
+<p class="text-sm text-text-secondary-dark font-display relative z-10">Check back later for new submissions.</p>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-20 w-full border-t border-white/10 bg-black/80 p-4 backdrop-blur-sm shadow-2xl">
+<div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4">
+<p class="text-lg font-graffiti-stencil text-graffiti-blue drop-shadow-lg">1 Selected</p>
+<div class="flex items-center gap-3">
+<button class="flex h-12 items-center justify-center rounded-lg bg-white/10 px-4 text-base font-graffiti-stencil text-graffiti-purple hover:bg-graffiti-purple/20 transition-colors duration-200 drop-shadow">Reject</button>
+<button class="flex h-12 items-center justify-center rounded-lg bg-white/10 px-4 text-base font-graffiti-stencil text-graffiti-blue hover:bg-graffiti-blue/20 transition-colors duration-200 drop-shadow">Message</button>
+<button class="flex h-12 items-center justify-center rounded-lg bg-gradient-to-r from-graffiti-green to-graffiti-pink hover:from-graffiti-pink hover:to-graffiti-green transition-all duration-300 px-4 text-black text-base font-graffiti-stencil drop-shadow-lg">Move</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

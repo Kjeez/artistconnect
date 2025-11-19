@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Street Art Battle - Artisan Stage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&amp;family=Press+Start+2P&amp;family=Permanent+Marker&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-size: 24px;
+      }.no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }.no-scrollbar {
+        -ms-overflow-style: none;scrollbar-width: none;}
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+      .shimmer-bg {
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          rgba(255, 255, 255, 0.1) 20%,
+          transparent 40%
+        );
+        background-size: 200% 100%;
+        animation: shimmer 8s infinite linear;
+      }
+      .graffiti-text-stroke {
+        -webkit-text-stroke: 1px black;text-stroke: 1px black;}
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#E71D36","secondary": "#2EC4B6","accent-yellow": "#FF9F1C","accent-purple": "#A820E9","background-light": "#f6f6f8",
+              "background-dark": "#1A1A1A","card-dark": "#2B2B2B","gold-start": "#D4AF37","gold-end": "#B8860B","text-primary-dark": "#F0F0F0","text-secondary-dark": "#B0B0B0",},
+            fontFamily: {
+              "display": ["Permanent Marker", "cursive"],"score": ["Bangers", "cursive"],"ui": ["Manrope", "sans-serif"],},
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-ui text-text-primary-dark">
+<audio id="spraySound1" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-spray-can-spurt-570.mp3"></audio>
+<audio id="spraySound2" preload="auto" src="https://assets.mixkit.co/sfx/preview/mixkit-spray-can-burst-571.mp3"></audio>
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center bg-background-dark p-4 pb-2 justify-between border-b-2 border-primary shadow-lg">
+<button class="flex size-10 items-center justify-center rounded-full text-text-primary-dark active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound1').play()">
+<span class="material-symbols-outlined !text-3xl text-primary">arrow_back</span>
+</button>
+<h1 class="text-accent-yellow text-xl font-display leading-tight tracking-wider flex-1 text-center graffiti-text-stroke">
+          Street Art Battle!
+        </h1>
+<button class="flex size-10 items-center justify-center rounded-full text-text-primary-dark active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound1').play()">
+<span class="material-symbols-outlined !text-3xl text-primary">menu</span>
+</button>
+</header>
+<nav class="sticky top-[72px] z-10 bg-background-dark">
+<div class="no-scrollbar overflow-x-auto">
+<div class="flex border-b-2 border-primary px-4 min-w-max">
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-accent-yellow text-accent-yellow px-4 pb-[13px] pt-4 active:scale-95 transition-transform duration-100" href="#" onclick="document.getElementById('spraySound1').play()">
+<p class="text-base font-display leading-normal">
+                New Crews (78)
+              </p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 active:scale-95 transition-transform duration-100" href="#" onclick="document.getElementById('spraySound1').play()">
+<p class="text-base font-display leading-normal">Selected (12)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 active:scale-95 transition-transform duration-100" href="#" onclick="document.getElementById('spraySound1').play()">
+<p class="text-base font-display leading-normal">Battle (4)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 active:scale-95 transition-transform duration-100" href="#" onclick="document.getElementById('spraySound1').play()">
+<p class="text-base font-display leading-normal">Winners (1)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[4px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 active:scale-95 transition-transform duration-100" href="#" onclick="document.getElementById('spraySound1').play()">
+<p class="text-base font-display leading-normal">Benched (23)</p>
+</a>
+</div>
+</div>
+</nav>
+<main class="flex-1 space-y-4 p-4 pb-28">
+<div class="flex flex-col gap-4 rounded-xl bg-card-dark p-4 border-2 border-secondary hover:shadow-secondary/50 shadow-lg shimmer-bg relative overflow-hidden transform hover:scale-[1.01] transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center border-4 border-primary shadow-xl" data-alt="Headshot of Eleanor Vance" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkfc4d5BI5Ztw5ZgRNmQJsPD_GvNXrsPXpATzPRWPEYaQsC7OnXRckyHsuJ7n0OeMXVXpNW1D5JtLd1K5aD6GNXBXHixeF1JCYKhqtUNOAuWHcDjyjx6teLQtsxBh73or3ErzQy8yiMJgnECCiQYRR9KtIwp0t5OjKy4TOoEIMrZRqPLbpQBmlETxv9LLqhAh4xFQGY4age6PHo7cGUjohFtUXtxOLCtUxk5UYx_eq1eGetJ1vTawKWXi2YXrNXRpltPtCuPJcmgk')"></div>
+<div class="flex-grow">
+<p class="text-lg font-display leading-tight text-accent-yellow graffiti-text-stroke">
+                Eleanor Vance
+              </p>
+<p class="text-sm font-ui text-text-secondary-dark">
+                Joined 3 days ago
+              </p>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-lg border-2 border-accent-yellow">
+<p class="text-xl font-score text-text-primary-dark absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="-webkit-text-stroke: 1px #2B2B2B;">
+                  92%
+                </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-secondary/20 px-4 text-text-primary-dark gap-2 text-sm font-bold leading-normal border-2 border-secondary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound1').play()">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span class="font-ui">Shoutout</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-accent-yellow px-4 text-background-dark gap-2 text-sm font-bold leading-normal border-2 border-primary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound2').play()">
+<span class="material-symbols-outlined !text-xl">brush</span>
+<span class="font-ui">View Art</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-dark p-4 ring-2 ring-primary border-2 border-accent-purple hover:shadow-accent-purple/50 shadow-lg shimmer-bg relative overflow-hidden transform hover:scale-[1.01] transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center border-4 border-primary shadow-xl" data-alt="Headshot of Marcus Thorne" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4Vt6t1VmELWYsmZcpDpUo9kflG-0_VqMkSTu4SPIK699JMq176y1Ihz3AH0n7cMC0mlWYJZRT0_6qnVP1wgzwSdNuwpJ4FHbMKTDcE1DO-Vdoxw7RWr0cbi2RlAQraXBGgt5NkrkSduml0rDwGHCCQILSwM3z0JppKi_68Tc3piUX1sfAH4_itMjnzK8Ts6TSlPr_eZ1IYMdey93nVzdOLUjcL-KRuXYNYKfEBv-mdg4YMlgS7QAJg_XgbfYr3-v3s19JaOr6IdA')"></div>
+<div class="flex-grow">
+<p class="text-lg font-display leading-tight text-accent-yellow graffiti-text-stroke">
+                Marcus Thorne
+              </p>
+<p class="text-sm font-ui text-text-secondary-dark">
+                Joined 5 days ago
+              </p>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative flex h-14 w-14 items-center justify-center rounded-full bg-accent-purple shadow-lg border-2 border-accent-yellow">
+<p class="text-xl font-score text-text-primary-dark absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="-webkit-text-stroke: 1px #2B2B2B;">
+                  88%
+                </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-secondary/20 px-4 text-text-primary-dark gap-2 text-sm font-bold leading-normal border-2 border-secondary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound1').play()">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span class="font-ui">Shoutout</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-accent-yellow px-4 text-background-dark gap-2 text-sm font-bold leading-normal border-2 border-primary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound2').play()">
+<span class="material-symbols-outlined !text-xl">brush</span>
+<span class="font-ui">View Art</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-card-dark p-4 border-2 border-secondary hover:shadow-secondary/50 shadow-lg shimmer-bg relative overflow-hidden transform hover:scale-[1.01] transition-all duration-300">
+<div class="flex items-center gap-4">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center border-4 border-primary shadow-xl" data-alt="Headshot of Jordan Lee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0cWLdDYjxV-MGQaW_ihoLQuEdlvF5Ffwmozj4RRGnMbreFiWHJb0dhQzH1CeHNEOPV8-6ObCea1R9Rza7jTXtmasoKcltBTyzPILYDkNRoJXLIqTP2Aeg1EJ2KjEOjRKfajHCiTW1ChOtsp5lTPfkj4wcbtxXC4WNmB0tp8GMxRxnXAP2wdk8Eh8ZNtZn3HI76jVNetmxYWDaWIOl_nJfCgyxw4oXBgCQf5gIG9Ixz56M_ESPpkmi1yWNphxIitiCEM7x7Jzkkq4')"></div>
+<div class="flex-grow">
+<p class="text-lg font-display leading-tight text-accent-yellow graffiti-text-stroke">
+                Jordan Lee
+              </p>
+<p class="text-sm font-ui text-text-secondary-dark">
+                Joined 1 week ago
+              </p>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative flex h-14 w-14 items-center justify-center rounded-full bg-secondary shadow-lg border-2 border-accent-yellow">
+<p class="text-xl font-score text-background-dark absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style="-webkit-text-stroke: 1px #2B2B2B;">
+                  85%
+                </p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-secondary/20 px-4 text-text-primary-dark gap-2 text-sm font-bold leading-normal border-2 border-secondary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound1').play()">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span class="font-ui">Shoutout</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-accent-yellow px-4 text-background-dark gap-2 text-sm font-bold leading-normal border-2 border-primary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound2').play()">
+<span class="material-symbols-outlined !text-xl">brush</span>
+<span class="font-ui">View Art</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center rounded-xl bg-card-dark/50 p-10 text-center border-2 border-primary/50">
+<span class="material-symbols-outlined !text-5xl text-accent-yellow/50">mood_bad</span>
+<p class="mt-4 font-display text-xl text-primary graffiti-text-stroke">
+            No More Crews!
+          </p>
+<p class="text-sm text-text-secondary-dark">
+            Check back later for new talent.
+          </p>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-20 w-full border-t-2 border-primary bg-background-dark/80 p-4 backdrop-blur-sm shadow-[0_-5px_15px_rgba(231,29,54,0.3)]">
+<div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4">
+<p class="text-base font-display text-accent-yellow graffiti-text-stroke">
+            1 Crew Selected
+          </p>
+<div class="flex items-center gap-3">
+<button class="flex h-10 items-center justify-center rounded-lg bg-primary/20 px-4 text-sm font-bold text-primary border-2 border-primary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound1').play()">
+<span class="font-ui">Bench</span>
+</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-secondary/20 px-4 text-sm font-bold text-secondary border-2 border-secondary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound1').play()">
+<span class="font-ui">Shoutout</span>
+</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-accent-yellow px-4 text-sm font-bold text-background-dark border-2 border-primary active:scale-95 transition-transform duration-100" onclick="document.getElementById('spraySound2').play()">
+<span class="font-ui">Move</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

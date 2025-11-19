@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Stage - Create</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5e19e6",
+            "background-light": "#f6f6f8",
+            "background-dark": "#161121",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1
+    }body {
+      background-color: #0E0B16;}
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-white antialiased">
+<div class="absolute inset-0 h-full w-full bg-background-dark/50 backdrop-blur-sm z-0">
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-10 flex h-[85vh] max-h-[700px] flex-col rounded-t-xl bg-[#221a32]">
+<div class="flex justify-center py-4">
+<div class="h-1.5 w-10 rounded-full bg-[#463863]"></div>
+</div>
+<header class="px-6 pb-4">
+<h1 class="text-2xl font-bold text-white">What would you like to create?</h1>
+</header>
+<main class="flex-1 overflow-y-auto px-6 pb-6">
+<div class="grid grid-cols-2 gap-4">
+<a class="flex flex-col gap-3 rounded-xl bg-[#302447] p-4 transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#463863]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">movie</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-white">Post an Audition</p>
+<p class="text-sm text-[#a593c8]">Find the perfect talent for your next project.</p>
+</div>
+</a>
+<a class="flex flex-col gap-3 rounded-xl bg-[#302447] p-4 transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#463863]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">confirmation_number</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-white">Create an Event</p>
+<p class="text-sm text-[#a593c8]">List a performance, workshop, or virtual show.</p>
+</div>
+</a>
+<a class="flex flex-col gap-3 rounded-xl bg-[#302447] p-4 transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#463863]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">edit_document</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-white">Add a Script</p>
+<p class="text-sm text-[#a593c8]">Sell your script or generate one with AI.</p>
+</div>
+</a>
+<a class="flex flex-col gap-3 rounded-xl bg-[#302447] p-4 transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#463863]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">work</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-white">List a Service</p>
+<p class="text-sm text-[#a593c8]">Offer your professional services to event organizers.</p>
+</div>
+</a>
+<a class="flex flex-col gap-3 rounded-xl bg-[#302447] p-4 transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#463863]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">podcasts</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-white">Go Live</p>
+<p class="text-sm text-[#a593c8]">Start an instant live stream or open mic session.</p>
+</div>
+</a>
+<a class="flex flex-col gap-3 rounded-xl bg-[#302447] p-4 transition-transform active:scale-95" href="#">
+<div class="flex items-center justify-center size-12 shrink-0 rounded-lg bg-[#463863]">
+<span class="material-symbols-outlined text-3xl text-transparent bg-clip-text bg-gradient-to-br from-[#BF953F] to-[#FCF6BA]">forum</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-white">Start a Discussion</p>
+<p class="text-sm text-[#a593c8]">Engage with the community on a new topic.</p>
+</div>
+</a>
+</div>
+</main>
+</div>
+
+</body></html>

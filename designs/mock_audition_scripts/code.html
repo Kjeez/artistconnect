@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TheatreConnect Audition Scripts</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ee2bad;
+        --secondary-color: #b99db0;
+        --background-color: #120c10;
+        --card-background: #1f141b;
+        --input-background: #392833;
+        --text-primary: #ffffff;
+        --text-secondary: #b99db0;
+      }
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+      .active-nav-item {
+        color: var(--primary-color);
+      }
+      .active-filter {
+        background-color: var(--primary-color);
+        color: var(--text-primary);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-[var(--background-color)] bg-opacity-80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-[var(--card-background)]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Audition Scripts</h1>
+</div>
+<div class="px-4 py-3">
+<div class="relative">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4 text-[var(--text-secondary)]">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input w-full rounded-full border-none bg-[var(--input-background)] py-3 pl-12 pr-4 text-white placeholder:text-[var(--text-secondary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" placeholder="Search scripts by title, author..." type="search"/>
+</div>
+</div>
+<div class="flex gap-3 px-4 pb-4 overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--input-background)] px-4 text-sm font-medium text-white transition-colors hover:bg-[var(--primary-color)]">Genre</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--input-background)] px-4 text-sm font-medium text-white transition-colors hover:bg-[var(--primary-color)]">Character Type</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[var(--input-background)] px-4 text-sm font-medium text-white transition-colors hover:bg-[var(--primary-color)]">Style</button>
+</div>
+</header>
+<main class="px-4 pb-24">
+<section class="pt-2">
+<h2 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">Featured Scripts</h2>
+<div class="flex -mx-4 overflow-x-auto px-4 pb-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch gap-4">
+<div class="flex h-full w-64 shrink-0 flex-col gap-3 rounded-xl bg-[var(--card-background)] p-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAD3CMW2SpXtdWB5EmwiakU2TvE3qfGnnt1h2nu39ZtSgILxz-56d8dvsA5ACehNo3m05NRwaJMoKACKKdhgDF-E_AhdzHBGdi7co1Pd1je_YBTQL-YnHI41LOyYVdptqTXMwDFt2WVdPFBX0b0XQY6rYmn3RuzbPLtwx5E0I0teUOdxWVB8b6Jj8fUGT53mWI32aK_jkVUT-oUv7bTh8l5OfY0U2-k5eghRMlWKfiJq9bvEPM9pBBfCxQEXLLERcCdtJ1EDuWDg8A");'></div>
+<div>
+<p class="text-white font-semibold leading-normal truncate">Hamlet</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal">William Shakespeare</p>
+</div>
+</div>
+<div class="flex h-full w-64 shrink-0 flex-col gap-3 rounded-xl bg-[var(--card-background)] p-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhVP6slDvI1i2rZ8ZBdJQ8bMwWkpUtj4DeealCCtd2hgq2wj4fB-oRI-ng_l1MhKEMyN9ah272gr8YGhIxNUbTXEHbzEvllEWze6NtHxeGB5qWN3DhudsIBxoBBsSSCiCCTwPZCp7Uw0U-qEsnxf1dcsjAOIPgoHWsmjfTpB5RDq55y-7tHXoEVkCwK4MMZKSZOsd2TvmZa_bGX0xEHDERPEG0WvK1AyOMQdj7SzNUAdItTjVE56OGQVZw9aIdohmqxPhOQsFQk1o");'></div>
+<div>
+<p class="text-white font-semibold leading-normal truncate">A Midsummer Night's Dream</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal">William Shakespeare</p>
+</div>
+</div>
+<div class="flex h-full w-64 shrink-0 flex-col gap-3 rounded-xl bg-[var(--card-background)] p-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdJf-L99jdGkUY5EFbzL1JO4g4C5kQioVQS_8dgwPNzwQQuxh0xcDM19ASUKHP45-hEThoqzNn5OnnvXy-y5897vXnuN7MjL2-rm-ZhiDmhCOAoUw16PBAnBbJgziShChNb7Lt_ZAe6MuwxrcjMWoTqHRcUkgvH_KqknoKh7eg0_xneHehBgrKwmvZ7e0z7g1qwyOKvqoJQLoKQMJosFplo_vAg6OJCto4thPusEynh3hwqAU8a0qCm3vBL36gtGrZCbXWvQVT0FQ");'></div>
+<div>
+<p class="text-white font-semibold leading-normal truncate">Romeo and Juliet</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal">William Shakespeare</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="pt-6">
+<h2 class="text-white text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">All Scripts</h2>
+<div class="space-y-2">
+<a class="flex items-center gap-4 p-3 rounded-xl hover:bg-[var(--card-background)] transition-colors" href="#">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7P_iIGgVsw86cDYmQg5eFA5bc293s_FeduRyANPsj-E_nVyhHkMTlnkfh6q53GawlMaYw2EQbSHcfLFS6NPPM_ymXKcYX9_Wedi9DFwDJmH9CAXwbIybTR43KM4EP8G8cijJMRssaYy9G7rf-YlVmAryWr8vu7vMLccqv2mgZmrPANn-QhtMc8jzGKCbl05vidM3qpxQ_2aPyr5W_W3EYEtvzgF57_Da84yg3RWUuzNP0Fh__pjYC1Gzv3AxDdqwTLb8twxjZzFA");'></div>
+<div class="flex-grow">
+<p class="text-white font-semibold leading-normal line-clamp-1">The Crucible</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal line-clamp-1">Arthur Miller</p>
+<p class="text-[var(--text-secondary)] text-xs font-normal leading-normal line-clamp-1 mt-1">Drama • Allegory</p>
+</div>
+<svg class="text-[var(--text-secondary)] shrink-0" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+</a>
+<a class="flex items-center gap-4 p-3 rounded-xl hover:bg-[var(--card-background)] transition-colors" href="#">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7pyGamHOgjO-xyl7wtGS9WKyrV7tmoI9Ccas6Vx-ExiA4EIFueS8ANG8Zu475qCjE0iBmxe6JEe-FvCZ-ngt_4QR3chLVkm41EWAGmH8sWAXcnTd0z4OQY7THROfd9Aygx3AMpTdQPKxcZNrSz_IcrzdC0Bvs7_GN5QO4IukdgpWqHosnuqGvw_XMrrSCOOr3k6srUERWez4qopcret3m8VQKZsdfof4-ZNJrjQSNURpQBa8Lsb6XJdC2Cdwe79ZwXhmb9rHtl88");'></div>
+<div class="flex-grow">
+<p class="text-white font-semibold leading-normal line-clamp-1">Twelfth Night</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal line-clamp-1">William Shakespeare</p>
+<p class="text-[var(--text-secondary)] text-xs font-normal leading-normal line-clamp-1 mt-1">Comedy</p>
+</div>
+<svg class="text-[var(--text-secondary)] shrink-0" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+</a>
+<a class="flex items-center gap-4 p-3 rounded-xl hover:bg-[var(--card-background)] transition-colors" href="#">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16 shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYUbafst--Iizs0tM2hcwYh7kfBLe5a8rvnf6DHzwvFV3JaGux46NEkLnB9dq0TuchRxkyIFxnbGFozszTj0ErLmQOXPLChLyL9iqK_wGgPCyurliWLE5XUG6ctHYdCouH_x3YxTK6JOhNy5AFAbexQ6PwlPrnbE_Rz5WRCIKWOfXCYUbNAncB_4LSfVFES-4cyst4GoTS_Bq_LAagtjvIEvNTk1unwKIOXZ0jK-yrTuYlilTjqlN0kl2n8nEq_cPFsnb_M9pOEX0");'></div>
+<div class="flex-grow">
+<p class="text-white font-semibold leading-normal line-clamp-1">Othello</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal line-clamp-1">William Shakespeare</p>
+<p class="text-[var(--text-secondary)] text-xs font-normal leading-normal line-clamp-1 mt-1">Tragedy</p>
+</div>
+<svg class="text-[var(--text-secondary)] shrink-0" fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path></svg>
+</a>
+</div>
+</section>
+</main>
+</div>
+<footer class="fixed bottom-0 left-0 right-0 z-10">
+<div class="bg-[var(--card-background)] bg-opacity-80 backdrop-blur-sm mx-4 mb-4 rounded-full">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path>
+</svg>
+<p class="text-xs font-medium tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,176a48.05,48.05,0,0,0,48-48V64a48,48,0,0,0-96,0v64A48.05,48.05,0,0,0,128,176ZM96,64a32,32,0,0,1,64,0v64a32,32,0,0,1-64,0Zm40,143.6V232a8,8,0,0,1-16,0V207.6A80.11,80.11,0,0,1,48,128a8,8,0,0,1,16,0,64,64,0,0,0,128,0,8,8,0,0,1,16,0A80.11,80.11,0,0,1,136,207.6Z"></path>
+</svg>
+<p class="text-xs font-medium tracking-[0.015em]">Auditions</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 active-nav-item" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31L196.69,88H160ZM200,216H56V40h88v48a8,8,0,0,0,8,8h48Z"></path>
+</svg>
+<p class="text-xs font-medium tracking-[0.015em]">Scripts</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+<p class="text-xs font-medium tracking-[0.015em]">Profile</p>
+</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

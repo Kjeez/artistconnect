@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Stage - Messages</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#BF953F",
+              "background-light": "#f6f6f8",
+              "background-dark": "#1A1A1A",
+              "component-dark": "#2C2C2E",
+              "text-primary": "#F5F5F7",
+              "text-secondary": "#8A8A8E",
+              "accent-start": "#BF953F",
+              "accent-end": "#FCF6BA",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-black font-display">
+<div class="mx-auto flex h-screen max-w-md flex-col bg-background-dark group/design-root overflow-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-10 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<h2 class="text-text-primary text-2xl font-bold leading-tight tracking-[-0.015em] flex-1">Messages</h2>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+<div class="text-text-secondary flex border-none bg-component-dark items-center justify-center pl-4 rounded-l-xl border-r-0">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-text-primary focus:outline-0 focus:ring-2 focus:ring-accent-start border-none bg-component-dark h-full placeholder:text-text-secondary px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search conversations..." value=""/>
+</div>
+</label>
+</div>
+</header>
+<!-- Conversation List -->
+<main class="flex-1 overflow-y-auto pb-24">
+<!-- Unread Message Item -->
+<div class="flex items-center gap-4 bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4 w-full">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Eleanor Vance" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEXb42QCAaarZSVcLCDjEh5gAqaVJzFtkjNLZNCQTR04HR0-GlXpXxiXMTIQYMLVfepguQYyR6im_b9CbD9_kHdPmN-hzt1-g2lkE6sV0c0RtxQx54J76FG_1kGBlJo55TUHXCQ99vHJRXdXMe17Fp8r3fqn12NC7WGwqY3lmhD-YbYrLwYP-ZuCQHn4l7N7rlogUjbWKrzOiF-NVm9Rg4mlmoKW4hH134VaHOkjgL_I_OLVRYBVnSbqa3aEm9n9Ifp3cnkNFwd3k");'></div>
+</div>
+<div class="flex flex-col justify-center flex-1 min-w-0">
+<p class="text-text-primary text-base font-bold leading-normal line-clamp-1">Eleanor Vance</p>
+<p class="text-text-primary text-sm font-semibold leading-normal line-clamp-1">The new script is ready for review.</p>
+</div>
+<div class="shrink-0 flex flex-col items-end gap-1.5">
+<p class="text-text-secondary text-xs font-normal leading-normal">5m ago</p>
+<div class="size-3 rounded-full bg-gradient-to-br from-accent-start to-accent-end"></div>
+</div>
+</div>
+</div>
+<!-- Unread Message Item 2 -->
+<div class="flex items-center gap-4 bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4 w-full">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Julian Croft" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADLaTAh6ngt7RJk9ys_Fpn-cToHhm18bI3ePxpTcIpxiZV6hKunFUXBNLueZf7_dPGu_Gyfz_Ce8qS_Kt8mQx2Dqg0jFjofMniVuVGzHBqtNF083Tbja3J9G9BHD_QgQr8bld1O0QlL9GqKxuDGXauLHe4k_wSmG1iCeitlnVOW_7pmKbUPUaSeqcTYYf1AlKpZxlgBtiisZ7bllcGmTt4hL2OgMnYrUt3EbbFOnLAflDi4z6RJT3Ksa4RWJQemMphJAezKlbOOvI");'></div>
+<div class="absolute bottom-0 right-0 size-4 rounded-full bg-green-500 border-2 border-background-dark"></div>
+</div>
+<div class="flex flex-col justify-center flex-1 min-w-0">
+<p class="text-text-primary text-base font-bold leading-normal line-clamp-1">Julian Croft</p>
+<p class="text-text-primary text-sm font-semibold leading-normal line-clamp-1">Are you available for a fitting on Tuesday?</p>
+</div>
+<div class="shrink-0 flex flex-col items-end gap-1.5">
+<p class="text-text-secondary text-xs font-normal leading-normal">1h ago</p>
+<div class="flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-accent-start to-accent-end">
+<span class="text-xs font-bold text-background-dark">2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Read Message Item -->
+<div class="flex items-center gap-4 bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Maria Rodriguez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCB15DO3uzECQBNhpBh3B0hzzn_RGxcABzN5ij87vfhG4vHFGC8WcF9pxOECLOOr_JBbQX8OKlJnTccQrU57x1FMdA4Db_ldPpdvjcnM4ZlBqiLphiE3kI95LaPaBOe3OAEO-UZLohs0fqc-FW9EhvRJyZ2MmrWNjDM3jk-axFYhJ1sWQmlH3vOHeNmHTYhacvSfJJ99d8FEryj-TTEHoT2zWQRzJ_PtzDDX2IQQCbfJDOa3B26-W2wZsqR5CPi6bcL2XOx45e1LKA");'></div>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary text-base font-medium leading-normal line-clamp-1">Maria Rodriguez</p>
+<p class="text-text-secondary text-sm font-normal leading-normal line-clamp-1">You: Let's catch up tomorrow.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-secondary text-xs font-normal leading-normal">Yesterday</p></div>
+</div>
+<!-- Read Message Item -->
+<div class="flex items-center gap-4 bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Kenji Tanaka" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA2yjB792UPrYzujVb9_oqueIdb1CGH5naHU6Kx5mNmPMzkGFhQSFUuwq3pzN1IOHqc08DEVf4HYkeYrOIPpgME5u9Xs4C1fzwBvQokeiDWmq89jHIRvdR0BQtht26K1KhMLjWSBwpwAT1ExA7oojuhugMx9OWXUebQgNMVC-014nLzJE5MvcCMS5gpHj2EWU8ncTJeGQuKyZKGhHdRmHtot6V8_8WD3gdCrjrMeJYm-_Rpwla4rpffcjppr4J9zhMt7zhikBLGiwE");'></div>
+<div class="absolute bottom-0 right-0 size-4 rounded-full bg-green-500 border-2 border-background-dark"></div>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary text-base font-medium leading-normal line-clamp-1">Kenji Tanaka</p>
+<p class="text-text-secondary text-sm font-normal leading-normal line-clamp-1">The lighting cues are locked in.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-secondary text-xs font-normal leading-normal">2d ago</p></div>
+</div>
+<!-- Read Message Item -->
+<div class="flex items-center gap-4 bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Stage Crew Group Chat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDysW-IuXyYZ_4BKk1kNsHjonvy2zcf9GHiVhjG8zkgih3oVisin7261McYpLrpW2EYfvPdAmyBVZoen-TSDSqkNhOL8_zzPWVsWcqAAQQr6PS6irkoQWPu0Db41AYWDdzYlgj34J7dMugv5KguQuV3oJcQ1Yf6xxrs9lWrP3s9xHEOM5U-Id7T-7sG0GnUk8Dnkx-H43cGWUqZd2PXfPe9v55hXkdhWRA1FRbWo1zsd0-1P0gxXpczPlyebgZ8zS1-tEprC_orrxk");'></div>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary text-base font-medium leading-normal line-clamp-1">Stage Crew Group</p>
+<p class="text-text-secondary text-sm font-normal leading-normal line-clamp-1">Reminder: full cast rehearsal at 6 PM.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-secondary text-xs font-normal leading-normal">10/28/24</p></div>
+</div>
+<!-- Read Message Item -->
+<div class="flex items-center gap-4 bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Chloe Dubois" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMK1Tbsg4JUcwQ4sQW2JFRLolhLR_6IZfP0dJXEWvBkQyD482NNeBKjyWuvpFuJYzzQ2C_HjGUOMI9ljcmj1ROrALdlnuFQiUwXQqZ2bL0h-AgARp8Qr9Rh62WNzigL_9a2qDkW_ZzWOO0gYE7Qlgwox1bQQINi5QQMTAvJ331Wlq4287wvlDYY8iLDiaUyxPiDPSqLw_Phk9tEbkietLOTywHnjV8zjoyQG6XkjuGhTIYD1edLMmhX37HjeNmeh5Gg5TUUVsmy5s");'></div>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-text-primary text-base font-medium leading-normal line-clamp-1">Chloe Dubois</p>
+<p class="text-text-secondary text-sm font-normal leading-normal line-clamp-1">Costume designs are finalized.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-text-secondary text-xs font-normal leading-normal">10/27/24</p></div>
+</div>
+</main>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-accent-start to-accent-end shadow-lg transition-transform active:scale-95">
+<span class="material-symbols-outlined text-3xl text-background-dark">edit</span>
+</button>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-10 mx-auto max-w-md border-t border-component-dark/50 bg-component-dark/80 backdrop-blur-sm">
+<div class="flex h-20 items-center justify-around">
+<a class="flex flex-col items-center gap-1 text-text-secondary transition-colors hover:text-text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-secondary transition-colors hover:text-text-primary" href="#">
+<span class="material-symbols-outlined">mic_external_on</span>
+<span class="text-xs">Auditions</span>
+</a>
+<a class="flex flex-col items-center gap-1 bg-clip-text text-transparent bg-gradient-to-br from-accent-start to-accent-end" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="text-xs font-bold bg-clip-text text-transparent bg-gradient-to-br from-accent-start to-accent-end">Messages</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-text-secondary transition-colors hover:text-text-primary" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

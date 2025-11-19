@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TheatreConnect Activity Feed</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #ee2bad;
+            --background-color: #121212;
+            --surface-color: #1E1E1E;
+            --on-surface-color: #FFFFFF;
+            --on-surface-variant-color: #BDBDBD;
+            --accent-color: #332933;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: var(--background-color);
+            color: var(--on-surface-color);
+        }
+        .primary-text {
+            color: var(--primary-color);
+        }
+        .primary-bg {
+            background-color: var(--primary-color);
+        }
+        .surface-bg {
+             background-color: var(--surface-color);
+        }
+        .accent-border {
+            border-color: var(--accent-color);
+        }
+        .on-surface-text {
+            color: var(--on-surface-color);
+        }
+        .on-surface-variant-text {
+            color: var(--on-surface-variant-color);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="p-2 -ml-2">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+</svg>
+</button>
+<h1 class="text-xl font-bold leading-tight tracking-tight flex-1 text-center">Activity</h1>
+<button class="p-2 -mr-2">
+<svg fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</button>
+</div>
+</header>
+<main class="px-4 pb-24 space-y-6">
+<div class="bg-[var(--surface-color)] rounded-lg p-4">
+<div class="flex items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 shrink-0 border-2 border-[var(--primary-color)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBszsT_2eWbn7rQ45728u5dGIgZyJXtd4bh1zn-qu5X5d17Wcpc7TDDVhmbBs7aG1EgFGjiyQMlEuliRfPMsM_fRewZCiFsHaSVbcKMRiBl6As2BaIovlT8sJnSqhqLhX2oHbzQ24EXliO94Asn_nyAWJxrnL4fkCG0Mo_guY6cr7uPGS8zxXt0Kpw5HA6hdqBdFyYT0m5Z_gDQmXwtWLd3tx0oVo56Rp0x2OF2nFudTVdQz_HFPPReG8MTQBBJvTfyjygCCVBFBCE");'>
+</div>
+<div class="flex-grow">
+<p class="on-surface-text text-base font-medium leading-normal"><span class="font-bold">Rohan Kapoor</span> booked 2 tickets for</p>
+<p class="on-surface-variant-text text-sm font-normal">2h ago</p>
+</div>
+<button class="p-1 -mr-1 text-[var(--on-surface-variant-color)]">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM128,64a12,12,0,1,0-12-12A12,12,0,0,0,128,64Zm0,128a12,12,0,1,0,12,12A12,12,0,0,0,128,192Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 mt-4 bg-black/20 p-3 rounded-lg">
+<div class="bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg w-20" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAnss5LQVA5292ujbaPJG0bZan6rIAdQT9mqb5CyR2muLx6x3ilwVfThrzGqYFbzwJ6VyZu3CNpdNA7T56_oD-2k0xlJ4uB3hm5fIrVUF5vswMGUfFUnBeBJQHazW8iaRicE--ZJpXS4HuHe38FV8ZuTig5HkByYJuz4u5G9uqbE-n3DFBCZAhm7GxNHRofDof58OO6w1Unq7UTmGIhL89pGdmYpXCfUPdWne9u3z5Mo7fbqc-InnZvDq2y1ZC28YZqd0gCWkvwjdw");'></div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="on-surface-text text-lg font-bold leading-tight">The Tempest</p>
+<p class="on-surface-variant-text text-sm font-normal mt-1">Kamani Auditorium, Delhi</p>
+<p class="on-surface-variant-text text-sm font-normal">Fri, 24 May - 7:00 PM</p>
+</div>
+</div>
+</div>
+<div class="bg-[var(--surface-color)] rounded-lg p-4">
+<div class="flex items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 shrink-0 border-2 border-[var(--primary-color)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBszsT_2eWbn7rQ45728u5dGIgZyJXtd4bh1zn-qu5X5d17Wcpc7TDDVhmbBs7aG1EgFGjiyQMlEuliRfPMsM_fRewZCiFsHaSVbcKMRiBl6As2BaIovlT8sJnSqhqLhX2oHbzQ24EXliO94Asn_nyAWJxrnL4fkCG0Mo_guY6cr7uPGS8zxXt0Kpw5HA6hdqBdFyYT0m5Z_gDQmXwtWLd3tx0oVo56Rp0x2OF2nFudTVdQz_HFPPReG8MTQBBJvTfyjygCCVBFBCE");'>
+</div>
+<div class="flex-grow">
+<p class="on-surface-text text-base font-medium leading-normal"><span class="font-bold">Priya Sharma</span> is interested in</p>
+<p class="on-surface-variant-text text-sm font-normal">1d ago</p>
+</div>
+<button class="p-1 -mr-1 text-[var(--on-surface-variant-color)]">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM128,64a12,12,0,1,0-12-12A12,12,0,0,0,128,64Zm0,128a12,12,0,1,0,12,12A12,12,0,0,0,128,192Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 mt-4 bg-black/20 p-3 rounded-lg">
+<div class="bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg w-20" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFCwwgTwTyLXHZ-k2THgMvGWdg-DOvAV5u7C35i9EuP2SqNqY9HQEgMlcxu7e2JBkvl9ejUMgu5q5QUmy5wf8Blxj4e6_s4dvrQq7mDlVEGdx4iwoFF4pYQa0ArFBeVbiIX4mM1IpgVybSbyj7Id6g0IVTNbNajt3LcGaBHUwBYw62PagZc9JrXgT8NFGF1Z6HQioTjvitk55D23mTpRn2rC5haQi0Y7X9C4Yl-d8sE_qhndEHetoVpdLKFIy86xjIda_UaBtbV9Y");'></div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="on-surface-text text-lg font-bold leading-tight">Hamlet</p>
+<p class="on-surface-variant-text text-sm font-normal mt-1">Shri Ram Centre, Delhi</p>
+<p class="on-surface-variant-text text-sm font-normal">Sat, 25 May - 6:30 PM</p>
+</div>
+</div>
+</div>
+<div class="bg-[var(--surface-color)] rounded-lg p-4">
+<div class="flex items-start gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 shrink-0 border-2 border-[var(--primary-color)]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBszsT_2eWbn7rQ45728u5dGIgZyJXtd4bh1zn-qu5X5d17Wcpc7TDDVhmbBs7aG1EgFGjiyQMlEuliRfPMsM_fRewZCiFsHaSVbcKMRiBl6As2BaIovlT8sJnSqhqLhX2oHbzQ24EXliO94Asn_nyAWJxrnL4fkCG0Mo_guY6cr7uPGS8zxXt0Kpw5HA6hdqBdFyYT0m5Z_gDQmXwtWLd3tx0oVo56Rp0x2OF2nFudTVdQz_HFPPReG8MTQBBJvTfyjygCCVBFBCE");'>
+</div>
+<div class="flex-grow">
+<p class="on-surface-text text-base font-medium leading-normal"><span class="font-bold">Arjun Verma</span> booked 3 tickets for</p>
+<p class="on-surface-variant-text text-sm font-normal">3d ago</p>
+</div>
+<button class="p-1 -mr-1 text-[var(--on-surface-variant-color)]">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128ZM128,64a12,12,0,1,0-12-12A12,12,0,0,0,128,64Zm0,128a12,12,0,1,0,12,12A12,12,0,0,0,128,192Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 mt-4 bg-black/20 p-3 rounded-lg">
+<div class="bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg w-20" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtfhdSKOOrHsY4VLvEo6Q9vdvgkVYh7iYNELWC16-gs_270H4jfIrTVz9chCHBZQ9xWo3kqhhipSW1pDhLaL7iUS3tFeV7sq4H4tiq2JPuy1E07uYbWLIK4QIdGFnEfKf6B-_JTQH5QlAi_gbnMI0QY52kFiAJ8iVcn0HBeduF4sMu4pOi8WuZcOXq44yxlZLjDqpLf6xAiqkl_-SYL7s0qy4ifbJAzDRKEqdp-M0dp0b09uMBofwuUynrSxDwPdaOjoQpAMoftho");'></div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="on-surface-text text-lg font-bold leading-tight">Macbeth</p>
+<p class="on-surface-variant-text text-sm font-normal mt-1">Akshara Theatre, Delhi</p>
+<p class="on-surface-variant-text text-sm font-normal">Sun, 26 May - 5:00 PM</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="fixed bottom-0 left-0 right-0 bg-[var(--surface-color)]/90 backdrop-blur-lg border-t accent-border">
+<div class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center gap-1 on-surface-variant-text hover:primary-text transition-colors" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+<p class="text-xs font-medium tracking-wide">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 primary-text" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216Z"></path></svg>
+<p class="text-xs font-bold tracking-wide">Activity</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 on-surface-variant-text hover:primary-text transition-colors" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+<p class="text-xs font-medium tracking-wide">Search</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 on-surface-variant-text hover:primary-text transition-colors" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+<p class="text-xs font-medium tracking-wide">Profile</p>
+</a>
+</div>
+<div class="h-safe-area-bottom bg-[var(--surface-color)]/90"></div>
+</footer>
+</div>
+
+</body></html>

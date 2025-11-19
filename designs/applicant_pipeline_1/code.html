@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Applicant Pipeline - Artisan Stage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Roboto+Mono:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">body {
+            background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23222222' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 0h3v3H0V0zm3 3h3v3H3V3z'/%3E%3C/g%3E%3C/svg%3E");
+            background-color: #121212;color: #F5F5F5;}.zine-card {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+            background-color: #0d0d0d;border: 2px dashed #F5F5F5;box-shadow: 4px 4px 0px 0px #0d0d0d;filter: contrast(1.1);}
+        .zine-card.active-card {
+             border: 2px dashed #F5F5F5;box-shadow: 4px 4px 0px 0px #F5F5F5;}.stamped-label {
+            background-color: #F5F5F5;
+            color: #0d0d0d;
+            border: 2px dashed #0d0d0d;
+            padding: 0.25rem 0.5rem;
+            text-transform: uppercase;
+            font-family: 'Roboto Mono', monospace;font-weight: 700;
+            font-size: 0.65rem;letter-spacing: 0.05em;
+            transform: rotate(-3deg);display: inline-block;
+            white-space: nowrap;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }.no-scrollbar {
+            -ms-overflow-style: none;scrollbar-width: none;}
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#F5F5F5","background-light": "#f6f6f8",
+              "background-dark": "#121212","card-dark": "#0d0d0d","text-primary-dark": "#F5F5F5","text-secondary-dark": "#A9A9A9",},
+            fontFamily: {
+              "display": ["Anton", "sans-serif"],"body": ["Manrope", "sans-serif"]},
+            borderRadius: {"DEFAULT": "0", "lg": "0", "xl": "0", "full": "9999px"},},
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-text-primary-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center bg-background-dark/90 p-4 pb-2 justify-between border-b-2 border-text-primary-dark backdrop-blur-sm">
+<button class="flex size-10 items-center justify-center rounded-none text-text-primary-dark border-2 border-text-primary-dark bg-card-dark shadow-[2px_2px_0_0_#F5F5F5]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-text-primary-dark text-lg font-display uppercase leading-tight tracking-wide flex-1 text-center font-extrabold text-xl">A Midsummer Night's Dream</h1>
+<button class="flex size-10 items-center justify-center rounded-none text-text-primary-dark border-2 border-text-primary-dark bg-card-dark shadow-[2px_2px_0_0_#F5F5F5]">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<nav class="sticky top-[72px] z-10 bg-background-dark/90 backdrop-blur-sm border-b-2 border-text-primary-dark">
+<div class="no-scrollbar overflow-x-auto">
+<div class="flex px-4 min-w-max">
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-text-primary-dark text-text-primary-dark px-4 pb-[13px] pt-4 uppercase font-display tracking-wider font-extrabold text-base" href="#">
+<p>New Applicants (78)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 uppercase font-display tracking-wider font-extrabold text-base" href="#">
+<p>Shortlisted (12)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 uppercase font-display tracking-wider font-extrabold text-base" href="#">
+<p>Callback (4)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 uppercase font-display tracking-wider font-extrabold text-base" href="#">
+<p>Hired (1)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4 uppercase font-display tracking-wider font-extrabold text-base" href="#">
+<p>Rejected (23)</p>
+</a>
+</div>
+</div>
+</nav>
+<main class="flex-1 space-y-4 p-4 pb-28">
+<div class="flex flex-col gap-4 p-4 zine-card">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center border-2 border-text-primary-dark" data-alt="Headshot of Eleanor Vance" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkfc4d5BI5Ztw5ZgRNmQJsPD_GvNXrsPXpATzPRWPEYaQsC7OnXRckyHsuJ7n0OeMXVXpNW1D5JtLd1K5aD6GNXBXHixeF1JCYKhqtUNOAuWHcDjyjx6teLQtsxBh73or3ErzQy8yiMJgnECCiQYRR9KtIwp0t5OjKy4TOoEIMrZRqPLbpQBmlETxv9LLqhAh4xFQGY4age6PHo7cGUjohFtUXtxOLCtUxk5UYx_eq1eGetJ1vTawKWXi2YXrNXRpltPtCuPJcmgk')"></div>
+<div class="flex-grow">
+<p class="text-base font-display uppercase leading-tight tracking-wider text-text-primary-dark font-extrabold">Eleanor Vance</p>
+<p class="text-sm font-body font-normal leading-normal text-text-secondary-dark">Applied 3 days ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="stamped-label">92% Match</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-none bg-card-dark px-4 text-text-primary-dark gap-2 text-sm font-display uppercase leading-normal tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-none bg-text-primary-dark px-4 text-card-dark gap-2 text-sm font-display uppercase leading-normal tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-4 zine-card active-card">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center border-2 border-text-primary-dark" data-alt="Headshot of Marcus Thorne" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4Vt6t1VmELWYsmZcpDpUo9kflG-0_VqMkSTu4SPIK699JMq176y1Ihz3AH0n7cMC0mlWYJZRT0_6qnVP1wgzwSdNuwpJ4FHbMKTDcE1DO-Vdoxw7RWr0cbi2RlAQraXBGgt5NkrkSduml0rDwGHCCQILSwM3z0JppKi_68Tc3piUX1sfAH4_itMjnzK8Ts6TSlPr_eZ1IYMdey93nVzdOLUjcL-KRuXYNYKfEBv-mdg4YMlgS7QAJg_XgbfYr3-v3s19JaOr6IdA')"></div>
+<div class="flex-grow">
+<p class="text-base font-display uppercase leading-tight tracking-wider text-text-primary-dark font-extrabold">Marcus Thorne</p>
+<p class="text-sm font-body font-normal leading-normal text-text-secondary-dark">Applied 5 days ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="stamped-label">88% Match</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-none bg-card-dark px-4 text-text-primary-dark gap-2 text-sm font-display uppercase leading-normal tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-none bg-text-primary-dark px-4 text-card-dark gap-2 text-sm font-display uppercase leading-normal tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 p-4 zine-card">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center border-2 border-text-primary-dark" data-alt="Headshot of Jordan Lee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0cWLdDYjxV-MGQaW_ihoLQuEdlvF5Ffwmozj4RRGnMbreFiWHJb0dhQzH1CeHNEOPV8-6ObCea1R9Rza7jTXtmasoKcltBTyzPILYDkNRoJXLIqTP2Aeg1EJ2KjEOjRKfajHCiTW1ChOtsp5lTPfkj4wcbtxXC4WNmB0tp8GMxRxnXAP2wdk8Eh8ZNtZn3HI76jVNetmxYWDaWIOl_nJfCgyxw4oXBgCQf5gIG9Ixz56M_ESPpkmi1yWNphxIitiCEM7x7Jzkkq4')"></div>
+<div class="flex-grow">
+<p class="text-base font-display uppercase leading-tight tracking-wider text-text-primary-dark font-extrabold">Jordan Lee</p>
+<p class="text-sm font-body font-normal leading-normal text-text-secondary-dark">Applied 1 week ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="stamped-label">85% Match</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-none bg-card-dark px-4 text-text-primary-dark gap-2 text-sm font-display uppercase leading-normal tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-none bg-text-primary-dark px-4 text-card-dark gap-2 text-sm font-display uppercase leading-normal tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center p-10 text-center zine-card bg-card-dark/50 border-text-secondary-dark/50">
+<span class="material-symbols-outlined !text-5xl text-text-secondary-dark/50">upcoming</span>
+<p class="mt-4 font-display uppercase font-extrabold text-text-primary-dark tracking-wider">No More Applicants</p>
+<p class="text-sm font-body text-text-secondary-dark">Check back later for new submissions.</p>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-20 w-full border-t-2 border-text-primary-dark bg-background-dark/90 p-4 backdrop-blur-sm">
+<div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4">
+<p class="text-base font-display uppercase font-extrabold text-text-primary-dark tracking-wide">1 Selected</p>
+<div class="flex items-center gap-3">
+<button class="flex h-10 items-center justify-center rounded-none bg-card-dark px-4 text-sm font-display uppercase text-text-primary-dark tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">Reject</button>
+<button class="flex h-10 items-center justify-center rounded-none bg-card-dark px-4 text-sm font-display uppercase text-text-primary-dark tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">Message</button>
+<button class="flex h-10 items-center justify-center rounded-none bg-text-primary-dark px-4 text-card-dark text-sm font-display uppercase tracking-wide border-2 border-text-primary-dark shadow-[2px_2px_0_0_#F5F5F5]">Move</button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

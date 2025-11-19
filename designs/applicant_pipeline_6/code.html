@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Applicant Pipeline - Artisan Stage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1919e6",
+              "background-light": "#f6f6f8",
+              "background-dark": "#121212",
+              "card-dark": "#1E1E1E",
+              "gold-start": "#D4AF37",
+              "gold-end": "#B8860B",
+              "text-primary-dark": "#F5F5F5",
+              "text-secondary-dark": "#A9A9A9",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-text-primary-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex items-center bg-background-dark p-4 pb-2 justify-between border-b border-card-dark/50">
+<button class="flex size-10 items-center justify-center rounded-full text-text-primary-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-text-primary-dark text-lg font-bold leading-tight tracking-tight flex-1 text-center">A Midsummer Night's Dream</h1>
+<button class="flex size-10 items-center justify-center rounded-full text-text-primary-dark">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<!-- Tabs -->
+<nav class="sticky top-[72px] z-10 bg-background-dark">
+<div class="no-scrollbar overflow-x-auto">
+<div class="flex border-b border-card-dark px-4 min-w-max">
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-gold-start text-gold-start px-4 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">New Applicants (78)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">Shortlisted (12)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">Callback (4)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">Hired (1)</p>
+</a>
+<a class="flex shrink-0 flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-secondary-dark px-4 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal">Rejected (23)</p>
+</a>
+</div>
+</div>
+</nav>
+<!-- Applicant Cards List -->
+<main class="flex-1 space-y-3 p-4 pb-28">
+<!-- Card 1 -->
+<div class="flex flex-col gap-4 rounded-xl bg-card-dark p-4">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center" data-alt="Headshot of Eleanor Vance" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkfc4d5BI5Ztw5ZgRNmQJsPD_GvNXrsPXpATzPRWPEYaQsC7OnXRckyHsuJ7n0OeMXVXpNW1D5JtLd1K5aD6GNXBXHixeF1JCYKhqtUNOAuWHcDjyjx6teLQtsxBh73or3ErzQy8yiMJgnECCiQYRR9KtIwp0t5OjKy4TOoEIMrZRqPLbpQBmlETxv9LLqhAh4xFQGY4age6PHo7cGUjohFtUXtxOLCtUxk5UYx_eq1eGetJ1vTawKWXi2YXrNXRpltPtCuPJcmgk')"></div>
+<div class="flex-grow">
+<p class="text-base font-bold leading-tight text-text-primary-dark">Eleanor Vance</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-dark">Applied 3 days ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex h-8 items-center justify-center rounded-full bg-gradient-to-br from-gold-start/20 to-gold-end/20 px-3">
+<p class="text-xs font-bold text-gold-start">92% Match</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-text-secondary-dark/10 px-4 text-text-primary-dark gap-2 text-sm font-bold leading-normal">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-gold-start to-gold-end px-4 text-black gap-2 text-sm font-bold leading-normal">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-4 rounded-xl bg-card-dark p-4 ring-2 ring-gold-start">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center" data-alt="Headshot of Marcus Thorne" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4Vt6t1VmELWYsmZcpDpUo9kflG-0_VqMkSTu4SPIK699JMq176y1Ihz3AH0n7cMC0mlWYJZRT0_6qnVP1wgzwSdNuwpJ4FHbMKTDcE1DO-Vdoxw7RWr0cbi2RlAQraXBGgt5NkrkSduml0rDwGHCCQILSwM3z0JppKi_68Tc3piUX1sfAH4_itMjnzK8Ts6TSlPr_eZ1IYMdey93nVzdOLUjcL-KRuXYNYKfEBv-mdg4YMlgS7QAJg_XgbfYr3-v3s19JaOr6IdA')"></div>
+<div class="flex-grow">
+<p class="text-base font-bold leading-tight text-text-primary-dark">Marcus Thorne</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-dark">Applied 5 days ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex h-8 items-center justify-center rounded-full bg-gradient-to-br from-gold-start/20 to-gold-end/20 px-3">
+<p class="text-xs font-bold text-gold-start">88% Match</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-text-secondary-dark/10 px-4 text-text-primary-dark gap-2 text-sm font-bold leading-normal">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-gold-start to-gold-end px-4 text-black gap-2 text-sm font-bold leading-normal">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-4 rounded-xl bg-card-dark p-4">
+<div class="flex items-center gap-4">
+<div class="h-14 w-14 shrink-0 rounded-full bg-cover bg-center" data-alt="Headshot of Jordan Lee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0cWLdDYjxV-MGQaW_ihoLQuEdlvF5Ffwmozj4RRGnMbreFiWHJb0dhQzH1CeHNEOPV8-6ObCea1R9Rza7jTXtmasoKcltBTyzPILYDkNRoJXLIqTP2Aeg1EJ2KjEOjRKfajHCiTW1ChOtsp5lTPfkj4wcbtxXC4WNmB0tp8GMxRxnXAP2wdk8Eh8ZNtZn3HI76jVNetmxYWDaWIOl_nJfCgyxw4oXBgCQf5gIG9Ixz56M_ESPpkmi1yWNphxIitiCEM7x7Jzkkq4')"></div>
+<div class="flex-grow">
+<p class="text-base font-bold leading-tight text-text-primary-dark">Jordan Lee</p>
+<p class="text-sm font-normal leading-normal text-text-secondary-dark">Applied 1 week ago</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex h-8 items-center justify-center rounded-full bg-gradient-to-br from-gold-start/20 to-gold-end/20 px-3">
+<p class="text-xs font-bold text-gold-start">85% Match</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-text-secondary-dark/10 px-4 text-text-primary-dark gap-2 text-sm font-bold leading-normal">
+<span class="material-symbols-outlined !text-xl">chat_bubble</span>
+<span>Message</span>
+</button>
+<button class="flex h-10 min-w-[40px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gradient-to-r from-gold-start to-gold-end px-4 text-black gap-2 text-sm font-bold leading-normal">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+<span>View Profile</span>
+</button>
+</div>
+</div>
+<!-- Empty State Example -->
+<div class="flex flex-col items-center justify-center rounded-xl bg-card-dark/50 p-10 text-center">
+<span class="material-symbols-outlined !text-5xl text-text-secondary-dark/50">upcoming</span>
+<p class="mt-4 font-bold text-text-primary-dark">No More Applicants</p>
+<p class="text-sm text-text-secondary-dark">Check back later for new submissions.</p>
+</div>
+</main>
+<!-- Batch Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-20 w-full border-t border-card-dark bg-background-dark/80 p-4 backdrop-blur-sm">
+<div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4">
+<p class="text-base font-bold text-text-primary-dark">1 Selected</p>
+<div class="flex items-center gap-3">
+<button class="flex h-10 items-center justify-center rounded-lg bg-text-secondary-dark/20 px-4 text-sm font-bold text-text-primary-dark">Reject</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-text-secondary-dark/20 px-4 text-sm font-bold text-text-primary-dark">Message</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-gradient-to-r from-gold-start to-gold-end px-4 text-sm font-bold text-black">Move</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

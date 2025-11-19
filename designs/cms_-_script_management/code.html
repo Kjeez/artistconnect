@@ -1,0 +1,86 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ee2bad;
+        --secondary-text: #b99db0;
+        --background-color: #181116;
+        --input-background: #2b2127;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-color" style="font-family: 'Be Vietnam Pro', 'Noto Sans', sans-serif;">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden text-white" style="--select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(185,157,176)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e');">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-white">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+</svg>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold">New Script</h1>
+<div class="w-6"></div>
+</div>
+</header>
+<main class="p-4 space-y-6">
+<div class="space-y-4">
+<input class="form-input w-full rounded-lg border-none bg-[var(--input-background)] h-14 placeholder:text-[var(--secondary-text)] p-4 text-base focus:ring-2 focus:ring-[var(--primary-color)] transition-shadow duration-300" placeholder="Script Title" value=""/>
+<input class="form-input w-full rounded-lg border-none bg-[var(--input-background)] h-14 placeholder:text-[var(--secondary-text)] p-4 text-base focus:ring-2 focus:ring-[var(--primary-color)] transition-shadow duration-300" placeholder="Author" value=""/>
+<div class="relative">
+<select class="form-select appearance-none w-full rounded-lg border-none bg-[var(--input-background)] h-14 text-[var(--secondary-text)] p-4 text-base focus:ring-2 focus:ring-[var(--primary-color)] focus:text-white transition-all duration-300">
+<option selected="">Genre</option>
+<option class="text-white" value="drama">Drama</option>
+<option class="text-white" value="comedy">Comedy</option>
+<option class="text-white" value="tragedy">Tragedy</option>
+<option class="text-white" value="musical">Musical</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[var(--secondary-text)]">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+</div>
+</div>
+<textarea class="form-textarea w-full rounded-lg border-none bg-[var(--input-background)] min-h-36 placeholder:text-[var(--secondary-text)] p-4 text-base focus:ring-2 focus:ring-[var(--primary-color)] transition-shadow duration-300" placeholder="Description"></textarea>
+</div>
+<div>
+<h2 class="text-xl font-bold mb-4">Script Content</h2>
+<div class="relative">
+<textarea class="form-textarea w-full rounded-lg border-none bg-[var(--input-background)] min-h-48 placeholder:text-[var(--secondary-text)] p-4 text-base focus:ring-2 focus:ring-[var(--primary-color)] transition-shadow duration-300" placeholder="Paste script content here or upload a file"></textarea>
+<div class="absolute bottom-4 right-4">
+<label class="flex items-center gap-2 cursor-pointer rounded-lg h-10 px-4 bg-[var(--input-background)] hover:bg-opacity-80 transition-colors duration-300 text-sm font-bold text-[var(--secondary-text)] hover:text-white" for="file-upload">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M208,88H152V32a8,8,0,0,0-16,0V88H80a8,8,0,0,0-6.4,12.8L116.8,160H64a8,8,0,0,0,0,16h52.8L73.6,216.8A8,8,0,0,0,80,224H208a8,8,0,0,0,0-16H169.31l36.8-40.49A40,40,0,1,0,136,104.53V104h16a8,8,0,0,0,0-16H136V72a24,24,0,1,1,23.62,32H132.8a8,8,0,0,0-5.66,13.66L160,150.59V160a24,24,0,1,1-23.62-32h26.82a40,40,0,1,0-4.85-8H48a24,24,0,1,1,0-48H208a8,8,0,0,0,0-16H48a40,40,0,0,0,0,80H73.35A24,24,0,0,1,88.69,136H112v-1.41l-25.6-28.17a24,24,0,0,1,35-31.18L136,92.53V88a40,40,0,1,0-40,40h12.69A8,8,0,0,0,112,120H88.69a24,24,0,0,1,23.62-32H136V72a40,40,0,0,0-80,0v16H48a8,8,0,0,0,0,16H56V88a24,24,0,1,1,48,0V72h16V88a8,8,0,0,0,16,0V72a24,24,0,0,1,24-24,8,8,0,0,0,0-16,40,40,0,0,0-40,40v16H80a8,8,0,0,0,0,16h32v-4.69L83.31,90.34a8,8,0,1,0-11.32,11.32L96,125.49V160a40,40,0,1,0,74.52,27.16L207.16,136.8a8,8,0,0,0-6.4-12.8H152V88a24,24,0,0,1,48,0v16h8a8,8,0,0,0,0-16Zm-24-48a8,8,0,1,1-16,0,8,8,0,0,1,16,0Z"></path></svg>
+<span>Upload File</span>
+</label>
+<input class="sr-only" id="file-upload" type="file"/>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-sm text-[var(--secondary-text)]">
+<p>Manage versions</p>
+<button class="flex items-center gap-1 font-semibold">
+<span>Version 1 (Latest)</span>
+<svg fill="currentColor" height="16" viewBox="0 0 256 256" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M181.66,133.66l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,164.69l42.34-42.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
+</button>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<div class="p-4">
+<div class="flex gap-4">
+<button class="flex-1 rounded-lg h-14 px-5 bg-[var(--input-background)] text-white text-base font-bold transition-colors duration-300 hover:bg-opacity-80">Preview</button>
+<button class="flex-1 rounded-lg h-14 px-5 bg-[var(--primary-color)] text-white text-base font-bold transition-transform duration-300 hover:scale-105">Save</button>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Stage - Post Audition - Step 3</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5e19e6",
+            "background-light": "#f6f6f8",
+            "background-dark": "#161121",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark">
+<div class="flex flex-col h-screen min-h-screen font-display text-white">
+<header class="flex shrink-0 items-center justify-between bg-background-dark p-4">
+<div class="flex w-24 items-center justify-start">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</div>
+<h1 class="flex-1 text-center text-lg font-bold leading-tight tracking-[-0.015em]">Post Audition</h1>
+<div class="flex w-24 items-center justify-end">
+</div>
+</header>
+<div class="px-4 py-2">
+<div class="text-xs font-semibold text-[#a593c8] mb-1">Step 3 of 4</div>
+<div class="w-full bg-[#443465] rounded-full h-1">
+<div class="bg-primary h-1 rounded-full" style="width: 75%"></div>
+</div>
+</div>
+<main class="flex-grow overflow-y-auto px-4">
+<div class="flex flex-col gap-4 py-4">
+<h2 class="tracking-light text-left text-[32px] font-bold leading-tight">Finally, what do applicants need to submit?</h2>
+<div class="flex w-full flex-col gap-2 py-2">
+<label class="text-base font-medium leading-normal text-white" for="deadline">Application Deadline <span class="text-red-400">*</span></label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[#a593c8]">calendar_today</span>
+<input class="form-input h-14 w-full rounded-xl border-none bg-[#302447] p-4 pl-12 text-base font-normal text-white placeholder:text-[#a593c8] focus:border-none focus:outline-0 focus:ring-0" id="deadline" placeholder="Select date and time" type="datetime-local"/>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-[#302447] p-4">
+<p class="text-base font-bold leading-normal text-white">Required Materials</p>
+<div class="flex flex-col gap-4">
+<label class="flex items-center gap-3">
+<input class="form-checkbox h-5 w-5 rounded border-2 border-[#a593c8] bg-transparent text-primary focus:ring-primary focus:ring-offset-0 focus:ring-offset-transparent" type="checkbox"/>
+<span class="text-base font-normal text-white">Headshot</span>
+</label>
+<label class="flex items-center gap-3">
+<input class="form-checkbox h-5 w-5 rounded border-2 border-[#a593c8] bg-transparent text-primary focus:ring-primary focus:ring-offset-0 focus:ring-offset-transparent" type="checkbox"/>
+<span class="text-base font-normal text-white">Resume/CV</span>
+</label>
+<label class="flex items-center gap-3">
+<input class="form-checkbox h-5 w-5 rounded border-2 border-[#a593c8] bg-transparent text-primary focus:ring-primary focus:ring-offset-0 focus:ring-offset-transparent" type="checkbox"/>
+<span class="text-base font-normal text-white">Showreel/Video Submission</span>
+</label>
+<label class="flex items-center gap-3">
+<input class="form-checkbox h-5 w-5 rounded border-2 border-[#a593c8] bg-transparent text-primary focus:ring-primary focus:ring-offset-0 focus:ring-offset-transparent" type="checkbox"/>
+<span class="text-base font-normal text-white">Voice Reel/Audio Submission</span>
+</label>
+<label class="flex items-center gap-3">
+<input class="form-checkbox h-5 w-5 rounded border-2 border-[#a593c8] bg-transparent text-primary focus:ring-primary focus:ring-offset-0 focus:ring-offset-transparent" type="checkbox"/>
+<span class="text-base font-normal text-white">Cover Letter</span>
+</label>
+<div class="flex flex-col gap-3">
+<label class="flex items-center gap-3">
+<input class="form-checkbox h-5 w-5 rounded border-2 border-[#a593c8] bg-transparent text-primary focus:ring-primary focus:ring-offset-0 focus:ring-offset-transparent" type="checkbox"/>
+<span class="text-base font-normal text-white">Specific Monologue/Scene</span>
+</label>
+<div class="pl-8">
+<button class="flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-dashed border-[#a593c8] bg-[#443465]/50 text-sm font-semibold text-[#a593c8] transition-colors hover:bg-[#443465]">
+<span class="material-symbols-outlined">upload_file</span>
+<span>Upload Script (PDF, DOCX)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-[#302447] p-4">
+<p class="text-base font-bold leading-normal text-white">Submission Method</p>
+<div class="flex flex-col gap-4" role="radiogroup">
+<label class="flex items-center gap-3">
+<input checked="" class="form-radio h-5 w-5 rounded-full border-2 border-[#a593c8] bg-transparent text-primary focus:ring-primary focus:ring-offset-0 focus:ring-offset-transparent" name="submission-method" type="radio" value="internal"/>
+<span class="text-base font-normal text-white">Through Artisan Stage</span>
+</label>
+<label class="flex items-center gap-3">
+<input class="form-radio h-5 w-5 rounded-full border-2 border-[#a593c8] bg-transparent text-primary focus:ring-primary focus:ring-offset-0 focus:ring-offset-transparent" name="submission-method" type="radio" value="external"/>
+<span class="text-base font-normal text-white">External Link</span>
+</label>
+<div class="pl-8 hidden">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[#a593c8]">link</span>
+<input class="form-input h-14 w-full resize-none overflow-hidden rounded-xl border-none bg-[#161121] p-4 pl-12 text-base font-normal leading-normal text-white placeholder:text-[#a593c8] focus:border-none focus:outline-0 focus:ring-0" placeholder="https://example.com/apply"/>
+</div>
+</div>
+</div>
+</div>
+<div class="flex w-full flex-col gap-2 py-2">
+<label class="text-base font-medium leading-normal text-white" for="additional-instructions">Additional Instructions</label>
+<textarea class="form-textarea h-36 w-full resize-none overflow-hidden rounded-xl border-none bg-[#302447] p-4 text-base font-normal leading-normal text-white placeholder:text-[#a593c8] focus:border-none focus:outline-0 focus:ring-0" id="additional-instructions" placeholder="Any specific notes for applicants regarding submissions, callbacks, or expectations."></textarea>
+</div>
+</div>
+</main>
+<footer class="mt-auto shrink-0 border-t border-white/10 bg-background-dark p-4">
+<div class="flex items-center gap-4">
+<button class="h-14 w-1/3 rounded-lg border border-white/20 bg-transparent text-center text-base font-bold text-white transition-colors hover:bg-white/10">Back</button>
+<button class="h-14 w-2/3 rounded-lg bg-primary text-center text-base font-bold text-white transition-opacity hover:opacity-90">Next: Review &amp; Post</button>
+</div>
+</footer>
+</div>
+
+</body></html>

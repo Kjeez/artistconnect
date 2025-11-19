@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TheatreConnect Moderation Tools</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #ee2bad;
+            --background-color: #120B10;
+            --surface-color: #1E141A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A99DA5;
+            --accent-color: #392833;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+        .nav-item-active {
+            color: var(--primary-color) !important;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="dark">
+<div class="relative flex size-full min-h-screen flex-col bg-[var(--background-color)] justify-between group/design-root overflow-x-hidden">
+<main class="flex-grow">
+<header class="sticky top-0 z-10 bg-[var(--background-color)]/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-[var(--text-primary)] p-2 -ml-2">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-tight flex-1 text-center">Moderation Tools</h1>
+<div class="w-8"></div>
+</div>
+</header>
+<div class="px-4 mt-6 mb-4">
+<h2 class="text-[var(--text-primary)] text-2xl font-bold leading-tight tracking-tighter">Reported Content</h2>
+<p class="text-[var(--text-secondary)] mt-1">Review and take action on reported items.</p>
+</div>
+<div class="flex flex-col gap-3 px-4">
+<a class="flex items-center gap-4 bg-[var(--surface-color)] p-3 rounded-lg hover:bg-[var(--accent-color)] transition-colors duration-200" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--accent-color)] shrink-0 size-12">
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M222.8,154.2c-15.28-13.25-28.9-18-43.82-18-18.94,0-36.6,8.74-53,16.85C99.32,166,76.24,177.42,48,156.26V48a8,8,0,0,0-13.24-6c-36,31.21-3.71,47.18,24.76,61.28C88.28,117.88,111.4,129.29,138,128c17.51-.83,34.25-6.3,51.21-17.12C217.48,93.51,244,79.23,222.8,42a8,8,0,0,0-9.24-2.76C185.73,51.72,162,39.95,134,39.95c-17.51,0-34.25,6.3-51.21,17.12C44.52,80.49,16,94.77,37.2,130.76a8,8,0,0,0,9.24,2.76c15.28-13.25,28.9-18,43.82-18,18.94,0,36.6,8.74,53,16.85,26.58,13.19,49.66,1.78,73.46,19.95V208a8,8,0,0,0,16,0V160.2A8,8,0,0,0,222.8,154.2Z"></path></svg>
+</div>
+<div class="flex-grow">
+<p class="text-[var(--text-primary)] text-base font-medium leading-normal">Inappropriate Language</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal">Reported by: UserA</p>
+</div>
+<div class="shrink-0">
+<svg class="text-[var(--text-secondary)]" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</div>
+</a>
+<a class="flex items-center gap-4 bg-[var(--surface-color)] p-3 rounded-lg hover:bg-[var(--accent-color)] transition-colors duration-200" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--accent-color)] shrink-0 size-12">
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M222.8,154.2c-15.28-13.25-28.9-18-43.82-18-18.94,0-36.6,8.74-53,16.85C99.32,166,76.24,177.42,48,156.26V48a8,8,0,0,0-13.24-6c-36,31.21-3.71,47.18,24.76,61.28C88.28,117.88,111.4,129.29,138,128c17.51-.83,34.25-6.3,51.21-17.12C217.48,93.51,244,79.23,222.8,42a8,8,0,0,0-9.24-2.76C185.73,51.72,162,39.95,134,39.95c-17.51,0-34.25,6.3-51.21,17.12C44.52,80.49,16,94.77,37.2,130.76a8,8,0,0,0,9.24,2.76c15.28-13.25,28.9-18,43.82-18,18.94,0,36.6,8.74,53,16.85,26.58,13.19,49.66,1.78,73.46,19.95V208a8,8,0,0,0,16,0V160.2A8,8,0,0,0,222.8,154.2Z"></path></svg>
+</div>
+<div class="flex-grow">
+<p class="text-[var(--text-primary)] text-base font-medium leading-normal">Harassment</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal">Reported by: UserB</p>
+</div>
+<div class="shrink-0">
+<svg class="text-[var(--text-secondary)]" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</div>
+</a>
+<a class="flex items-center gap-4 bg-[var(--surface-color)] p-3 rounded-lg hover:bg-[var(--accent-color)] transition-colors duration-200" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--accent-color)] shrink-0 size-12">
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M222.8,154.2c-15.28-13.25-28.9-18-43.82-18-18.94,0-36.6,8.74-53,16.85C99.32,166,76.24,177.42,48,156.26V48a8,8,0,0,0-13.24-6c-36,31.21-3.71,47.18,24.76,61.28C88.28,117.88,111.4,129.29,138,128c17.51-.83,34.25-6.3,51.21-17.12C217.48,93.51,244,79.23,222.8,42a8,8,0,0,0-9.24-2.76C185.73,51.72,162,39.95,134,39.95c-17.51,0-34.25,6.3-51.21,17.12C44.52,80.49,16,94.77,37.2,130.76a8,8,0,0,0,9.24,2.76c15.28-13.25,28.9-18,43.82-18,18.94,0,36.6,8.74,53,16.85,26.58,13.19,49.66,1.78,73.46,19.95V208a8,8,0,0,0,16,0V160.2A8,8,0,0,0,222.8,154.2Z"></path></svg>
+</div>
+<div class="flex-grow">
+<p class="text-[var(--text-primary)] text-base font-medium leading-normal">Spam</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal">Reported by: UserC</p>
+</div>
+<div class="shrink-0">
+<svg class="text-[var(--text-secondary)]" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</div>
+</a>
+<a class="flex items-center gap-4 bg-[var(--surface-color)] p-3 rounded-lg hover:bg-[var(--accent-color)] transition-colors duration-200" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--accent-color)] shrink-0 size-12">
+<svg class="text-[var(--primary-color)]" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M222.8,154.2c-15.28-13.25-28.9-18-43.82-18-18.94,0-36.6,8.74-53,16.85C99.32,166,76.24,177.42,48,156.26V48a8,8,0,0,0-13.24-6c-36,31.21-3.71,47.18,24.76,61.28C88.28,117.88,111.4,129.29,138,128c17.51-.83,34.25-6.3,51.21-17.12C217.48,93.51,244,79.23,222.8,42a8,8,0,0,0-9.24-2.76C185.73,51.72,162,39.95,134,39.95c-17.51,0-34.25,6.3-51.21,17.12C44.52,80.49,16,94.77,37.2,130.76a8,8,0,0,0,9.24,2.76c15.28-13.25,28.9-18,43.82-18,18.94,0,36.6,8.74,53,16.85,26.58,13.19,49.66,1.78,73.46,19.95V208a8,8,0,0,0,16,0V160.2A8,8,0,0,0,222.8,154.2Z"></path></svg>
+</div>
+<div class="flex-grow">
+<p class="text-[var(--text-primary)] text-base font-medium leading-normal">Hate Speech</p>
+<p class="text-[var(--text-secondary)] text-sm font-normal leading-normal">Reported by: UserD</p>
+</div>
+<div class="shrink-0">
+<svg class="text-[var(--text-secondary)]" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</div>
+</a>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-[var(--surface-color)] pb-safe">
+<div class="flex justify-around border-t border-[var(--accent-color)] pt-2 pb-3 px-2">
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)] w-1/5" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+<p class="text-xs font-medium tracking-wide">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)] w-1/5" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+<p class="text-xs font-medium tracking-wide">Explore</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)] w-1/5" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Zm-32-80a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"></path></svg>
+<p class="text-xs font-medium tracking-wide">Create</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--text-secondary)] w-1/5" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,16V152h-28.7A15.86,15.86,0,0,0,168,156.69L148.69,176H107.31L88,156.69A15.86,15.86,0,0,0,76.69,152H48V48Zm0,160H48V168H76.69L96,187.31A15.86,15.86,0,0,0,107.31,192h41.38A15.86,15.86,0,0,0,160,187.31L179.31,168H208v40Z"></path></svg>
+<p class="text-xs font-medium tracking-wide">Inbox</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 nav-item-active w-1/5" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M230.93,220a8,8,0,0,1-6.93,4H32a8,8,0,0,1-6.92-12c15.23-26.33,38.7-45.21,66.09-54.16a72,72,0,1,1,73.66,0c27.39,8.95,50.86,27.83,66.09,54.16A8,8,0,0,1,230.93,220Z"></path></svg>
+<p class="text-xs font-medium tracking-wide">Profile</p>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>

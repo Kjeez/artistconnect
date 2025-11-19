@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Applicant Pipeline - Artisan Stage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }.no-scrollbar {
+            -ms-overflow-style: none;scrollbar-width: none;}
+        :root {
+            --new-applicants-color: #6a0dad;--shortlisted-color: #008080;--callback-color: #FF7F50;--hired-color: #228B22;--rejected-color: #DC143C;--tag-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+        .tag-shadow {
+            box-shadow: var(--tag-shadow);
+        }.graffiti-tag {
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.5);}
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1919e6",
+              "background-light": "#f6f6f8",
+              "background-dark": "#121212",
+              "card-dark": "#1E1E1E",
+              "gold-start": "#D4AF37",
+              "gold-end": "#B8860B",
+              "text-primary-dark": "#F5F5F5",
+              "text-secondary-dark": "#A9A9A9",
+              "new-applicants-color": "var(--new-applicants-color)",
+              "shortlisted-color": "var(--shortlisted-color)",
+              "callback-color": "var(--callback-color)",
+              "hired-color": "var(--hired-color)",
+              "rejected-color": "var(--rejected-color)",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-text-primary-dark overflow-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-20 flex items-center bg-background-dark p-4 pb-2 justify-between border-b border-card-dark/50">
+<button class="flex size-10 items-center justify-center rounded-full text-text-primary-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-text-primary-dark text-lg font-bold leading-tight tracking-tight flex-1 text-center">A Midsummer Night's Dream</h1>
+<button class="flex size-10 items-center justify-center rounded-full text-text-primary-dark">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</header>
+<nav class="sticky top-[72px] z-20 bg-background-dark py-2">
+<div class="no-scrollbar overflow-x-auto">
+<div class="flex items-center justify-between px-4 min-w-max space-x-4">
+<a class="flex flex-col items-center justify-center text-new-applicants-color transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined !text-4xl">format_paint</span>
+<p class="text-xs font-bold leading-normal mt-1">New (78)</p>
+</a>
+<a class="flex flex-col items-center justify-center text-shortlisted-color transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined !text-4xl">format_paint</span>
+<p class="text-xs font-bold leading-normal mt-1">Shortlist (12)</p>
+</a>
+<a class="flex flex-col items-center justify-center text-callback-color transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined !text-4xl">format_paint</span>
+<p class="text-xs font-bold leading-normal mt-1">Callback (4)</p>
+</a>
+<a class="flex flex-col items-center justify-center text-hired-color transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined !text-4xl">format_paint</span>
+<p class="text-xs font-bold leading-normal mt-1">Hired (1)</p>
+</a>
+<a class="flex flex-col items-center justify-center text-rejected-color transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined !text-4xl">format_paint</span>
+<p class="text-xs font-bold leading-normal mt-1">Rejected (23)</p>
+</a>
+</div>
+</div>
+</nav>
+<main class="relative flex-1 p-4 pb-28 overflow-x-scroll no-scrollbar perspective-1000">
+<div class="absolute inset-0 flex items-start justify-start p-4 space-x-8 min-w-max h-full">
+<button class="graffiti-tag relative flex flex-col items-center w-40 h-auto p-3 bg-new-applicants-color rounded-lg tag-shadow transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[0.98] cursor-pointer" style="top: 10px; left: 10px; transform: rotate(-2deg);">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center ring-2 ring-white/50" data-alt="Headshot of Eleanor Vance" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkfc4d5BI5Ztw5ZgRNmQJsPD_GvNXrsPXpATzPRWPEYaQsC7OnXRckyHsuJ7n0OeMXVXpNW1D5JtLd1K5aD6GNXBXHixeF1JCYKhqtUNOAuWHcDjyjx6teLQtsxBh73or3ErzQy8yiMJgnECCiQYRR9KtIwp0t5OjKy4TOoEIMrZRqPLbpQBmlETxv9LLqhAh4xFQGY4age6PHo7cGUjohFtUXtxOLCtUxk5UYx_eq1eGetJ1vTawKWXi2YXrNXRpltPtCuPJcmgk')"></div>
+<p class="mt-2 text-base font-bold text-white text-center leading-tight">Eleanor Vance</p>
+<p class="text-xs text-white/80 text-center">Applied 3 days ago</p>
+<div class="mt-2 flex h-6 items-center justify-center rounded-full bg-white/20 px-2">
+<p class="text-xs font-bold text-white">92% Match</p>
+</div>
+<span class="material-symbols-outlined absolute top-1 right-1 text-white/70 !text-lg">info</span>
+</button>
+<button class="graffiti-tag relative flex flex-col items-center w-40 h-auto p-3 bg-shortlisted-color rounded-lg tag-shadow transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[0.98] cursor-pointer" style="top: 60px; left: 200px; transform: rotate(3deg);">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center ring-2 ring-white/50" data-alt="Headshot of Marcus Thorne" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4Vt6t1VmELWYsmZcpDpUo9kflG-0_VqMkSTu4SPIK699JMq176y1Ihz3AH0n7cMC0mlWYJZRT0_6qnVP1wgzwSdNuwpJ4FHbMKTDcE1DO-Vdoxw7RWr0cbi2RlAQraXBGgt5NkrkSduml0rDwGHCCQILSwM3z0JppKi_68Tc3piUX1sfAH4_itMjnzK8Ts6TSlPr_eZ1IYMdey93nVzdOLUjcL-KRuXYNYKfEBv-mdg4YMlgS7QAJg_XgbfYr3-v3s19JaOr6IdA')"></div>
+<p class="mt-2 text-base font-bold text-white text-center leading-tight">Marcus Thorne</p>
+<p class="text-xs text-white/80 text-center">Applied 5 days ago</p>
+<div class="mt-2 flex h-6 items-center justify-center rounded-full bg-white/20 px-2">
+<p class="text-xs font-bold text-white">88% Match</p>
+</div>
+<span class="material-symbols-outlined absolute top-1 right-1 text-white/70 !text-lg">star</span>
+</button>
+<button class="graffiti-tag relative flex flex-col items-center w-40 h-auto p-3 bg-new-applicants-color rounded-lg tag-shadow transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[0.98] cursor-pointer" style="top: 120px; left: 400px; transform: rotate(-5deg);">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center ring-2 ring-white/50" data-alt="Headshot of Jordan Lee" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB0cWLdDYjxV-MGQaW_ihoLQuEdlvF5Ffwmozj4RRGnMbreFiWHJb0dhQzH1CeHNEOPV8-6ObCea1R9Rza7jTXtmasoKcltBTyzPILYDkNRoJXLIqTP2Aeg1EJ2KjEOjRKfajHCiTW1ChOtsp5lTPfkj4wcbtxXC4WNmB0tp8GMxRxnXAP2wdk8Eh8ZNtZn3HI76jVNetmxYWDaWIOl_nJfCgyxw4oXBgCQf5gIG9Ixz56M_ESPpkmi1yWNphxIitiCEM7x7Jzkkq4')"></div>
+<p class="mt-2 text-base font-bold text-white text-center leading-tight">Jordan Lee</p>
+<p class="text-xs text-white/80 text-center">Applied 1 week ago</p>
+<div class="mt-2 flex h-6 items-center justify-center rounded-full bg-white/20 px-2">
+<p class="text-xs font-bold text-white">85% Match</p>
+</div>
+<span class="material-symbols-outlined absolute top-1 right-1 text-white/70 !text-lg">info</span>
+</button>
+<button class="graffiti-tag relative flex flex-col items-center w-40 h-auto p-3 bg-callback-color rounded-lg tag-shadow transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[0.98] cursor-pointer" style="top: 30px; left: 600px; transform: rotate(1deg);">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center ring-2 ring-white/50" data-alt="Headshot of Sofia Rossi" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6_rtz06fZIiH2ydj6zNakdeVza1hdIH7yKOCmz4wlz4JROaLFgxMnwirzKaq0mmDUomTreJibKjz1W19eRqTq90-6OxnnPNjGKafjTJVwKaid8MlO1Sgnd22sqSjy-74vN8SXB6wnxHV-w0T0HpVYvVGGA8dGduE34hfvzobSCpSRwQU7Q7b9MqcJWtnV4fVUOD_hQYNCHPsnLYh21Il1jwoAXM3N5f3QAb0pBdRUuo47n4MKbtNxbYE0qH_AJd5-yYUu4dSE3hg')"></div>
+<p class="mt-2 text-base font-bold text-white text-center leading-tight">Sofia Rossi</p>
+<p class="text-xs text-white/80 text-center">Callback Scheduled</p>
+<div class="mt-2 flex h-6 items-center justify-center rounded-full bg-white/20 px-2">
+<p class="text-xs font-bold text-white">95% Match</p>
+</div>
+<span class="material-symbols-outlined absolute top-1 right-1 text-white/70 !text-lg">event</span>
+</button>
+<button class="graffiti-tag relative flex flex-col items-center w-40 h-auto p-3 bg-hired-color rounded-lg tag-shadow transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[0.98] cursor-pointer" style="top: 90px; left: 800px; transform: rotate(-4deg);">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center ring-2 ring-white/50" data-alt="Headshot of David Chen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXcUKcPS0pKw_sbyI2fZX3e0fw3n5As3-4jYiUZQ8q7H77qJrayqSOEw67hhsH9qFaT9qriqrwBh1XvPrfrSsJUDc-3Eh1SR_GbnyUv-Mfi5W49CbyU7M1GblV7gs3h3t7WPPjA0MILfd5ZOydO2hkVGwK3FFK8LUtAjlzSOgQQlVcsmDXmNH6gyao2tDO3FAPkWH9_ZTlgQK1h1bo0GufV94WIhqensPLF-gt0HV-IVIiYiHAtUVth5vBFsLjuSbLh0HhFxwuid0')"></div>
+<p class="mt-2 text-base font-bold text-white text-center leading-tight">David Chen</p>
+<p class="text-xs text-white/80 text-center">Hired!</p>
+<div class="mt-2 flex h-6 items-center justify-center rounded-full bg-white/20 px-2">
+<p class="text-xs font-bold text-white">98% Match</p>
+</div>
+<span class="material-symbols-outlined absolute top-1 right-1 text-white/70 !text-lg">check_circle</span>
+</button>
+<button class="graffiti-tag relative flex flex-col items-center w-40 h-auto p-3 bg-rejected-color rounded-lg tag-shadow transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[0.98] cursor-pointer" style="top: 50px; left: 1000px; transform: rotate(2deg);">
+<div class="h-16 w-16 shrink-0 rounded-full bg-cover bg-center ring-2 ring-white/50" data-alt="Headshot of Olivia Rodriguez" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWdNUZn8Fy17TtzGH6k_NWp85oLcrY0-zUkJyhw87_FuTWrSR_3J0rNOrpJVbaASBwo2Iax3YRroZejyWQXug-8qQLwiWpBKBczSEqZyoKRBnF42y_E4dTz19ekE803jXTABnWH_bRvEvF3isj7pc4_VZTXwZQEhCnlJ9T-DkWvzQIARKozHFXFapXnoWIEBfsbVom--LyooBTcnk30d3DbDGM_OGWepJ6iY7Ik4Jq7ct6tDeHBBG5jrVPGVZpYQI8cRf4WklxKII')"></div>
+<p class="mt-2 text-base font-bold text-white text-center leading-tight">Olivia Rodriguez</p>
+<p class="text-xs text-white/80 text-center">Rejected</p>
+<div class="mt-2 flex h-6 items-center justify-center rounded-full bg-white/20 px-2">
+<p class="text-xs font-bold text-white">60% Match</p>
+</div>
+<span class="material-symbols-outlined absolute top-1 right-1 text-white/70 !text-lg">cancel</span>
+</button>
+<div class="graffiti-tag flex flex-col items-center justify-center w-40 h-40 p-3 bg-card-dark/50 rounded-lg text-center tag-shadow transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[0.98] cursor-pointer" style="top: 150px; left: 1200px; transform: rotate(-1deg);">
+<span class="material-symbols-outlined !text-4xl text-text-secondary-dark/50">sentiment_dissatisfied</span>
+<p class="mt-2 font-bold text-text-primary-dark text-sm">No More Tags</p>
+<p class="text-xs text-text-secondary-dark">Keep scrolling!</p>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 z-30 w-full border-t border-card-dark bg-background-dark/80 p-4 backdrop-blur-sm">
+<div class="mx-auto flex w-full max-w-4xl items-center justify-between gap-4">
+<p class="text-base font-bold text-text-primary-dark">1 Selected</p>
+<div class="flex items-center gap-3">
+<button class="flex h-10 items-center justify-center rounded-lg bg-text-secondary-dark/20 px-4 text-sm font-bold text-text-primary-dark">Reject</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-text-secondary-dark/20 px-4 text-sm font-bold text-text-primary-dark">Message</button>
+<button class="flex h-10 items-center justify-center rounded-lg bg-gradient-to-r from-gold-start to-gold-end px-4 text-sm font-bold text-black">Move</button>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>TheatreConnect Artist Profile</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ee2bad;
+        --secondary-color: #392833;
+        --background-color: #181116;
+        --text-primary: #ffffff;
+        --text-secondary: #b99db0;
+        --accent-color: #271c23;
+        --star-filled: #ffc107;
+        --star-empty: #77556c;
+      }
+      body {
+        font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-[var(--background-color)]/80 p-4 pb-2 backdrop-blur-sm">
+<button class="text-[var(--text-primary)]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<button class="text-[var(--text-primary)]">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,109.66l-48,48a8,8,0,0,1-11.32-11.32L204.69,112H165a88,88,0,0,0-85.23,66,8,8,0,0,1-15.5-4A103.94,103.94,0,0,1,165,96h39.71L170.34,61.66a8,8,0,0,1,11.32-11.32l48,48A8,8,0,0,1,229.66,109.66ZM192,208H40V88a8,8,0,0,0-16,0V208a16,16,0,0,0,16,16H192a8,8,0,0,0,0-16Z"></path>
+</svg>
+</button>
+</header>
+<main class="p-4">
+<section class="flex flex-col items-center gap-6 text-center">
+<div class="h-32 w-32 rounded-full bg-cover bg-center bg-no-repeat shadow-lg shadow-[var(--primary-color)]/20" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMTMRD3oPo8Mo7kDphYG3x_R2_m0lIUC_AFnloKU5x1fodHIicndmZHqzN256ha4h8apYNaAUlnQ0QBMqeqIaGtbilLZAs0ixq2GEMrfrAjWMUvGByJcQ6RnTexO5GwMImZ_gjucI6Zo-mB37JOnUpRO8GsO1A5BDKnhU7IuuhSMeV305K4aClnz6lK1OCQJ8QacXrfXq9Kk6rSZkV7ZHcTQ02ZJRhZrM7tsqOWCdWtFvI3bRV67tUMvYWDwmXZDVRetCsAOrE44M");'></div>
+<div>
+<h1 class="text-3xl font-bold tracking-tight text-[var(--text-primary)]">Rohan Sharma</h1>
+<p class="text-lg text-[var(--text-secondary)]">Actor, Director</p>
+<p class="text-base text-[var(--text-secondary)]">Delhi, India</p>
+</div>
+<button class="w-full max-w-sm rounded-lg bg-[var(--primary-color)] px-8 py-3 text-base font-bold text-[var(--text-primary)] transition-transform hover:scale-105">Book Now</button>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-bold text-[var(--text-primary)]">About</h2>
+<p class="mt-2 text-base leading-relaxed text-[var(--text-secondary)]">
+              Rohan Sharma is a versatile actor and director with over 10 years of experience in the theatre industry. He has worked on numerous productions, ranging from classical
+              plays to contemporary dramas. Rohan is known for his captivating performances and innovative approach to storytelling.
+            </p>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-bold text-[var(--text-primary)]">Portfolio</h2>
+<div class="mt-4 flex -mx-4 overflow-x-auto px-4 pb-4 [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex gap-4">
+<div class="w-40 shrink-0">
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABv-GO5IXUvGoQ2zjaSGF8CpGyrzaV3fAnYnDFvwJbm-5MeyyqPLRenKP59YDWb7oKunXVQJMm5c9I1IKFPCktEmb0WaVPj5oRBhOD3QqNs70KO3CDpW-VbSnR8ojzfUYLaqEILx6MpbIZHUxuuueQQDwppXldcq03cPAUnQuAbbSziWj60HxpzECgCeOxjuj5P7o1PhBN9LusmCgg0tKFPbeEGB60ZAZaMVF97uiQCQ1GWTAOjZkwqI8ZNLpH-U5OqV1V1mvvPUU");'></div>
+<p class="mt-2 truncate text-base font-medium text-[var(--text-primary)]">Hamlet</p>
+</div>
+<div class="w-40 shrink-0">
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtnRKxexaZppXaJitri_INUe_OitpEYv6S7JmspQ176mZ6bgNmWUzU_yNYJ49kkau9yejVn9nN01vJA0RhwzPncRUonFDxUvjl9ntRjDgvmsgu9o3ap-KuE-KAUYv60xLkbXo17Om04QciD2GGXLEE03iAmRU241dXgN3ay2hUjb-12zvLg7n1KGQc1GjQNhefK1OqvI9VcU3lMm_a2qKWhTSmf2Edt6R4F6hg1b1_1TqVXrPEc8bFx4TMQP-c0rQRmchKbTrYViI");'></div>
+<p class="mt-2 truncate text-base font-medium text-[var(--text-primary)]">Macbeth</p>
+</div>
+<div class="w-40 shrink-0">
+<div class="aspect-square w-full rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIARgMtGRjUpRUynnRskoPP7CS692hFEVfP58ESPJp_J_xMVQ_BMThobcN5xILJjkCR2e_en6c4Jl3QLXoh2-Wt2-ACKVAQagNhnsP9gu0SWfJ3nNIE17_3cmGyn9cL7c97pDC5kGwflHk5sJWvkYAHcnGXEKqFQ_c6c7WvpgIbBU_AltuD-wI8iVe_U3ZtWxnMTqAUJjy9Djw9pjQwSLLhegq9XDsBvD9p5DA38Kt2eRrZJ74BKNz5gN2VNKubtZJ-5vWg-VH2FA");'></div>
+<p class="mt-2 truncate text-base font-medium text-[var(--text-primary)]">Othello</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-bold text-[var(--text-primary)]">Upcoming Performances</h2>
+<div class="mt-4 space-y-4">
+<div class="flex items-center gap-4">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGKuGUPQPxNQcmzNU3BrQrUHwrGlTLHtopKDFy5BysuR7X1YypJZkf8mJd9GtgpYv_JF-lkUPL8pB-Jfz6-bjlTUOx0eeDTxu63sWgvhzqDTIcsxggFypD-Gqelokq6Dpe62mO9Sr1VPOZEp-furDkaLsIdzzzelG3xAodlBk2O_TeZcNXqsg_Ij6NXKmipGe52WEcpirF4i537cDQyGrZ_un7ej4lmOnTbIud23g00H6MYa8BbcqQjkcCefTdYBXos15BCY5b6EE");'></div>
+<div>
+<p class="font-semibold text-[var(--text-primary)]">The Merchant of Venice</p>
+<p class="text-sm text-[var(--text-secondary)]">June 15, 2024 | 7:00 PM</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="h-16 w-16 shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-_wslbzlTcVJB7vwHb1Sz2Ehivr9Ofw24AbKNv7lPU6Z-Jm_i9WNPN9hfPTnzFvZmXq3ZMcJ1d2Epmal_z86fUeVZoqhf6mNNPDDhPAviqMxpUj8d7-hOO0uuBoHaztMh66GLNnV6qHZ7nfzQYragRjxxy7xqIPlPts1Dr_oKQqOtCueVXoM7ddbV1MepPIhg3wg7Lm_YQ33LCJFvweWIvTFcskY9CkN7V3BiGdW6oLnJuDBCpIliHJ-UKBUDNyIYoH4nZgycbZw");'></div>
+<div>
+<p class="font-semibold text-[var(--text-primary)]">A Midsummer Night's Dream</p>
+<p class="text-sm text-[var(--text-secondary)]">July 20, 2024 | 8:00 PM</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mt-8">
+<h2 class="text-xl font-bold text-[var(--text-primary)]">Reviews</h2>
+<div class="mt-4 space-y-6">
+<div class="rounded-lg bg-[var(--accent-color)] p-4">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcIVFeQVwgyZY2iFIfTt7WDVYNxxELCnmBXT4Y8-ebUh_zr4lmEuUmFG4q7_FNGt26v_0RDoqr2j3nhJ8NDkNk2tVD2SqwbMG3j7s5Uz0-RxYJOPO87l8Lpg-YJhw6k7LL71LA9zmvQvi-4AmLPSn14h5bxa2Eq1P95kIlJ-V3Tdizr49aJWSxCpjQC_eaPJbRC0kgAdLVd4Dq_nmKthamflFlKHxcg-9goTBWOjkD2wCnGg2j5Yb2ofAPP3uNXwSy9nOUlx4gUZ0");'></div>
+<div>
+<p class="font-semibold text-[var(--text-primary)]">Priya Verma</p>
+<p class="text-sm text-[var(--text-secondary)]">May 10, 2024</p>
+</div>
+</div>
+<div class="my-2 flex gap-0.5">
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+</div>
+<p class="text-base text-[var(--text-primary)]">Rohan's performance in Hamlet was breathtaking. His portrayal of the character was both powerful and nuanced, leaving the audience spellbound.</p>
+</div>
+<div class="rounded-lg bg-[var(--accent-color)] p-4">
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB90SImjSIqiBw61Z0HhSnmKKGJqLi1jCIcWzHaDBRQlwHrVufV7t40HEO0llrwTGk8eZH2hGG8Majfr8grHVQDtGJ9SzejF81Z9mb9IDFrxXA8nYf3-VhmzGG8GPLH_xmLdRnIauOZ--fiXnTKbpYnkxlENgZPDiMs5syGrIWDT_FPe2LW1ao719nbF_XCvT3McJdYSd4b9zxcX7wNWYve0EvTO2Stz6lu4WOGMcyaH19IIV1SyZLRjgfz85QKNRYrRAqXhULT7sc");'></div>
+<div>
+<p class="font-semibold text-[var(--text-primary)]">Arjun Kapoor</p>
+<p class="text-sm text-[var(--text-secondary)]">April 25, 2024</p>
+</div>
+</div>
+<div class="my-2 flex gap-0.5">
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="text-[var(--star-filled)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></div>
+<div class="text-[var(--star-empty)]"><svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path></svg></div>
+</div>
+<p class="text-base text-[var(--text-primary)]">Rohan's direction of Macbeth was innovative and thought-provoking. The play was a visual treat, with excellent performances from the entire cast.</p>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-[var(--accent-color)] pb-3 pt-2 shadow-[0_-4px_10px_rgba(0,0,0,0.1)]">
+<nav class="flex justify-around">
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--primary-color)]" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,229.66a8,8,0,0,1-11.32,0l-50.06-50.07a88,88,0,1,1,11.32-11.31l50.06,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"></path></svg>
+<span class="text-xs font-medium">Discover</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Zm-32-80a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"></path></svg>
+<span class="text-xs font-medium">Create</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,16V152h-28.7A15.86,15.86,0,0,0,168,156.69L148.69,176H107.31L88,156.69A15.86,15.86,0,0,0,76.69,152H48V48Zm0,160H48V168H76.69L96,187.31A15.86,15.86,0,0,0,107.31,192h41.38A15.86,15.86,0,0,0,160,187.31L179.31,168H208v40Z"></path></svg>
+<span class="text-xs font-medium">Inbox</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

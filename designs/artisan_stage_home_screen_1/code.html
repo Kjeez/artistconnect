@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Artisan Stage Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5e19e6",
+              "background-light": "#f6f6f8",
+              "background-dark": "#161121",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col text-white group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex flex-col gap-2 bg-background-dark/80 p-4 pb-2 backdrop-blur-sm">
+<div class="flex h-12 items-center justify-between">
+<span class="material-symbols-outlined text-primary text-3xl">
+                    theater_comedy
+                </span>
+<p class="text-white tracking-light text-xl font-bold leading-tight">Good Morning, Sarah</p>
+<div class="flex items-center justify-end gap-3">
+<button class="flex cursor-pointer items-center justify-center rounded-full h-10 w-10 bg-transparent text-white">
+<span class="material-symbols-outlined text-2xl">
+                            notifications
+                        </span>
+</button>
+<img class="size-10 rounded-full object-cover" data-alt="User profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTpP_Yh5CJmjwNrWW_cmSOvkodBvVR8wrRwdEdcANi3MTETCA311jqg7V3gkBkTuUmPdQhTk4zotZX814-t0ez0tExYU-zRgXCUdB1cbfHh6n99bMseugt8ypsErnm34ijkXhoO2vUnp9Mn5fXe3a-AVqOh7dKz00r050H_AXB07gHG9FZZZrFyavU6uZDFkpvKNvHCyW8ywgIJ4Qi8iKzdBwB3dYdT4FPFVRgTbErGMskTeaBg-6DHDTWMWzA4gFE52hVatcCosY"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6 px-4 pb-28">
+<!-- Search Bar -->
+<div>
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+<div class="text-gray-400 flex items-center justify-center pl-4 rounded-l-xl bg-white/5">
+<span class="material-symbols-outlined">
+                                search
+                            </span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl text-white focus:outline-0 focus:ring-0 border-none bg-white/5 focus:border-none h-full placeholder:text-gray-400 pl-2 text-base font-normal leading-normal" placeholder="Find artists, scripts, events..." value=""/>
+</div>
+</label>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden -mx-4 px-4">
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-4">
+<p class="text-white text-sm font-medium leading-normal">Post Audition</p>
+</div>
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-4">
+<p class="text-white text-sm font-medium leading-normal">Browse Scripts</p>
+</div>
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-4">
+<p class="text-white text-sm font-medium leading-normal">Book Event</p>
+</div>
+<div class="flex h-10 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-white/5 px-4">
+<p class="text-white text-sm font-medium leading-normal">My Profile</p>
+</div>
+</div>
+<!-- Carousel -->
+<div class="flex flex-col gap-4">
+<h2 class="text-xl font-bold text-white">Featured For You</h2>
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden -mx-4 px-4">
+<div class="flex items-stretch gap-4">
+<div class="flex h-full w-72 flex-col gap-3 rounded-xl">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col" data-alt="A dramatic stage photo of an actress in a spotlight" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNs7kx69yJSuUyWH3bslHBlhft9Mr1nZshDZA7VB9P1WWXyTwr9GCMsR0-fz8L6hojbU91IVx1cLZmbQTObRghfqQohRcpyH5s2IT7jRx3V9_cWLnYkCR9acCEJz7gPxrPtlwFrpL0QGvCR0_eII8VVQ-2cIj7WvDefZkFFPoJsQvcW25Xt4uAlhr4kwj5I4xM7gbGzSjSbWz6b03C5_OHiT987lrUTFhHT2cPA3oNHK5FoRCHy08-2831A0WkoDQjjft8ZAjhCTo");'></div>
+<div>
+<p class="text-white text-base font-medium leading-normal">Featured Artist: Elena Vance</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">A breathtaking performance in "Starlight"</p>
+</div>
+</div>
+<div class="flex h-full w-72 flex-col gap-3 rounded-xl">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col" data-alt="A stylized cover for a script titled The Crimson Letter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_u_nPyg_Xa1daEJ-Wn80R6w6Sx1ltZ3xNunRGimWPZfpZ9MJEt5AGHviceS8fbBbExfguWmTEwhO1rOr4I5TwkjCclM_NUHQeubHbDdzI5zb6CgQGLROuD98RUDHkXCJ-WuVki55Hbat-5RD3TIDt2xPsMBUQkNJgwO6liD040xRguR1sTNdoBdyrh2pCSmsRFkL-qIqDXOEufprZneXPELjIb1fvzZQh6AB8dofH4fsKXVifx98nrms2CLG3s8qrfdCU8nnzxV8");'></div>
+<div>
+<p class="text-white text-base font-medium leading-normal">Trending Script: The Crimson Letter</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">A tale of mystery and betrayal</p>
+</div>
+</div>
+<div class="flex h-full w-72 flex-col gap-3 rounded-xl">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col" data-alt="An exterior shot of a grand theatre at night" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFDe9MMR3CAH6k6OVosGy-gGEnMRizY3Bu0SUxOmBJE-IQOXvA6G6_HPv79TwYppK9fhWpRMMz2wKgKrB5fnZcUnCmDZyfEHQnKwYbuLJk3dgTUPRlz3snao3fxtxWkSi-M8_CtGz8DTIPTCIh7F-RByazCCd_5y9wTXWJfdRlUFYJi2mVYw3UC1hjbHi8f11ZmxDK1cYyQVFNKtClaYrQ4OvFTV_-hXGf4I7ecLHkhLW0K_zLEdXkWDqe31t_Ld1BzQMrVBk9Isk");'></div>
+<div>
+<p class="text-white text-base font-medium leading-normal">Nearby: Hamlet Live</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Grand Theatre, 8 PM Tonight</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TextGrid -->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-3">
+<div class="flex flex-1 cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-white/[.03] p-4 items-start aspect-square justify-end transition-all hover:bg-white/10">
+<span class="material-symbols-outlined text-3xl text-primary">groups</span>
+<h2 class="text-white text-base font-bold leading-tight">Talent Showcase</h2>
+</div>
+<div class="flex flex-1 cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-white/[.03] p-4 items-start aspect-square justify-end transition-all hover:bg-white/10">
+<span class="material-symbols-outlined text-3xl text-primary">campaign</span>
+<h2 class="text-white text-base font-bold leading-tight">Auditions</h2>
+</div>
+<div class="flex flex-1 cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-white/[.03] p-4 items-start aspect-square justify-end transition-all hover:bg-white/10">
+<span class="material-symbols-outlined text-3xl text-primary">confirmation_number</span>
+<h2 class="text-white text-base font-bold leading-tight">Events</h2>
+</div>
+<div class="flex flex-1 cursor-pointer flex-col gap-3 rounded-xl border border-white/10 bg-white/[.03] p-4 items-start aspect-square justify-end transition-all hover:bg-white/10">
+<span class="material-symbols-outlined text-3xl text-primary">menu_book</span>
+<h2 class="text-white text-base font-bold leading-tight">Scripts</h2>
+</div>
+</div>
+<!-- Tools for Creators -->
+<div class="flex flex-col gap-4">
+<h2 class="text-xl font-bold text-white">Tools for Creators</h2>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-4 rounded-xl bg-white/5 p-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-white">Smart Casting Assistant</p>
+<p class="text-sm text-gray-400">AI-powered casting suggestions</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl bg-white/5 p-4">
+<div class="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">model_training</span>
+</div>
+<div class="flex flex-col">
+<p class="font-semibold text-white">Rehearsal AI</p>
+<p class="text-sm text-gray-400">Practice lines with a virtual partner</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Safety Banner -->
+<div class="flex items-center gap-4 rounded-xl border border-teal-500/30 bg-teal-500/10 p-4">
+<span class="material-symbols-outlined text-2xl text-teal-400">
+                    verified_user
+                </span>
+<div class="flex flex-col">
+<p class="font-semibold text-white">Your Safety is Our Priority</p>
+<p class="text-sm text-gray-400">Learn about our community guidelines.</p>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-background-dark/80 backdrop-blur-sm">
+<div class="flex h-20 items-center justify-around px-4">
+<div class="flex cursor-pointer flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined">home</span>
+<p class="text-xs font-semibold">Home</p>
+</div>
+<div class="flex cursor-pointer flex-col items-center gap-1 text-gray-400 transition-colors hover:text-white">
+<span class="material-symbols-outlined">explore</span>
+<p class="text-xs font-semibold">Explore</p>
+</div>
+<div class="flex cursor-pointer flex-col items-center gap-1 text-gray-400 transition-colors hover:text-white">
+<span class="material-symbols-outlined">add_circle</span>
+<p class="text-xs font-semibold">Create</p>
+</div>
+<div class="flex cursor-pointer flex-col items-center gap-1 text-gray-400 transition-colors hover:text-white">
+<span class="material-symbols-outlined">chat</span>
+<p class="text-xs font-semibold">Messages</p>
+</div>
+<div class="flex cursor-pointer flex-col items-center gap-1 text-gray-400 transition-colors hover:text-white">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-semibold">Profile</p>
+</div>
+</div>
+</div>
+</div>
+</body></html>

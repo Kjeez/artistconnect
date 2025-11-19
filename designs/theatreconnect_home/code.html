@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TheatreConnect</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary-neon: #ff00ff;
+            --secondary-neon: #00ffff;
+            --accent-neon: #39ff14;
+            --dark-bg: #0d0d0d;
+            --card-bg: #1a1a1a;
+            --text-light: #f0f0f0;
+            --text-muted: #a0a0a0;
+        }
+        body {
+            font-family: 'Poppins', 'Be Vietnam Pro', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+        }
+        .neon-glow-pink {
+            box-shadow: 0 0 5px var(--primary-neon), 0 0 10px var(--primary-neon), 0 0 15px var(--primary-neon);
+        }
+        .neon-glow-blue {
+            box-shadow: 0 0 5px var(--secondary-neon), 0 0 10px var(--secondary-neon), 0 0 15px var(--secondary-neon);
+        }
+        .neon-text-pink {
+            text-shadow: 0 0 3px var(--primary-neon), 0 0 5px var(--primary-neon);
+        }
+        .neon-text-blue {
+            text-shadow: 0 0 3px var(--secondary-neon), 0 0 5px var(--secondary-neon);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--dark-bg)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between overflow-x-hidden">
+<div>
+<header class="sticky top-0 z-50 bg-[var(--dark-bg)]/80 backdrop-blur-sm">
+<div class="flex items-center p-4 justify-between">
+<div class="w-12"></div>
+<h1 class="text-xl font-bold tracking-wider text-white neon-text-pink flex-1 text-center" style="font-family: 'Be Vietnam Pro', sans-serif;">TheatreConnect</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="cursor-pointer rounded-full p-2 text-white hover:bg-[var(--primary-neon)]/20 transition-colors">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<main>
+<section class="relative h-[60vh] min-h-[400px] flex flex-col items-center justify-center text-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7OOFB1Z0OJi8wCpk1b4AAlCe1PuJLdDdGKVEuRazy5ZYjCLkS1YL46ZDdXCZxMdfjtMicuN4jlaRvpQOFnJf6roMutg9E7M6OIrNdva9_3O9vFxUdVB5EC4WvVLvzq-bqKyPQcwlGA6uEZ6pKs1nzsjzNgZDqeX0JB9niCobOjvy8b6CIbrlX6JVBuTHxhYreEmki3W6upUbAwfCwQ31TqVzjhkidUUwcFEF7dVIr_RRKx3CM-UIteRHqdqydeaxjx02PmouzGOg");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[var(--dark-bg)] via-[var(--dark-bg)]/50 to-transparent"></div>
+<div class="absolute inset-0 bg-[var(--dark-bg)]/30"></div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-48 h-24 bg-[var(--primary-neon)] rounded-full blur-3xl opacity-30"></div>
+<div class="relative z-10 p-4 flex flex-col items-center gap-6">
+<div class="flex flex-col gap-2">
+<h2 class="text-4xl font-black tracking-tighter text-white neon-text-pink" style="font-family: 'Be Vietnam Pro', sans-serif;">Delhi's Theatre Hub</h2>
+<p class="text-[var(--text-light)] text-base font-light">Connect, create, and collaborate with artists in Delhi-NCR.</p>
+</div>
+<button class="relative overflow-hidden rounded-full h-12 px-8 bg-[var(--primary-neon)] text-white text-base font-bold transition-all duration-300 hover:neon-glow-pink transform hover:scale-105">
+<span class="relative z-10">Explore Now</span>
+</button>
+</div>
+</section>
+<section class="py-8">
+<h3 class="text-2xl font-bold px-4 mb-4 text-white neon-text-blue" style="font-family: 'Be Vietnam Pro', sans-serif;">Featured Events</h3>
+<div class="flex overflow-x-auto snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden px-4 gap-4">
+<div class="snap-center flex-shrink-0 w-[80%] md:w-1/3">
+<div class="flex flex-col gap-3 rounded-xl bg-[var(--card-bg)] border border-[var(--secondary-neon)]/20 p-3 transition-all duration-300 hover:border-[var(--secondary-neon)]/50 hover:shadow-[0_0_15px_rgba(0,255,255,0.2)]">
+<div class="w-full h-40 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8IA5wlqfdhld-tIk7WZjXN2SspH3BbnZe8YjzahdJ2dS2idkhCLFFhXEoAlPiFa9rWzkUn_MoSihm-Qz_aQT7XhYelczFc6bjlkfRQT3SS7Eh4PaRh8M4MwYIXHEcJrQ6IBztEWQi4QHSQoGD2YM-UliWS3uO-REWwBGdfWoaWaH6LEYsZc9PxyjNpD5OrZrPqUFNRYFuI-cYj0ron0JIyFBGNDZTknp9qkll1VmHmr5RrHoO9Fse_mJNSjmVYcGb5kV1DvbWHqE");'></div>
+<div>
+<p class="text-white text-lg font-semibold">Delhi Nights</p>
+<p class="text-[var(--text-muted)] text-sm">A modern take on classic tales</p>
+</div>
+</div>
+</div>
+<div class="snap-center flex-shrink-0 w-[80%] md:w-1/3">
+<div class="flex flex-col gap-3 rounded-xl bg-[var(--card-bg)] border border-[var(--secondary-neon)]/20 p-3 transition-all duration-300 hover:border-[var(--secondary-neon)]/50 hover:shadow-[0_0_15px_rgba(0,255,255,0.2)]">
+<div class="w-full h-40 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYbaCSJVM-CqWoyHB43hUIRRHVX6ITaBNLH6wS43zAwghXHe1VWm_UpS-iOEUiPBLqNMTxOaCvHW0hMD9aNspjgzwa8hRBvEeSUkZT6rhn_WLthy-h_iepxaGv6Zqp_KvWEk2SBtf8SfDFGJSIDwoogSPwm_nic8h-mAPXyiwydsCsqgRjg8oZWrtPrDMq2yHcZoVV4Lduo4erqIgUqKKgCIK6_NxuGiVw26fGsvnvEkA5PZd-SvBJ98pAK5DXNP6HQ0u4qDsGaLM");'></div>
+<div>
+<p class="text-white text-lg font-semibold">The Tempest</p>
+<p class="text-[var(--text-muted)] text-sm">Shakespeare's timeless masterpiece</p>
+</div>
+</div>
+</div>
+<div class="snap-center flex-shrink-0 w-[80%] md:w-1/3">
+<div class="flex flex-col gap-3 rounded-xl bg-[var(--card-bg)] border border-[var(--secondary-neon)]/20 p-3 transition-all duration-300 hover:border-[var(--secondary-neon)]/50 hover:shadow-[0_0_15px_rgba(0,255,255,0.2)]">
+<div class="w-full h-40 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB99Q9KxCaHchp2Qhsb5VlD2ommnGSvt3ykNH2ZO0s53GKZAjs-fCUlhI44No6K16OcbbBXqL73cy0Eu3vjUkw_X9EYSGLa0Ds7NQoT1YSd5-ezBc5nuOi1kue_axxyu8O8oe2PsJ2tqL42t3P43g5aBCRwx-wW4XPKyP0G6qWDzQ_YImrU58X4u_fZMsHsVmqfMHqq9K-7vuf0eoiqaCDehVGcsdpn2uClk1cIF0ppyvR2W-0fRzCG8V8FquSSajA8iXGCTA-Vj6k");'></div>
+<div>
+<p class="text-white text-lg font-semibold">Hamlet</p>
+<p class="text-[var(--text-muted)] text-sm">A tragic tale of betrayal</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-8">
+<h3 class="text-2xl font-bold px-4 mb-4 text-white neon-text-blue" style="font-family: 'Be Vietnam Pro', sans-serif;">Features</h3>
+<div class="grid grid-cols-2 gap-4 px-4">
+<div class="flex flex-col gap-3 rounded-xl bg-[var(--card-bg)] p-4 text-center items-center border border-[var(--primary-neon)]/20 transition-all duration-300 hover:border-[var(--primary-neon)]/50 hover:shadow-[0_0_15px_rgba(255,0,255,0.2)]">
+<div class="text-[var(--primary-neon)]">
+<svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M168,72a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,72Zm-8,48H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm48-80V208a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V40A16,16,0,0,1,56,24H168.49a15.86,15.86,0,0,1,11.31,4.69l32,32A15.86,15.86,0,0,1,216.49,72H208a8,8,0,0,1-8-8V29.91L179.91,48H64V208H192V80h16A8,8,0,0,0,208,72Zm4.83,50.17a8,8,0,0,0-11.32,0l-16,16a8,8,0,0,0,11.32,11.32l16-16A8,8,0,0,0,212.83,122.17ZM170.17,157.83a8,8,0,0,0-11.32,0l-16,16a8,8,0,0,0,11.32,11.32l16-16A8,8,0,0,0,170.17,157.83Z"></path></svg>
+</div>
+<div class="flex flex-col">
+<h4 class="text-white text-base font-semibold">AI Rehearsal Alerts</h4>
+<p class="text-[var(--text-muted)] text-sm font-light">Stay updated on rehearsals.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 rounded-xl bg-[var(--card-bg)] p-4 text-center items-center border border-[var(--primary-neon)]/20 transition-all duration-300 hover:border-[var(--primary-neon)]/50 hover:shadow-[0_0_15px_rgba(255,0,255,0.2)]">
+<div class="text-[var(--primary-neon)]">
+<svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg"><path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path></svg>
+</div>
+<div class="flex flex-col">
+<h4 class="text-white text-base font-semibold">Discover Talent</h4>
+<p class="text-[var(--text-muted)] text-sm font-light">Connect with local artists.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 z-50">
+<div class="bg-[var(--card-bg)]/80 backdrop-blur-lg border-t border-[var(--secondary-neon)]/20 rounded-t-2xl">
+<div class="flex justify-around items-center py-2">
+<a class="flex flex-col items-center gap-1 text-[var(--primary-neon)] group" href="#">
+<div class="p-2 rounded-full bg-[var(--primary-neon)]/20">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path></svg>
+</div>
+<p class="text-xs font-semibold text-[var(--primary-neon)]">Home</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-muted)] group hover:text-[var(--secondary-neon)] transition-colors" href="#">
+<div class="p-2 rounded-full group-hover:bg-[var(--secondary-neon)]/20 transition-colors">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"></path></svg>
+</div>
+<p class="text-xs font-medium">Events</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-muted)] group hover:text-[var(--secondary-neon)] transition-colors" href="#">
+<div class="p-2 rounded-full group-hover:bg-[var(--secondary-neon)]/20 transition-colors">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"></path></svg>
+</div>
+<p class="text-xs font-medium">Scripts</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-muted)] group hover:text-[var(--secondary-neon)] transition-colors" href="#">
+<div class="p-2 rounded-full group-hover:bg-[var(--secondary-neon)]/20 transition-colors">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path></svg>
+</div>
+<p class="text-xs font-medium">Profile</p>
+</a>
+</div>
+<div class="pb-safe-area-inset-bottom"></div>
+</div>
+</footer>
+</div>
+
+</body></html>
