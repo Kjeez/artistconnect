@@ -6,23 +6,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 @layer base {
-  :root {
+  /* Dark Theme (Default) */
+  :root[data-theme="dark"] {
     --primary-neon: #ff00ff;
     --secondary-neon: #00ffff;
     --accent-neon: #39ff14;
     --gold-neon: #ffd700;
     --purple-neon: #bf00ff;
-    --dark-bg: #0d0d0d;
+    --app-bg: #0d0d0d;
     --card-bg: #1a1a1a;
     --surface-bg: #271c23;
     --input-bg: #392833;
-    --text-light: #f0f0f0;
-    --text-muted: #a0a0a0;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --border-color: rgba(0, 255, 255, 0.2);
+    --shadow-color: rgba(255, 0, 255, 0.2);
+  }
+
+  /* Light/Bright Theme */
+  :root[data-theme="light"] {
+    --primary-neon: #e91e63;
+    --secondary-neon: #00bcd4;
+    --accent-neon: #4caf50;
+    --gold-neon: #ff9800;
+    --purple-neon: #9c27b0;
+    --app-bg: #ffffff;
+    --card-bg: #f8f9fa;
+    --surface-bg: #ffffff;
+    --input-bg: #f0f0f0;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --border-color: rgba(0, 188, 212, 0.2);
+    --shadow-color: rgba(233, 30, 99, 0.15);
+  }
+
+  /* Legacy variable mapping for backward compatibility */
+  :root {
+    --dark-bg: var(--app-bg);
+    --text-light: var(--text-primary);
+    --text-muted: var(--text-secondary);
   }
 
   body {
-    @apply bg-dark-bg text-text-light font-poppins antialiased;
+    background-color: var(--app-bg);
+    color: var(--text-primary);
+    @apply font-poppins antialiased;
     min-height: 100dvh;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   * {
@@ -196,6 +226,85 @@
   @keyframes particles {
     0% { transform: translate(0, 0); }
     100% { transform: translate(50px, 100px); }
+  }
+
+  /* Theme Toggle Button */
+  .theme-toggle-btn {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: all 0.3s ease;
+  }
+
+  .theme-toggle-btn:hover {
+    border-color: var(--primary-neon);
+    box-shadow: 0 6px 20px var(--shadow-color);
+  }
+
+  [data-theme="dark"] .theme-toggle-btn {
+    background: rgba(26, 26, 26, 0.9);
+    border-color: rgba(255, 215, 0, 0.3);
+  }
+
+  [data-theme="light"] .theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(156, 39, 176, 0.3);
+  }
+
+  /* Theme-aware card styles */
+  [data-theme="light"] .card {
+    background: var(--card-bg);
+    border-color: rgba(0, 188, 212, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  [data-theme="light"] .card:hover {
+    border-color: rgba(0, 188, 212, 0.6);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  [data-theme="light"] .card-featured {
+    background: var(--card-bg);
+    border-color: rgba(233, 30, 99, 0.3);
+    box-shadow: 0 2px 8px rgba(233, 30, 99, 0.1);
+  }
+
+  [data-theme="light"] .card-featured:hover {
+    border-color: rgba(233, 30, 99, 0.6);
+    box-shadow: 0 4px 16px rgba(233, 30, 99, 0.15);
+  }
+
+  /* Theme-aware input styles */
+  [data-theme="light"] .input-field {
+    background: var(--input-bg);
+    color: var(--text-primary);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  [data-theme="light"] .input-field:focus {
+    border-color: var(--primary-neon);
+    box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+  }
+
+  /* Theme-aware button styles */
+  [data-theme="light"] .btn-primary {
+    background: var(--primary-neon);
+    color: white;
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+  }
+
+  [data-theme="light"] .btn-primary:hover {
+    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+  }
+
+  [data-theme="light"] .btn-outline {
+    border-color: var(--primary-neon);
+    color: var(--primary-neon);
+  }
+
+  [data-theme="light"] .btn-outline:hover {
+    background: var(--primary-neon);
+    color: white;
   }
 }
 
